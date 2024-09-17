@@ -1,5 +1,11 @@
+import Landing from "@/components/Landing"
+
 const Home = () => {
-  return <div>Home</div>
+  return (
+    <>
+      <Landing />
+    </>
+  )
 }
 
 export default Home

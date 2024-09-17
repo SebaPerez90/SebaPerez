@@ -3,9 +3,9 @@ import { Routes } from './paths'
 
 export const AppRoutes = [
   {
-    path: Routes.home,
+    path: Routes .home,
     async lazy() {
-      const module = await import('../screens/home')
+      const module = await import('@/screens/Home')
       return { Component: module.default }
     },
   },
