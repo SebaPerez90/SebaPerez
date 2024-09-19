@@ -1,14 +1,22 @@
+import { Button } from './ui/button'
+
 const Landing = () => {
   return (
-    <section className='border h-[60vh] flex flex-col justify-center items-center'>
-      <h1 className='font-bold text-5xl'>Titulo Principal de la aplicación</h1>
+    <section className='h-[60vh] col-center items-start gap-4'>
+      <h1 className='font-bold text-5xl'>
+        Transformá tus ideas en productos digitales modernos y totalmente
+        personalizadas.
+      </h1>
       <p className='text-lg text-black/70'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit
-        delectus dolorum dicta natus at, quaerat, repellat, rem vero laudantium
-        doloremque id reiciendis! Optio, delectus itaque? Eos harum sint
-        similique?
+        Impulsa tu negocio con una página web o aplicación diseñada a tu medida.
+        Desde sitios simples hasta plataformas completas, te ayudo a crear
+        soluciones digitales que destacan por su facilidad de uso, diseño
+        atractivo y rendimiento eficiente.
       </p>
-      <div></div>
+      <div className='mt-4 row-center'>
+        <Button className='py-6 px-10'>call to action 1</Button>
+        <Button className='py-6 px-10'>call to action 2</Button>
+      </div>
     </section>
   )
 }

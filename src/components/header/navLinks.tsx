@@ -1,11 +1,10 @@
 const NavLinks = () => {
   return (
     <nav>
-      <ul className="flex gap-6">
+      <ul className="row-center">
         <li>Contacto</li>
         <li>Planes</li>
         <li>Servicios</li>
-        <li>Sobre mi</li>
       </ul>
     </nav>
   )
