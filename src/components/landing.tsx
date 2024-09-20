@@ -2,7 +2,7 @@ import { Button } from './ui/button'
 
 const Landing = () => {
   return (
-    <section className='h-[60vh] col-center items-start gap-4'>
+    <section className='h-[60vh] col-center items-start gap-4 border'>
       <h1 className='font-bold text-5xl'>
         Transformá tus ideas en productos digitales modernos y totalmente
         personalizadas.
