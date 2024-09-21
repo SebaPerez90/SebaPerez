@@ -1,5 +1,5 @@
 import AboutUs from '@/components/AboutUs'
-import Landing from '@/components/landing'
+import Landing from '@/components/Landing'
 
 const Home = () => {
   return (

@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "image": "/public/avatar-developer.jpg",
+        "description": "Me llamo Seba, soy desarrollador freelance con un fuerte sentido de vocación y de entrega al cliente, por lo que tu satisfacción es la mia. Con mi ayuda vas a duplicar tu prescencia digital y generar más clientes gracias a la exposición y estrategías de venta."
+    },
+    {
+        "id": 2,
+        "image": "/public/business_plan.svg",
+        "description": "Además también te ayudo con la organización de tu negocio, no dejes escapar ni un solo detalle. Gracias a la implementación de una base de datos para poder tener todo la información en un solo y poder tener un claro registro de cada evento que pasé con tu aplicación"
+    }
+]

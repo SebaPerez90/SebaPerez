@@ -6,7 +6,7 @@ import PrimaryButton from '../ui/PrimaryButton'
 
 const Header = () => {
   return (
-    <header className='flex items-center fixed w-full justify-between p-7 text-white bg-[#00000058] backdrop-blur-[8px]'>
+    <header className='flex items-center fixed w-full justify-between p-7 text-white bg-[#00000058] backdrop-blur-[8px] z-50'>
       <div className='row-center gap-9'>
         <Link
           to={'/'}

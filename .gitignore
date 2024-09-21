@@ -25,5 +25,8 @@ dist-ssr
 
 
 # enviorments variables
-
 .env
+
+
+# files
+draft.txt

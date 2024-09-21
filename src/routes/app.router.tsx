@@ -9,4 +9,11 @@ export const AppRoutes = [
       return { Component: module.default }
     },
   },
+  {
+    path: Routes .pricing,
+    async lazy() {
+      const module = await import('@/screens/Princing')
+      return { Component: module.default }
+    },
+  },
 ] as RouteObject[]
