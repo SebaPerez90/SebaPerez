@@ -5,21 +5,38 @@ import { Button } from '../ui/button'
 
 const Header = () => {
   return (
-    <header className='flex items-center fixed w-full justify-between px-6 py-5 text-white'>
-      <Link to={'/'}>
-        <figcaption className='text-2xl pb-1 font-extrabold text-[#7CF5FF]'>
-          {"{"}CodeVibes{"}"}
-        </figcaption>
-      </Link>
-      <NavLinks />
+    <header className='flex items-center fixed w-full justify-between p-7 text-white'>
+      <div className='row-center gap-9'>
+        <Link
+          to={'/'}
+          className='text-2xl pb-1 flex items-center gap-1 font-extrabold text-white'>
+          {/* <strong className='text-4xl -translate-y-[2px] text-[#bc5eff]'>
+            {'{'} */}
+          {/* </strong> */}
+          CodeVibes
+          {/* <strong className='text-4xl -translate-y-[2px] text-[#bc5eff]'> */}
+          {/* {'}'} */}
+          {/* </strong> */}
+        </Link>
+        <NavLinks />
+      </div>
       <div className='row-center'>
-        <Link to={'/contact-me'}>Contáctame</Link>
+        <Link to={'/contact-me'}>
+          <Button
+            // size={'lg'}
+            variant={'destructive'}>
+            Contáctame
+          </Button>
+        </Link>
         <Link
           to={'/log-in'}
           className='row-center'>
-          <Button size={"lg"} variant={"secondary"} className='gap-2 px-5'>
+          <Button variant={'secondary'}>
             Inicia sesión
-            <LuLogIn size={20} />
+            <LuLogIn
+              className='ml-1'
+              size={20}
+            />
           </Button>
         </Link>
       </div>
