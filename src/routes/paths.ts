@@ -2,7 +2,8 @@ export const Routes = {
   home: '/',
   about: '/about',
   contact: '/contact',
-  pricing: '/pricing',
+  plans: '/plans',
+  services: '/services',
   auth: {
     login: '/log-in',
     signup: '/sign-up',

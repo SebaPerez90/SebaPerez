@@ -1,3 +1,4 @@
+import { Routes } from '@/routes/paths'
 import type { FormData } from '../types/index'
 
 export const signUpFormData: FormData[] = [
@@ -28,5 +29,24 @@ export const signUpFormData: FormData[] = [
     id: 'repeatPassword',
     label: 'Repetir contraseña',
     placeholder:"*******"
+  },
+]
+
+
+export const navLinks = [
+  {
+    id: 1,
+    label: 'Contacto',
+    href: Routes.contact,
+  },
+  {
+    id: 2,
+    label: 'Planes',
+    href: Routes.plans,
+  },
+  {
+    id: 3,
+    label: 'Servicios',
+    href: Routes.services,
   },
 ]

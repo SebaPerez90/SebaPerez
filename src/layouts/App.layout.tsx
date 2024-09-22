@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer'
 import Header from '@/components/header/Header'
 import { Outlet } from 'react-router-dom'
 
@@ -5,9 +6,8 @@ const AppLayout = () => {
   return (
     <>
       <Header />
-      <main className='bg-black col-center'>
-        <Outlet />
-      </main>
+      <Outlet />
+      <Footer />
     </>
   )
 }

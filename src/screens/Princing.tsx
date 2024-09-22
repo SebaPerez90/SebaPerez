@@ -3,7 +3,7 @@ import pricing_data from '@/jsons/pricing.json'
 
 const Princing = () => {
   return (
-    <main className=' col-center min-h-dvh gap-24 max-h-max pb-28 pt-36'>
+    <main className=' col-center min-h-dvh max-h-max gap-24 pb-28 pt-36'>
       <div className='col-center [width:clamp(300px,80%,700px)]'>
         <h1 className='text-white text-5xl w-max font-bold'>
           ¿Estás listo para expandir tu negocio?

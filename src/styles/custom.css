@@ -401,10 +401,9 @@ input:checked+.slider:before {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  gap: 1rem;
-  padding: 1rem;
-  padding-top: 1.7em;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.7rem 1rem;
   width: 20rem;
   min-height: 34em;
   background-color: hsla(240, 15%, 9%, 1);
@@ -426,8 +425,8 @@ input:checked+.slider:before {
 }
 
 .princingCard .card_title__container .card_title {
-  font-size: 1.6rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 700;
   color: var(--white);
 }
 
@@ -481,19 +480,19 @@ input:checked+.slider:before {
 
 .princingCard .button {
   cursor: pointer;
-  padding: 0.5rem;
+  padding: 0.5rem 1.5rem;
   width: 80%;
   bottom: 1.4em;
+  background: #000;
+  border-radius: 5px;
   background-color: rgba(94, 58, 238, 0.659);
+  box-shadow: inset 0 -2px 25px -1px var(--white);
   font-size: 1rem;
   color: var(--white);
   border: 0;
-  border-radius: 9999px;
-  box-shadow: inset 0 -2px 25px -1px var(--white);
-  position: absolute;
   transition: background-color 200ms ease;
 }
 
 .princingCard .button:hover {
-  background-color: rgb(174, 0, 255);
+  background-color: #69009a;
 }

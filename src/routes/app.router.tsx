@@ -10,7 +10,7 @@ export const AppRoutes = [
     },
   },
   {
-    path: Routes .pricing,
+    path: Routes.plans,
     async lazy() {
       const module = await import('@/screens/Princing')
       return { Component: module.default }

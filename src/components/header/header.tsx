@@ -6,11 +6,11 @@ import PrimaryButton from '../ui/PrimaryButton'
 
 const Header = () => {
   return (
-    <header className='flex items-center fixed w-full justify-between p-7 text-white bg-[#00000058] backdrop-blur-[8px] z-50'>
+    <header className='flex items-center fixed w-full justify-between p-7 text-black backdrop-blur-[8px] z-50'>
       <div className='row-center gap-9'>
         <Link
           to={'/'}
-          className='hover:text-slate-200 hover:duration-200 text-2xl pb-1 flex items-center gap-1 font-extrabold text-white'>
+          className='hover:text-slate-200 hover:duration-200 text-2xl pb-1 flex items-center gap-1 font-extrabold text-black'>
           <strong className='text-4xl -translate-y-[2px] text-[#b247ff]'>
             {'{'}
           </strong>

@@ -1,11 +1,11 @@
-import AboutUs from '@/components/AboutUs'
+// import AboutUs from '@/components/AboutUs'
 import Landing from '@/components/Landing'
 
 const Home = () => {
   return (
     <>
       <Landing />
-      <AboutUs />
+      {/* <AboutUs /> */}
     </>
   )
 }
