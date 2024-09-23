@@ -9,7 +9,8 @@ const Header = () => {
       <div className='row-center gap-9'>
         <Link
           to={'/'}
-          className='hover:text-slate-200 hover:duration-200 text-2xl pb-1 flex items-center gap-1 font-extrabold text-purple-500'>
+          aria-label='Ir al inicio'
+          className='hover:text-purple-600 duration-200 hover:duration-200 text-2xl pb-1 flex items-center gap-1 font-extrabold text-purple-500'>
           CodeVibes
         </Link>
         <NavLinks />

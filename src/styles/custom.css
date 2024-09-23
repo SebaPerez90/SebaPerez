@@ -500,24 +500,23 @@ input:checked+.slider:before {
 
 /* Custom shape */
 
-.custom-shape-divider-top-1727069285 {
-  z-index: -1;
+.custom-shape-divider-bottom-1727069719 {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
+  transform: rotate(180deg);
 }
 
-.custom-shape-divider-top-1727069285 svg {
+.custom-shape-divider-bottom-1727069719 svg {
   position: relative;
   display: block;
-  width: calc(130% + 1.3px);
-  height: 500px;
-  transform: rotateY(180deg);
+  width: calc(155% + 1.3px);
+  height: 212px;
 }
 
-.custom-shape-divider-top-1727069285 .shape-fill {
-  fill: #FFFFFF;
+.custom-shape-divider-bottom-1727069719 .shape-fill {
+  fill: #a955f74a;
 }

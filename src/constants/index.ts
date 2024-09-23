@@ -38,16 +38,19 @@ export const navLinks = [
     id: 1,
     label: 'Contacto',
     href: Routes.contact,
+    ariaLabel:"Enviame un mensaje para contactarme"
   },
   {
     id: 2,
     label: 'Planes',
     href: Routes.plans,
+    ariaLabel:"Planes para contratar"
   },
   {
     id: 3,
     label: 'Servicios',
     href: Routes.services,
+    ariaLabel:"Servicios ofrecidos"
   },
 ]
 
