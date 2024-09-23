@@ -50,3 +50,31 @@ export const navLinks = [
     href: Routes.services,
   },
 ]
+
+
+export const listData = [
+  {
+    id: 1,
+    title: 'Company',
+    items: ['Preguntas frecuentes', 'Nosotros', 'Contactanos'],
+  },
+  {
+    id: 2,
+    title: 'Usuarios',
+    items: ['Publica tu servicio', 'Profesionales', 'Trabajos'],
+  },
+  {
+    id: 3,
+    title: 'Sobre nosotros',
+    items: ['Seba Perez', 'Dami Garbarini', 'Apoya el proyecto'],
+  },
+]
+
+export const images = [
+  '/footer.webp',
+  '/footer2.webp',
+  '/footer3.webp',
+  '/footer4.webp',
+  '/footer5.webp',
+  '/footer6.webp',
+]

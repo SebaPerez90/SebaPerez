@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import NavLinks from './NavLinks'
 import { LuLogIn } from 'react-icons/lu'
 import { Button } from '../ui/button'
-import PrimaryButton from '../ui/PrimaryButton'
 
 const Header = () => {
   return (
@@ -10,25 +9,23 @@ const Header = () => {
       <div className='row-center gap-9'>
         <Link
           to={'/'}
-          className='hover:text-slate-200 hover:duration-200 text-2xl pb-1 flex items-center gap-1 font-extrabold text-black'>
-          <strong className='text-4xl -translate-y-[2px] text-[#b247ff]'>
-            {'{'}
-          </strong>
+          className='hover:text-slate-200 hover:duration-200 text-2xl pb-1 flex items-center gap-1 font-extrabold text-purple-500'>
           CodeVibes
-          <strong className='text-4xl -translate-y-[2px] text-[#bc5eff]'>
-            {'}'}
-          </strong>
         </Link>
         <NavLinks />
       </div>
       <div className='row-center'>
         <Link to={'/contact-me'}>
-          <PrimaryButton label='Contáctame' />
+          <Button
+            variant={'outline'}
+            className='text-black'>
+            Contáctame
+          </Button>
         </Link>
         <Link
           to={'/log-in'}
           className='row-center'>
-          <Button variant={'secondary'}>
+          <Button>
             Inicia sesión
             <LuLogIn
               className='ml-1'

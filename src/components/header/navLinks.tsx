@@ -6,7 +6,7 @@ const linksStyles =
 
 const NavLinks = () => {
   return (
-    <nav>
+    <nav className='hidden lg:block'>
       <ul className='row-center gap-10'>
         {navLinks.map((link) => (
           <li
