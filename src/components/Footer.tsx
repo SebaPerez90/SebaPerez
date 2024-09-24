@@ -9,10 +9,11 @@ const Footer = () => {
   return (
     <footer className='bg-white col-center gap-32 pt-32 pb-6'>
       <div className='row-center h-[20em] gap-16'>
-        <div className='w-[20em] col-center h-full justify-between items-starat'>
+        <div className='w-[22em] col-center h-full justify-between items-starat'>
           <div>
-            <h1 className='text-3xl font-bold text-black'>
-              Únete a la revolución digital para potenciar tu negocio.
+            <h1 className='title text-3xl'>
+              Únete a la revolución digital para{' '}
+              <strong className='text-3xl text-purple-500'>potenciar tu negocio</strong>.
             </h1>
             <p className='text-slate-500 mt-4'>
               Sin importar el rubro al que te dediques, estas a solo un mensaje

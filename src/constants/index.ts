@@ -81,3 +81,27 @@ export const images = [
   '/footer5.webp',
   '/footer6.webp',
 ]
+
+export const aboutData = [
+  {
+    id: '01',
+    title: 'Contame sobre tu negocio',
+    description:
+      'Hablemos para poder entender e identificar las necesidades de tu negocio y de esa forma pensar en un plan de acción.',
+    image: 'about-us.jpg',
+  },
+  {
+    id: '02',
+    title: 'Selección de diseño',
+    description:
+      'Seleccionamos todos los componentes que van a integrar tu producto final, es decir paleta de colores, imagenes, videos etc.',
+    image: 'products-services.jpg',
+  },
+  {
+    id: '03',
+    title: 'Manos a la obra',
+    description:
+      'Con las metas definidas, pactamos una fecha de entrega para que puedas disfrutar de tu producto.',
+    image: 'clients.jpg',
+  },
+]
