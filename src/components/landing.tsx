@@ -1,31 +1,52 @@
 import { Button } from './ui/button'
-import landing_image from '@/assets/landing.svg'
+
+const benefitsLabels = [
+  'Precios accesibles',
+  'Soporte 24/7',
+  '100% Personalizadas',
+]
 
 const Landing = () => {
   return (
-    <section className='py-28 w-full relative flex justify-center bg-white'>
-      <div className='z-10 col-center gap-4 items-start w-[40em]'>
-        <h1 className='font-black text-5xl bg-clip-text bg-no-repeat text-transparent bg-gradient-to-r from-purple-600 via-violet-500 to-pink-500 py-3'>
-          Impulsa tu negocio con soluciones digitales personalizadas.
+    <section className='py-28 w-full h-dvh relative flex justify-center bg-white'>
+      <div className='z-10 col-center gap-0 w-[50em] text-center'>
+        <h1
+          style={{ fontFamily: 'Poppins, sans-serif' }}
+          className='font-bold text-6xl [line-height:1.1em] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-t from-purple-900 via-violet-500 to-pink-500 py-3'>
+          Impulsa tu negocio con soluciones digitales.
         </h1>
-        <p className='text-xl font-medium text-slate-700 w-[80%]'>
+        <p className='text-lg font-medium text-slate-700 w-[70%]'>
           Aumenta tu presencia digital y optimiza tu negocio con sitios y
           aplicaciones web, funcionales y diseñadas a tu medida.
         </p>
+        <ul className='row-center my-12'>
+          {benefitsLabels.map((item, index) => (
+            <li
+              key={index}
+              className='flex gap-1 items-center'>
+              <span className='row-center w-5 h-5 bg-[#8731f6] rounded-full'>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  viewBox='0 0 16 16'
+                  fill='currentColor'
+                  className='w-4 h-4 text-white'>
+                  <path
+                    fill-rule='evenodd'
+                    d='M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z'
+                    clip-rule='evenodd'></path>
+                  <title>check svg icon</title>
+                </svg>
+              </span>
+              <span className='font-medium text-sm text-slate-600'>{item}</span>
+            </li>
+          ))}
+        </ul>
         <Button
-          size={'lg'}
-          className='py-6'>
-          Consulta por presupuesto
+          type='button'
+          className='p-6 border-2 rounded-full bg-black text-white border-black'>
+          Reservá hoy
         </Button>
       </div>
-
-      <figure className='w-[25em] h-auto z-10'>
-        <img
-          src={landing_image}
-          alt='landing-image'
-          className='object-contain w-full h-full'
-        />
-      </figure>
 
       <div className='custom-shape-divider-bottom-1727069719'>
         <svg

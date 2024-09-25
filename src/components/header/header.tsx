@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import NavLinks from './NavLinks'
-import { Button } from '../ui/button'
 import { Routes } from '@/routes/paths'
 import { useEffect, useRef } from 'react'
 
@@ -28,23 +27,21 @@ const Header = () => {
         <Link
           to={Routes.home}
           aria-label='Ir al inicio'
-          className='hover:text-purple-600 duration-200 hover:duration-200 text-2xl pb-1 flex items-center gap-1 font-extrabold text-purple-500'>
-          CodeVibes
+          className='hover:text-purple-600 duration-200 hover:duration-200 text-xl pb-1 flex items-center gap-1 font-extrabold text-purple-500 title'>
+          {'{'} CodeVibes {'}'}
         </Link>
-        <NavLinks />
       </div>
+      <NavLinks />
       <div className='row-center'>
-        <Link to={Routes.contact}>
-          <Button
-            variant={'outline'}
-            className='text-black'>
-            Contáctame
-          </Button>
+        <Link
+          to={Routes.contact}
+          className='custom-btn'>
+          Contáctame
         </Link>
         <Link
           to={Routes.auth.login}
-          className='row-center'>
-          <Button>Inicia sesión</Button>
+          className='py-2 px-4 text-xs bg-black border-2 rounded-md text-white border-black font-semibold'>
+          Inicia sesión
         </Link>
       </div>
     </header>

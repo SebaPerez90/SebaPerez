@@ -55,7 +55,7 @@ const AboutUs = () => {
       </section>
 
       {/* Steps by step */}
-      <section className='z-10 col-center gap-44 [width:clamp(350px,75%,1200px)] pt-20 pb-32'>
+      <section className='z-10 col-center gap-44 [width:clamp(350px,80%,1200px)] pt-20 pb-32'>
         <h1 className='title text-lg'>¿Como vamos a trabajar?</h1>
         {aboutData.map((data) => (
           <div
@@ -71,8 +71,8 @@ const AboutUs = () => {
               style={{ fontFamily: 'Poppins, sans-serif' }}>
               {data.id}
             </span>
-            <div className='w-[21em] z-20'>
-              <h2 className='title text-purple-500'>{data.title}</h2>
+            <div className='w-[18em] z-20'>
+              <h2 className='title w-max text-purple-500'>{data.title}</h2>
               <p className='paragraph text-black mt-4'>{data.description}</p>
             </div>
           </div>
