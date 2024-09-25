@@ -2,35 +2,28 @@ import { Link } from 'react-router-dom'
 import NavLinks from './NavLinks'
 import { Button } from '../ui/button'
 import { Routes } from '@/routes/paths'
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 
 const Header = () => {
+  const headerRef = useRef<HTMLElement | null>(null)
   useEffect(() => {
     const handleScroll = () => {
-      const header = document.getElementById('header')
-      if (window.scrollY !== 0) {
-        header?.classList.add('[box-shadow:0_0_30px_0_#00000033]')
-      } else {
-        header?.classList.remove('[box-shadow:0_0_30px_0_#00000033]')
+      if (headerRef.current) {
+        headerRef.current.classList.toggle(
+          '[box-shadow:0_0_30px_0_#00000033]',
+          window.scrollY !== 0
+        )
       }
     }
 
-    handleScroll()
-    if (typeof window !== 'undefined') {
-      window.addEventListener('scroll', handleScroll)
-    }
-
-    return () => {
-      if (typeof window !== 'undefined') {
-        window.removeEventListener('scroll', handleScroll)
-      }
-    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   return (
     <header
-      id='header'
-      className='flex items-center fixed w-full justify-between p-7 text-black backdrop-blur-[8px] bg-white/50 z-50'>
+      ref={headerRef}
+      className='flex items-center fixed w-full justify-between px-7 py-4 text-black backdrop-blur-[8px] bg-white/50 z-50'>
       <div className='row-center gap-9'>
         <Link
           to={Routes.home}

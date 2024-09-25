@@ -16,12 +16,7 @@ const Footer = () => {
               <strong className='text-3xl text-purple-500'>potenciar tu negocio</strong>.
             </h1>
             <p className='text-slate-500 mt-4'>
-              Sin importar el rubro al que te dediques, estas a solo un mensaje
-              de mejorar tus ingresos y prescencia digital.
-              <br></br>
-              <br></br>
-              Te voy ayudar a encontrar la mejor manera de llevar a cabo tus
-              objetivos!
+            No importa tu rubro, mejorar tu presencia digital está a un clic de distancia. Te ayudaré a cumplir tus objetivos.
             </p>
           </div>
           <Button

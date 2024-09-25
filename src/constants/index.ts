@@ -7,53 +7,51 @@ export const signUpFormData: FormData[] = [
     name: 'name',
     id: 'name',
     label: 'Nombre',
-    placeholder:"Jhon Doe"
+    placeholder: 'Jhon Doe',
   },
   {
     type: 'text',
     name: 'email',
     id: 'email',
     label: 'Correo electrónico',
-    placeholder:"example@gmail.com"
+    placeholder: 'example@gmail.com',
   },
   {
     type: 'password',
     name: 'password',
     id: 'password',
     label: 'Contraseña',
-    placeholder:"*******"
+    placeholder: '*******',
   },
   {
     type: 'password',
     name: 'repeatPassword',
     id: 'repeatPassword',
     label: 'Repetir contraseña',
-    placeholder:"*******"
+    placeholder: '*******',
   },
 ]
-
 
 export const navLinks = [
   {
     id: 1,
     label: 'Contacto',
     href: Routes.contact,
-    ariaLabel:"Enviame un mensaje para contactarme"
+    ariaLabel: 'Enviame un mensaje para contactarme',
   },
   {
     id: 2,
     label: 'Planes',
     href: Routes.plans,
-    ariaLabel:"Planes para contratar"
+    ariaLabel: 'Planes para contratar',
   },
   {
     id: 3,
     label: 'Servicios',
     href: Routes.services,
-    ariaLabel:"Servicios ofrecidos"
+    ariaLabel: 'Servicios ofrecidos',
   },
 ]
-
 
 export const listData = [
   {
@@ -85,23 +83,32 @@ export const images = [
 export const aboutData = [
   {
     id: '01',
-    title: 'Contame sobre tu negocio',
+    title: 'Conociendo tus necesidades',
     description:
-      'Hablemos para poder entender e identificar las necesidades de tu negocio y de esa forma pensar en un plan de acción.',
-    image: 'about-us.jpg',
+      'Escuchamos tus ideas y objetivos para entender cómo podemos ayudarte.',
   },
   {
     id: '02',
-    title: 'Selección de diseño',
+    title: 'Creación del diseño',
     description:
-      'Seleccionamos todos los componentes que van a integrar tu producto final, es decir paleta de colores, imagenes, videos etc.',
-    image: 'products-services.jpg',
+      'Crearemos un diseño centrado en usabilidad y estética, ajustado a tus expectativas y objetivos.',
   },
   {
     id: '03',
-    title: 'Manos a la obra',
+    title: 'Desarrollo de tu proyecto',
     description:
-      'Con las metas definidas, pactamos una fecha de entrega para que puedas disfrutar de tu producto.',
-    image: 'clients.jpg',
+      'Creamos tu producto de manera eficiente y cuidamos cada detalle para garantizar calidad.',
+  },
+  {
+    id: '04',
+    title: 'Lanzamiento',
+    description:
+      'Presentamos tu producto al mundo y nos aseguramos de que todo funcione perfectamente desde el inicio.',
+  },
+  {
+    id: '05',
+    title: 'Soporte continuo',
+    description:
+      'Te brindamos soporte continuo y hacemos mejoras para que siempre estés un paso adelante.',
   },
 ]
