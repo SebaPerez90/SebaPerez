@@ -17,7 +17,7 @@ const AboutUs = () => {
                 alt='avatar de desarrollador Seba'
               />
             </figure>
-            <span className='mt-3 text-black justify-center text-sm font-semibold flex items-center'>
+            <span className='mt-3 text-slate-500 justify-center text-sm font-semibold flex items-center'>
               <MdLocationPin
                 color='#f00'
                 size={20}
@@ -25,7 +25,7 @@ const AboutUs = () => {
               Argentina, Buenos Aires.
             </span>
           </div>
-          <p className='w-[25em] paragraph'>
+          <p className='w-[25em] paragraph text-black'>
             ¡Hola! Soy Seba, desarrollador de software, creo soluciones
             digitales adaptadas las necesidades de cada negocio. Mi objetivo es
             ayudarte a mejorar tu presencia online y atraer más clientes,

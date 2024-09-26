@@ -3,7 +3,7 @@ import { navLinks } from '@/constants/index'
 
 const NavLinks = () => {
   return (
-    <nav className='hidden lg:block'>
+    <nav className='hidden md:block'>
       <ul className='row-center gap-10'>
         {navLinks.map((link) => (
           <li

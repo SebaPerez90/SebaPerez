@@ -7,16 +7,20 @@ import { images, listData } from '@/constants/index'
 
 const Footer = () => {
   return (
-    <footer className='bg-white col-center gap-32 pt-32 pb-6'>
+    <footer className='bg-white col-center gap-32 pt-32 pb-4'>
       <div className='row-center h-[20em] gap-16'>
         <div className='w-[22em] col-center h-full justify-between items-starat'>
           <div>
             <h1 className='title text-3xl'>
               Únete a la revolución digital para{' '}
-              <strong className='text-3xl text-purple-500'>potenciar tu negocio</strong>.
+              <strong className='text-3xl text-purple-500'>
+                potenciar tu negocio
+              </strong>
+              .
             </h1>
-            <p className='text-slate-500 mt-4'>
-            No importa tu rubro, mejorar tu presencia digital está a un clic de distancia. Te ayudaré a cumplir tus objetivos.
+            <p className='paragraph mt-4'>
+              No importa tu rubro, mejorar tu presencia digital está a un click
+              de distancia. Te ayudaré a cumplir tus objetivos.
             </p>
           </div>
           <Button
@@ -38,8 +42,7 @@ const Footer = () => {
               key={index}>
               <img
                 className='w-full h-full object-cover'
-                width={1500}
-                height={1500}
+                loading='lazy'
                 src={item}
                 alt='categories-images'
               />
@@ -48,8 +51,8 @@ const Footer = () => {
         </Swiper>
       </div>
 
-      <div className='col-center'>
-        <div className='flex justify-evenly [width:clamp(600px,60%,1200px)] py-16'>
+      <div className='col-center w-full'>
+        <div className='flex justify-evenly [width:clamp(350px,100%,900px)] py-16'>
           {listData.map((data) => (
             <ul
               key={data.id}
@@ -60,14 +63,14 @@ const Footer = () => {
               {data.items.map((item) => (
                 <li
                   key={item}
-                  className='text-slate-600 cursor-pointer hover:text-slate-400 hover:duration-150'>
+                  className='text-slate-400 font-medium text-sm cursor-pointer hover:text-slate-600 hover:duration-150'>
                   {item}
                 </li>
               ))}
             </ul>
           ))}
         </div>
-        <span className='w-max mt-4 text-slate-500'>
+        <span className='w-max mt-4 font-medium'>
           CodeVibes © 2024 | codevibes@gmail.com
         </span>
       </div>
