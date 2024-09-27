@@ -3,11 +3,14 @@ import { Button } from './ui/button'
 
 const QuestionBox = () => {
   return (
-    <section className='[width:clamp(350px,100%,500px)] col-center'>
+    <section className='[width:clamp(320px,100%,500px)] col-center px-12'>
       <h2 className='title text-center'>
         ¿No encontraste tu pregunta? ¡Pregúntanos directamente!
       </h2>
-      <form className='w-full'>
+      <form
+        id='question-form'
+        name='question-form'
+        className='w-full'>
         <Textarea
           placeholder='Escribí tu pregunta aquí...'
           rows={8}

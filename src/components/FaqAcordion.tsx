@@ -16,7 +16,7 @@ const FaqAccordion = () => {
     <Accordion
       type='single'
       collapsible
-      className='w-full px-10 flex gap-14 flex-wrap items-start justify-between'>
+      className='w-full px-10 flex gap-14 flex-wrap items-start justify-between max-[560px]:justify-center'>
       {Object.entries(faqData).map(([section, items]) => (
         <div
           key={section}
@@ -32,7 +32,7 @@ const FaqAccordion = () => {
               <AccordionTrigger className='text-start text-base font-semibold'>
                 {item.question}
               </AccordionTrigger>
-              <AccordionContent className='text-start font-medium'>
+              <AccordionContent className='text-start font-medium text-black/60'>
                 {item.answer}
               </AccordionContent>
             </AccordionItem>
