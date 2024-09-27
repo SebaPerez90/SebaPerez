@@ -27,7 +27,7 @@ const Header = () => {
         <Link
           to={Routes.home}
           aria-label='Ir al inicio'
-          className='hover:text-purple-600 duration-200 hover:duration-200 text-xl pb-1 flex items-center gap-1 font-extrabold text-purple-500 title'>
+          className='hover:text-purple-600 duration-200 hover:duration-200 text-xl flex items-center gap-1 font-extrabold text-purple-500 title'>
           {'{'} CodeVibes {'}'}
         </Link>
       </div>

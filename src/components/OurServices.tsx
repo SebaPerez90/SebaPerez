@@ -37,9 +37,9 @@ const servicesData = [
 
 const OurServices = () => {
   return (
-    <section className='w-full bg-secondary col-center gap-20 py-36'>
+    <section id='#services' className='w-full bg-secondary col-center gap-20 py-36'>
       <h1 className='title text-lg'>Mis servicos</h1>
-      <div className='grid grid-cols-2 place-items-center gap-12'>
+      <div className='col-center md:grid grid-cols-2 place-items-center gap-12'>
         {servicesData.map((item) => (
           <Card
             key={item.id}

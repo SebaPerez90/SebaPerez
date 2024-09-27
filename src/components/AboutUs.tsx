@@ -8,7 +8,7 @@ const AboutUs = () => {
       {/* Self-introduce */}
       <section className='w-full h-[50em] relative col-center gap-32'>
         <h1 className='title text-lg'>¿Quién soy?</h1>
-        <div className='row-center items-start gap-20'>
+        <div className='max-[640px]:col-center row-center items-start gap-20'>
           <div>
             <figure className='w-[13em] h-[13em] rounded-full overflow-hidden'>
               <img
@@ -55,7 +55,7 @@ const AboutUs = () => {
       </section>
 
       {/* Steps by step */}
-      <section className='z-10 col-center gap-44 [width:clamp(350px,80%,1200px)] pt-20 pb-32'>
+      <section className='z-10 col-center gap-44 [width:clamp(300px,80%,1200px)] pt-20 pb-32'>
         <h1 className='title text-lg'>¿Como vamos a trabajar?</h1>
         {aboutData.map((data) => (
           <div

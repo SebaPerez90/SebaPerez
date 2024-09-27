@@ -3,7 +3,8 @@ import { AppRoutes } from './app.router'
 import AppLayout from '@/layouts/App.layout'
 import AuthLayout from '@/layouts/Auth.layout'
 import { AuthRotes } from './auth.router'
-// import AppLayout from '../layouts/App.layout'
+import { Routes } from './paths'
+import FrecuentlyAskQuestion from '@/screens/FrecuentlyAskQuestion'
 
 export const router = createBrowserRouter([
   {
@@ -13,5 +14,9 @@ export const router = createBrowserRouter([
   {
     element: <AuthLayout />,
     children: AuthRotes,
+  },
+  {
+    path: Routes.faq,
+    element: <FrecuentlyAskQuestion />,
   },
 ])

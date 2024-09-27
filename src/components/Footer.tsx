@@ -20,7 +20,7 @@ const Footer = () => {
             </h1>
             <p className='paragraph mt-4'>
               No importa tu rubro, mejorar tu presencia digital está a un click
-              de distancia. Te ayudaré a cumplir tus objetivos.
+              de distancia. Te ayudo a cumplir tus objetivos.
             </p>
           </div>
           <Button

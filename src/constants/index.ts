@@ -1,7 +1,6 @@
 import { Routes } from '@/routes/paths'
-import type { FormData } from '../types/index'
 
-export const signUpFormData: FormData[] = [
+export const signUpFormData = [
   {
     type: 'text',
     name: 'name',
@@ -32,6 +31,23 @@ export const signUpFormData: FormData[] = [
   },
 ]
 
+export const projectRequest = [
+  {
+    type: 'text',
+    name: 'topic',
+    id: 'topic',
+    label: 'Asunto',
+    placeholder: 'Tienda e-comerce',
+  },
+  {
+    type: 'text',
+    name: 'email',
+    id: 'email',
+    label: 'Correo electrónico',
+    placeholder: 'example@gmail.com',
+  },
+]
+
 export const navLinks = [
   {
     id: 1,
@@ -47,9 +63,9 @@ export const navLinks = [
   },
   {
     id: 3,
-    label: 'Servicios',
-    href: Routes.services,
-    ariaLabel: 'Servicios ofrecidos',
+    label: 'Preguntas',
+    href: Routes.faq,
+    ariaLabel: 'Preguntas precuentes',
   },
 ]
 

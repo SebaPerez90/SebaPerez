@@ -5,10 +5,10 @@ const Princing = () => {
   return (
     <main className=' col-center min-h-dvh max-h-max gap-24 pb-28 pt-36'>
       <div className='col-center [width:clamp(300px,80%,700px)]'>
-        <h1 className='text-white text-5xl w-max font-bold'>
+        <h1 className='title text-5xl w-max'>
           ¿Estás listo para expandir tu negocio?
         </h1>
-        <p className='text-slate-300 text-lg'>
+        <p className='paragraph'>
           En la actualidad, no tener una tienda en línea es perder
           oportunidades. Con 5.45 mil millones de usuarios de internet y un
           crecimiento constante en las compras digitales, es el momento ideal

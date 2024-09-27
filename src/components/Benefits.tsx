@@ -5,36 +5,37 @@ import benefits3 from '@/assets/benefits-3.webp'
 const benefitsData = [
   {
     id: 1,
-    title: 'Precios super accesibles',
+    title: 'Presupuesto Personalizado',
     description:
-      'Con CodeVibes, conectamos con clientes potenciales para ofrecer soluciones personalizadas y efectivas.',
-    image: benefits,
+      'En CodeVibes manejamos una lista de precios super accesibles y personalizados dependiendo de la complejidad de los requisitos.',
+    image: benefits2,
   },
   {
     id: 2,
     title: 'Plata asegurada',
     description:
-      'Con CodeVibes, administras tus datos de manera segura y confiable.',
-    image: benefits2,
+      'Con CodeVibes tu satisfacción, también es la nuestra! paga solo si el producto final cumple con tus expectativas.',
+    image: benefits3,
   },
   {
     id: 3,
     title: 'Soporte',
-    description: 'Con CodeVibes, optimizas tus tiempos de entrega y ofertas.',
-    image: benefits3,
+    description:
+      'En CodeVibes estamos siempre disponible para optimizar el rendimiento de tu aplicación, garantizando entregas eficientes y soluciones a medida.',
+    image: benefits,
   },
 ]
 
 const Benefits = () => {
   return (
-    <section className='col-center h-dvh justify-evenly w-full px-10'>
+    <section className='col-center justify-evenly w-full py-44 px-12 lg:gap-8'>
       <h1 className='title text-lg'>¿Porqué elegir CodeVibes?</h1>
-      <div className='row-center justify-between test w-full px-10'>
+      <div className='col-center lg:row-center justify-between [width:clamp(350px,100%,1500px)] mt-28'>
         {benefitsData.map((data) => (
           <div
             key={data.id}
-            className='col-center w-[15em] text-center'>
-            <figure className='w-[14em] h-[14em] rounded-md overflow-hidden'>
+            className='col-center w-[20em] text-center'>
+            <figure className='w-[12em] h-[12em] rounded-md overflow-hidden'>
               <img
                 loading='lazy'
                 className='h-full w-full object-cover'
@@ -43,11 +44,8 @@ const Benefits = () => {
               />
             </figure>
             <div>
-              <h2 className='title'>Garantia asegurada</h2>
-              <p className='paragraph mt-2'>
-                Podes probar los beneficios de tu producto sin problemas y paga
-                solo si cumple tus expectativas
-              </p>
+              <h2 className='title text-lg'>{data.title}</h2>
+              <p className='paragraph text-sm mt-2'>{data.description}</p>
             </div>
           </div>
         ))}
