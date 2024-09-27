@@ -1,4 +1,6 @@
-/* From Uiverse.io by Siyu1017 */
+/* From Uiverse.io by G4b413l */
+
+/* Tooltip */
 .tooltip-container {
   position: relative;
   transition: all 0.2s;
@@ -28,9 +30,6 @@
   transform: translateX(-50%) translateY(-100%) scale(1);
 }
 
-
-
-/* From Uiverse.io by G4b413l */
 
 /* Loader */
 .three-body {
