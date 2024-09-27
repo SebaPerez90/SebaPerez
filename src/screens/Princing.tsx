@@ -1,11 +1,11 @@
 import PrincigCard from '@/components/PrincigCard'
-import pricing_data from '@/jsons/pricing.json'
+import pricingData from '@/jsons/pricing.json'
 
 const Princing = () => {
   return (
     <main className=' col-center min-h-dvh max-h-max gap-24 pb-28 pt-36'>
-      <div className='col-center [width:clamp(300px,80%,700px)]'>
-        <h1 className='title text-5xl w-max'>
+      <div className='col-center [width:clamp(300px,80%,700px)] test'>
+        <h1 className='title text-5xl'>
           ¿Estás listo para expandir tu negocio?
         </h1>
         <p className='paragraph'>
@@ -20,14 +20,14 @@ const Princing = () => {
           parte de esta transformación.
         </p>
       </div>
-      <div className='grid grid-cols-3 justify-center gap-10 mx-8 z-10'>
-        {pricing_data.map((item) => (
+      <div className='row-center flex-wrap gap-10 mx-8 z-10'>
+        {pricingData.map((item) => (
           <PrincigCard
             key={item.id}
             title={item.title}
             subtitle={item.subtitle}
+            price={item.price}
             listItems={item.services}
-            buttonLabel={item.buttonLabel}
           />
         ))}
       </div>
