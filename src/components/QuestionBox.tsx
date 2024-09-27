@@ -12,6 +12,7 @@ const QuestionBox = () => {
         name='question-form'
         className='w-full'>
         <Textarea
+          id='question'
           placeholder='Escribí tu pregunta aquí...'
           rows={8}
           required
