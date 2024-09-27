@@ -2,7 +2,7 @@ import { MdDevices } from 'react-icons/md'
 import { SlEarphonesAlt } from 'react-icons/sl'
 import { MdDesignServices } from 'react-icons/md'
 import { FaLaptopCode } from 'react-icons/fa'
-import { Card } from './ui/card'
+import { Card } from '../ui/card'
 
 const servicesData = [
   {

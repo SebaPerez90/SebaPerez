@@ -16,18 +16,25 @@ const FaqAccordion = () => {
     <Accordion
       type='single'
       collapsible
-      className='w-full px-10 flex gap-10 flex-wrap items-start justify-between'>
+      className='w-full px-10 flex gap-14 flex-wrap items-start justify-between'>
       {Object.entries(faqData).map(([section, items]) => (
         <div
           key={section}
           className='w-[20em] flex-grow max-w-[25em] mt-10'>
-          <h2 className='title'>{formatSectionTitle(section)}</h2>
+          <h2 className='title text-purple-500'>
+            {formatSectionTitle(section)}
+          </h2>
           {items.map((item, index) => (
             <AccordionItem
               key={index}
-              value={item.question}>
-              <AccordionTrigger>{item.question}</AccordionTrigger>
-              <AccordionContent>{item.answer}</AccordionContent>
+              value={item.question}
+              className='border-b-purple-500 mt-3'>
+              <AccordionTrigger className='text-start text-base font-semibold'>
+                {item.question}
+              </AccordionTrigger>
+              <AccordionContent className='text-start font-medium'>
+                {item.answer}
+              </AccordionContent>
             </AccordionItem>
           ))}
         </div>

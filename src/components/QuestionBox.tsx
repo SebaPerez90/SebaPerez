@@ -4,7 +4,7 @@ import { Button } from './ui/button'
 const QuestionBox = () => {
   return (
     <section className='[width:clamp(350px,100%,500px)] col-center'>
-      <h2 className='title'>
+      <h2 className='title text-center'>
         ¿No encontraste tu pregunta? ¡Pregúntanos directamente!
       </h2>
       <form className='w-full'>
@@ -15,12 +15,12 @@ const QuestionBox = () => {
           className='resize-none'
         />
         <div className='grid grid-cols-2 gap-8 mt-4'>
-          <Button
-            variant={'outline'}
-            type='submit'>
+          <button
+            type='button'
+            className='custom-btn'>
             Cancelar
-          </Button>
-          <Button>Enviar pregunta</Button>
+          </button>
+          <Button type='submit'>Enviar pregunta</Button>
         </div>
       </form>
     </section>
