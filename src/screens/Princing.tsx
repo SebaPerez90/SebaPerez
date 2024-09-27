@@ -4,7 +4,7 @@ import pricingData from '@/jsons/pricing.json'
 const Princing = () => {
   return (
     <main className=' col-center min-h-dvh max-h-max gap-24 pb-28 pt-36'>
-      <div className='col-center [width:clamp(300px,80%,700px)] test'>
+      <div className='col-center [width:clamp(300px,80%,700px)] '>
         <h1 className='title text-5xl'>
           ¿Estás listo para expandir tu negocio?
         </h1>
