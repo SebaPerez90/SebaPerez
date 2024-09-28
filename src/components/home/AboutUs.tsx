@@ -12,6 +12,7 @@ const AboutUs = () => {
           <div>
             <figure className='w-[13em] h-[13em] rounded-full overflow-hidden'>
               <img
+                loading='lazy'
                 className='h-full w-full object-cover'
                 src={avatar_image}
                 alt='avatar de desarrollador Seba'
@@ -72,7 +73,9 @@ const AboutUs = () => {
               {data.id}
             </span>
             <div className='w-[18em] z-20'>
-              <h2 className='title w-max max-[400px]:w-auto text-purple-500'>{data.title}</h2>
+              <h2 className='title w-max max-[400px]:w-auto text-purple-500'>
+                {data.title}
+              </h2>
               <p className='paragraph text-black mt-4'>{data.description}</p>
             </div>
           </div>
