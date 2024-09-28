@@ -30,11 +30,11 @@ const Benefits = () => {
   return (
     <section className='col-center justify-evenly w-full py-44 px-12 lg:gap-8'>
       <h1 className='title text-lg'>¿Porqué elegir CodeVibes?</h1>
-      <div className='col-center lg:row-center justify-between [width:clamp(350px,100%,1500px)] mt-28'>
+      <div className='flex-col flex  items-center lg:flex-row justify-between [width:clamp(300px,100%,1500px)] mt-20'>
         {benefitsData.map((data) => (
           <div
             key={data.id}
-            className='col-center w-[20em] text-center'>
+            className='col-center w-[20em] text-center lg:mt-0 mt-16'>
             <figure className='w-[12em] h-[12em] rounded-md overflow-hidden'>
               <img
                 loading='lazy'

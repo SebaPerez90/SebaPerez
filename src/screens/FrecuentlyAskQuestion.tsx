@@ -10,7 +10,7 @@ const QuestionBox = lazy(() => import('@/components/QuestionBox'))
 
 const FrecuentlyAskQuestion = () => {
   return (
-    <main className='py-14 col-center gap-20'>
+    <main className='py-14 col-center gap-16'>
       <header className='relative w-full'>
         <Link
           to={Routes.home}
