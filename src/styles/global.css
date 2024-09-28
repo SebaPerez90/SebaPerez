@@ -119,6 +119,7 @@
   box-sizing: border-box;
   font: inherit;
   font-size: calc(8px + 0.6vw);
+  transition: background ease-out 400ms;
 }
 
 html,

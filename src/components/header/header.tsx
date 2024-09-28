@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <header
       ref={headerRef}
-      className='flex items-center fixed w-full justify-between px-7 py-4 text-black backdrop-blur-[8px] bg-white/50 z-50'>
+      className='flex items-center fixed w-full justify-between px-7 py-4 text-black backdrop-blur-[8px] bg-white/50 z-50 dark:bg-red-600'>
       <div className='row-center gap-9'>
         <Link
           to={Routes.home}
