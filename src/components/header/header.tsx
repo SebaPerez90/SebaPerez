@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom'
 import NavLinks from './NavLinks'
 import { Routes } from '@/routes/paths'
 import { useEffect, useRef } from 'react'
+import ThemeButton from './ThemeButton'
+import { LanguageSelect } from './LanguageSelect'
 
 const Header = () => {
   const headerRef = useRef<HTMLElement | null>(null)
@@ -33,16 +35,8 @@ const Header = () => {
       </div>
       <NavLinks />
       <div className='row-center'>
-        <Link
-          to={Routes.contact}
-          className='custom-btn'>
-          Contáctame
-        </Link>
-        <Link
-          to={Routes.auth.login}
-          className='py-2 px-4 text-xs bg-black border-2 rounded-md text-white border-black font-semibold'>
-          Inicia sesión
-        </Link>
+        <ThemeButton />
+        <LanguageSelect />
       </div>
     </header>
   )
