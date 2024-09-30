@@ -1,10 +1,12 @@
 import PrincigCard from '@/components/PrincigCard'
-import pricingData from '@/jsons/pricing.json'
+// import pricingData from '@/jsons/pricing.json'
 import { IoIosInformationCircle } from 'react-icons/io'
 import { useTranslation } from 'react-i18next'
+import { LocalePricingData } from '@/types'
 
 const Princing = () => {
   const { t } = useTranslation()
+  const pricingContent = t('pricing', { returnObjects: true })
 
   return (
     <main className=' col-center min-h-dvh max-h-max gap-24 pb-28 pt-36 bg-secondary'>
@@ -19,11 +21,11 @@ const Princing = () => {
       </header>
       <section>
         <div className='row-center flex-wrap gap-10 mx-8 z-10'>
-          {pricingData.map((item) => (
+          {(pricingContent as Array<LocalePricingData>).map((item) => (
             <PrincigCard
               key={item.id}
               title={item.title}
-              subtitle={item.subtitle}
+              description={item.description}
               price={item.price}
               listItems={item.services}
             />

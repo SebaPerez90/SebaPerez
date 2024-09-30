@@ -5,14 +5,14 @@ import { Routes } from '@/routes/paths'
 
 interface PrincigCardProps {
   title: string
-  subtitle: string
+  description: string
   price: number
   listItems: string[]
 }
 
 const PrincigCard = ({
   title,
-  subtitle,
+  description,
   listItems,
   price,
 }: PrincigCardProps) => {
@@ -21,7 +21,7 @@ const PrincigCard = ({
       <div className='col-center items-start'>
         <div className='flex flex-col gap-3'>
           <h2 className='title text-purple-500'>{title}</h2>
-          <p className='paragraph'>{subtitle}</p>
+          <p className='paragraph'>{description}</p>
           <span className='title text-4xl font-bold w-full text-center'>
             ${price}
           </span>

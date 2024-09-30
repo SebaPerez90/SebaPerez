@@ -13,8 +13,12 @@ export type LocaleData = {
   description: string
 }
 
-export type LocalePricingData = {
+export type LocaleFaqData = {
   question: string
   answer: string
 }
 
+export type LocalePricingData = LocaleData & {
+  price: number
+  services: string[]
+}
