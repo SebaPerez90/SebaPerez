@@ -8,33 +8,32 @@ import {
 import englishIcon from '@/assets/english-icon.png'
 import spanishIcon from '@/assets/spanish-icon.png'
 import { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 export function LanguageSelect() {
-  const [currentLang, setCurrentLang] = useState('')
-  const [language, setLanguage] = useState(
-    localStorage.getItem('language') || 'es'
+  const { i18n } = useTranslation()
+  const [currentLang, setCurrentLang] = useState(
+    localStorage.getItem('lang') || 'en'
   )
 
   useEffect(() => {
-    localStorage.setItem('language', language)
-  }, [language])
+    i18n.changeLanguage(currentLang)
+    localStorage.setItem('lang', currentLang)
+  }, [currentLang, i18n])
 
   return (
     <Select
       value={currentLang}
-      onValueChange={(value) => {
-        setCurrentLang(value)
-        setLanguage((prevLang) => (prevLang === 'en' ? 'es' : 'en'))
-      }}>
+      onValueChange={(value) => setCurrentLang(value)}>
       <SelectTrigger className='w-max overflow-visible custom-btn px-2 border-2 border-purple-500'>
         <div className='row-center gap-1'>
           <span className='text-sm'>
-            {language === 'en' ? 'English' : 'Español'}
+            {currentLang === 'en' ? 'English' : 'Español'}
           </span>
           <img
             width={20}
             height={20}
-            src={language === 'en' ? englishIcon : spanishIcon}
+            src={currentLang === 'en' ? englishIcon : spanishIcon}
             alt='icono de idioma'
           />
         </div>

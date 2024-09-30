@@ -1,4 +1,8 @@
 {
-  "welcome": "Bienvenido a la aplicación",
-  "change_language": "Cambiar idioma"
+  "landing": {
+    "title": "Impulsa tu negocio con soluciones digitales.",
+    "description": "Aumenta tu presencia digital y optimiza tu negocio con sitios y aplicaciones web, funcionales y diseñadas a tu medida.",
+    "callToAction": "Reservá hoy",
+    "benefits": ["Precios accesibles", "Soporte 24/7", "100% Personalizadas"]
+  }
 }

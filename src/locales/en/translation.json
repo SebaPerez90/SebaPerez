@@ -1,4 +1,8 @@
 {
-  "welcome": "Welcome to the app",
-  "change_language": "Change language"
+  "landing": {
+    "title": "Boost your business with digital solutions.",
+    "description": "Increase your digital presence and optimize your business with websites and web applications, functional and tailored to your needs.",
+    "callToAction": "Book today",
+    "benefits": ["Affordable prices", "24/7 Support", "100% Customized"]
+  }
 }
