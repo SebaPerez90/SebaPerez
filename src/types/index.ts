@@ -1,11 +1,3 @@
-export type FormData = {
-  type: string
-  name: string
-  id: string
-  label: string
-  placeholder: string
-}
-
 export type LocaleData = {
   id: number | string
   title: string
@@ -21,4 +13,12 @@ export type LocaleFaqData = {
 export type LocalePricingData = LocaleData & {
   price: number
   services: string[]
+}
+
+export type LocaleProjectRequestForm = {
+  type: string
+  name: string
+  id: string
+  label: string
+  placeholder: string
 }

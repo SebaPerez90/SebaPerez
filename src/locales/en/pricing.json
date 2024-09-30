@@ -67,40 +67,40 @@
   "pricing": [
     {
       "id": 1,
-      "title": "Sitio Web",
-      "description": "Creo tu sitio web profesional para destacar lo mejor de tu emprendimiento, asegurando que más personas descubran tus servicios y productos.",
+      "title": "Website",
+      "description": "I create your professional website to showcase the best of your business, ensuring more people discover your services and products.",
       "price": 100,
       "services": [
         "Landing page",
-        "Diseño web personalizado",
-        "Integración con redes sociales",
-        "Formularios varios"
+        "Custom web design",
+        "Social media integration",
+        "Various forms"
       ]
     },
     {
       "id": 2,
-      "title": "Aplicaciones Web",
-      "description": "Desarrollo aplicaciones web que optimizan la gestión interna y mejoran la experiencia del usuario.",
+      "title": "Web Applications",
+      "description": "I develop web applications that optimize internal management and enhance the user experience.",
       "price": 200,
       "services": [
-        "Desarrollo de aplicaciones a medida",
-        "Aplicaciones fáciles de usar",
-        "Gestión de usuarios",
-        "Funcionalidades adaptadas a tu negocio",
-        "Soporte técnico continuo"
+        "Custom application development",
+        "User-friendly applications",
+        "User management",
+        "Features tailored to your business",
+        "Continuous technical support"
       ]
     },
     {
       "id": 3,
-      "title": "Automatización y Ecommerce",
-      "description": "Te ayudo a modernizar tu negocio con soluciones automatizadas y tiendas online que te permiten vender fácilmente en internet.",
+      "title": "Automation and Ecommerce",
+      "description": "I help modernize your business with automated solutions and online stores that make it easy for you to sell online.",
       "price": 200,
       "services": [
-        "Creación de tiendas online",
-        "Automatización de procesos repetitivos",
-        "Sistema de cobro online",
-        "Automatización de procesos",
-        "Seguridad mejorada para tu web"
+        "Online store creation",
+        "Automation of repetitive processes",
+        "Online payment system",
+        "Process automation",
+        "Enhanced security for your website"
       ]
     }
   ]

@@ -31,23 +31,6 @@ export const signUpFormData = [
   },
 ]
 
-export const projectRequest = [
-  {
-    type: 'text',
-    name: 'topic',
-    id: 'topic',
-    label: 'Asunto',
-    placeholder: 'Tienda e-comerce',
-  },
-  {
-    type: 'text',
-    name: 'email',
-    id: 'email',
-    label: 'Correo electrónico',
-    placeholder: 'example@gmail.com',
-  },
-]
-
 export const navLinks = [
   {
     id: 1,

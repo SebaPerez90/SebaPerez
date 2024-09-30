@@ -9,13 +9,13 @@ export const AppRoutes = [
       return { Component: module.default }
     },
   },
-  {
-    path: Routes.contact,
-    async lazy() {
-      const module = await import('@/screens/ContactMe')
-      return { Component: module.default }
-    },
-  },
+  // {
+  //   path: Routes.contact,
+  //   async lazy() {
+  //     const module = await import('@/screens/ContactMe')
+  //     return { Component: module.default }
+  //   },
+  // },
   {
     path: Routes.plans,
     async lazy() {

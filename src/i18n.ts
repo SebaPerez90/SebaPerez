@@ -6,6 +6,8 @@ import enLanding from '@/locales/en/landing.json'
 import esLanding from '@/locales/es/landing.json'
 import enPricing from '@/locales/en/pricing.json'
 import esPricing from '@/locales/es/pricing.json'
+import enContact from '@/locales/en/contact.json'
+import esContact from '@/locales/es/contact.json'
 
 // Configurar los recursos de idioma
 const resources = {
@@ -13,12 +15,14 @@ const resources = {
     translation: {
       ...enLanding, // Expande el objeto de landing
       ...enPricing, // Expande el objeto de pricing
+      ...enContact, // Expande el objeto de pricing
     },
   },
   es: {
     translation: {
       ...esLanding, // Expande el objeto de landing
       ...esPricing, // Expande el objeto de pricing
+      ...esContact, // Expande el objeto de pricing
     },
   },
 }

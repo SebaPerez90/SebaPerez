@@ -1,0 +1,41 @@
+{
+  "projectRequestForm": {
+    "title": "Join the digital expansion today",
+    "description": "I'm ready to help you bring your digital project to life. Let's talk today!",
+    "subtitle": "Get in touch",
+
+    "inputs": [
+      {
+        "type": "text",
+        "name": "topic",
+        "id": "topic",
+        "label": "Subject",
+        "placeholder": "Budget for my e-commerce"
+      },
+      {
+        "type": "text",
+        "name": "name",
+        "id": "name",
+        "label": "Name",
+        "placeholder": "Jhon Doe"
+      },
+      {
+        "type": "text",
+        "name": "email",
+        "id": "email",
+        "label": "Email",
+        "placeholder": "example@gmail.com"
+      }
+    ],
+
+    "textarea": {
+      "label": "Tell me a little about your idea.",
+      "placeholder": "Your message..."
+    },
+
+    "buttonLabel": {
+      "submit": "Send",
+      "cancel": "Cancel"
+    }
+  }
+}
