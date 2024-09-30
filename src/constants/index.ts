@@ -53,19 +53,19 @@ export const navLinks = [
     id: 1,
     label: 'Contacto',
     href: Routes.contact,
-    ariaLabel: 'Enviame un mensaje para contactarme',
+    ariaLabel: 'contact me',
   },
   {
     id: 2,
     label: 'Planes',
     href: Routes.plans,
-    ariaLabel: 'Planes para contratar',
+    ariaLabel: 'pricing plans',
   },
   {
     id: 3,
     label: 'Preguntas',
     href: Routes.faq,
-    ariaLabel: 'Preguntas precuentes',
+    ariaLabel: 'frequently ask questions',
   },
 ]
 
@@ -94,37 +94,4 @@ export const images = [
   '/footer4.webp',
   '/footer5.webp',
   '/footer6.webp',
-]
-
-export const aboutData = [
-  {
-    id: '01',
-    title: 'Conociendo tus necesidades',
-    description:
-      'Escuchamos tus ideas y objetivos para entender cómo podemos ayudarte.',
-  },
-  {
-    id: '02',
-    title: 'Creación del diseño',
-    description:
-      'Crearemos un diseño centrado en usabilidad y estética, ajustado a tus expectativas y objetivos.',
-  },
-  {
-    id: '03',
-    title: 'Desarrollo de tu proyecto',
-    description:
-      'Creamos tu producto de manera eficiente y cuidamos cada detalle para garantizar calidad.',
-  },
-  {
-    id: '04',
-    title: 'Lanzamiento',
-    description:
-      'Presentamos tu producto al mundo y nos aseguramos de que todo funcione perfectamente desde el inicio.',
-  },
-  {
-    id: '05',
-    title: 'Soporte continuo',
-    description:
-      'Te brindamos soporte continuo y hacemos mejoras para que siempre estés un paso adelante.',
-  },
 ]

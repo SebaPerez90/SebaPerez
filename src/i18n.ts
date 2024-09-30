@@ -1,12 +1,14 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
-import enTranslation from '@/locales/en/translation.json'
-import esTranslation from '@/locales/es/translation.json'
+import enLanding from '@/locales/en/landing.json'
+import esLanding from '@/locales/es/landing.json'
+import enPricing from '@/locales/en/pricing.json'
+import esPricing from '@/locales/es/pricing.json'
 
 // Configurar los recursos de idioma
 const resources = {
-  en: { translation: enTranslation },
-  es: { translation: esTranslation },
+  en: { translation: enLanding, enPricing },
+  es: { translation: esLanding, esPricing },
 }
 
 // Inicializar i18n
@@ -22,3 +24,45 @@ i18n
   })
 
 export default i18n
+// import i18n from 'i18next'
+// import { initReactI18next } from 'react-i18next'
+// // import enLanding from '@/locales/en/landing.json'
+// // import esLanding from '@/locales/es/landing.json'
+
+// // Configurar los recursos de idioma
+// // const resources = {
+// //   en: {
+// //     translation: {
+// //       landing: enLanding,
+// //     },
+// //   },
+// //   es: {
+// //     translation: {
+// //       landing: esLanding,
+// //     },
+// //   },
+// // }
+
+// i18n
+//   .use(initReactI18next)
+//   .init({
+//     resources: {
+//       es: {
+//         translation: {
+//           landing: await import('@/locales/es/landing.json'),
+//         },
+//       },
+//       en: {
+//         translation: {
+//           landing: await import('@/locales/en/landing.json'),
+//         },
+//       },
+//     },
+//     lng: localStorage.getItem('lang') || 'en',
+//     fallbackLng: 'en',
+//     interpolation: {
+//       escapeValue: false,
+//     },
+//   })
+
+// export default i18n

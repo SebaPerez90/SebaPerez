@@ -4,29 +4,29 @@ import { Button } from './ui/button'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, EffectFade } from 'swiper/modules'
 import { images, listData } from '@/constants/index'
+import { useTranslation } from 'react-i18next'
 
 const Footer = () => {
+  const { t } = useTranslation()
+
   return (
     <footer className='bg-white col-center gap-5 sm:gap-20 pt-32 pb-4'>
       <div className='flex-col-reverse sm:flex-row flex items-center justify-center h-[50em] sm:h-[20em] gap-0 sm:gap-16'>
         <div className='w-[25em] sm:w-[22em] col-center h-full justify-center sm:justify-between items-starat'>
           <div>
             <h1 className='title text-3xl'>
-              Únete a la revolución digital para{' '}
+              {t('footer.title')}
               <strong className='text-3xl text-purple-500'>
-                potenciar tu negocio
+                {t('footer.strong')}
               </strong>
               .
             </h1>
-            <p className='paragraph mt-4'>
-              No importa tu rubro, mejorar tu presencia digital está a un click
-              de distancia. Te ayudo a cumplir tus objetivos.
-            </p>
+            <p className='paragraph mt-4'>{t('footer.description')}</p>
           </div>
           <Button
             size={'lg'}
             className='w-full py-6'>
-            Contáctame !
+            {t('footer.action')}
           </Button>
         </div>
         <Swiper

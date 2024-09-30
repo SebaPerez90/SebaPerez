@@ -1,13 +1,18 @@
-import { aboutData } from '@/constants/index'
+// import { aboutData } from '@/constants/index'
 import avatar_image from '@/assets/avatar-image.jpg'
 import { MdLocationPin } from 'react-icons/md'
+import { useTranslation } from 'react-i18next'
+import { LocaleData } from '@/types'
 
 const AboutUs = () => {
+  const { t } = useTranslation()
+  const stepByStepContent = t('steps.content', { returnObjects: true })
+
   return (
     <>
       {/* Self-introduce */}
       <section className='w-full h-[50em] relative col-center gap-32'>
-        <h1 className='title text-lg'>¿Quién soy?</h1>
+        <h1 className='title text-lg'>{t('aboutUs.title')}</h1>
         <div className='max-[640px]:col-center row-center items-start gap-20'>
           <div>
             <figure className='w-[13em] h-[13em] rounded-full overflow-hidden'>
@@ -27,17 +32,10 @@ const AboutUs = () => {
             </span>
           </div>
           <p className='w-[25em] paragraph text-black'>
-            ¡Hola! Soy Seba, desarrollador de software, creo soluciones
-            digitales adaptadas las necesidades de cada negocio. Mi objetivo es
-            ayudarte a mejorar tu presencia online y atraer más clientes,
-            asegurando que tu negocio esté optimizado para crecer en el mundo
-            digital.
+            {t('aboutUs.description1')}
             <br></br>
             <br></br>
-            Con mi experiencia, no solo podrás mejorar la apariencia y
-            funcionalidad de tu sitio o aplicación web, sino también organizar
-            mejor tu negocio con herramientas que te permitirán gestionar toda
-            la información de manera eficiente y sin complicaciones.
+            {t('aboutUs.description2')}
           </p>
         </div>
 
@@ -55,10 +53,10 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Steps by step */}
+      {/* steps by step */}
       <section className='z-10 col-center gap-44 [width:clamp(300px,80%,1200px)] pt-20 pb-32'>
-        <h1 className='title text-lg'>¿Como vamos a trabajar?</h1>
-        {aboutData.map((data) => (
+        <h1 className='title text-lg'>{t('steps.title')}</h1>
+        {(stepByStepContent as Array<LocaleData>).map((data) => (
           <div
             key={data.id}
             className='row-center'

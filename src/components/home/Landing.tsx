@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next'
 
 const Landing = () => {
   const { t } = useTranslation()
-
   const benefits = t('landing.benefits', { returnObjects: true })
 
   return (
@@ -42,7 +41,7 @@ const Landing = () => {
         <Button
           type='button'
           className='p-6 border-2 rounded-full bg-black text-white border-black'>
-          {t('landing.callToAction')}
+          {t('landing.action')}
         </Button>
       </div>
 
