@@ -12,3 +12,9 @@ export type LocaleData = {
   strong?: string
   description: string
 }
+
+export type LocalePricingData = {
+  question: string
+  answer: string
+}
+

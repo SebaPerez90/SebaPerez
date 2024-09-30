@@ -4,27 +4,24 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion'
-import faqData from '@/jsons/faq.json'
-import { useEffect } from 'react'
+import { LocalePricingData } from '@/types'
+import { useTranslation } from 'react-i18next'
 
 const FaqAccordion = () => {
-  useEffect(() => {
-    Object.entries(faqData)
-  }, [])
+  const { t } = useTranslation()
+  const paymentsContent = t('content', { returnObjects: true })
 
   return (
     <Accordion
       type='single'
       collapsible
       className='w-full px-10 flex gap-14 flex-wrap items-start justify-between max-[560px]:justify-center'>
-      {Object.entries(faqData).map(([section, items]) => (
+      {Object.entries(paymentsContent).map(([section, items]) => (
         <div
           key={section}
           className='w-[20em] flex-grow max-w-[25em] mt-10'>
-          <h2 className='title text-purple-500'>
-            {formatSectionTitle(section)}
-          </h2>
-          {items.map((item, index) => (
+          <h2 className='title text-purple-500'>{section}</h2>
+          {(items as Array<LocalePricingData>).map((item, index) => (
             <AccordionItem
               key={index}
               value={item.question}
@@ -41,19 +38,6 @@ const FaqAccordion = () => {
       ))}
     </Accordion>
   )
-}
-
-const formatSectionTitle = (section: string) => {
-  switch (section) {
-    case 'payments':
-      return 'Pagos'
-    case 'extras':
-      return 'Extras'
-    case 'warantees':
-      return 'Garantías'
-    default:
-      return section
-  }
 }
 
 export default FaqAccordion
