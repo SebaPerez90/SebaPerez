@@ -2,57 +2,42 @@ import { MdDevices } from 'react-icons/md'
 import { SlEarphonesAlt } from 'react-icons/sl'
 import { MdDesignServices } from 'react-icons/md'
 import { FaLaptopCode } from 'react-icons/fa'
+import { LocaleData } from '@/types'
 import { Card } from '../ui/card'
+import { useTranslation } from 'react-i18next'
 
-const servicesData = [
-  {
-    id: 1,
-    title: 'Sitios web a medida',
-    description:
-      'Creá una presencia online profesional que atraerá más clientes y hará crecer tu negocio.',
-    icon: <FaLaptopCode size={43} />,
-  },
-  {
-    id: 2,
-    title: 'Diseños visuales atractivos',
-    description:
-      'Diseños modernos y llamativos que capturan la atención de tus visitantes y los convierten en clientes.',
-    icon: <MdDesignServices size={43} />,
-  },
-  {
-    id: 3,
-    title: 'Asistencia y soporte continuo',
-    description:
-      'Te acompañamos en cada paso, resolviendo problemas para que tu sitio o aplicación siempre esté funcionando sin problemas.',
-    icon: <SlEarphonesAlt size={43} />,
-  },
-  {
-    id: 4,
-    title: 'Webs adaptables',
-    description:
-      'Tu sitio web lucirá perfecto en cualquier dispositivo: móvil, tablet o computadora, para que siempre esté accesible.',
-    icon: <MdDevices size={43} />,
-  },
-]
+const iconDictionary: { [key: number | string]: JSX.Element } = {
+  1: <FaLaptopCode size={43} />,
+  2: <MdDesignServices size={43} />,
+  3: <SlEarphonesAlt size={43} />,
+  4: <MdDevices size={43} />,
+}
 
 const OurServices = () => {
+  const { t } = useTranslation()
+  const services = t('ourServices.content', { returnObjects: true })
+
   return (
-    <section id='#services' className='w-full bg-secondary col-center gap-20 py-36'>
-      <h1 className='title text-lg'>Mis servicos</h1>
+    <section
+      id='#services'
+      className='w-full bg-secondary col-center gap-20 py-36'>
+      <h1 className='title text-lg'>{t('ourServices.title')}</h1>
       <div className='col-center md:grid grid-cols-2 place-items-center gap-12'>
-        {servicesData.map((item) => (
+        {(services as Array<LocaleData>).map((item) => (
           <Card
             key={item.id}
             className='w-[25em] p-5 bg-white shadow-neutral rounded-lg row-center '>
             <div className='flex flex-col gap-1'>
               <div className='row-center justify-between'>
-                <span className='title text-xl text-balance'>
-                  {item.title}
+                <h3 className='title text-xl text-balance'>{item.title}</h3>
+                <span className='text-purple-500 p-3 rounded-md bg-secondary'>
+                  {iconDictionary[item.id]}
                 </span>
-                <span className='text-purple-500 p-3 rounded-md bg-secondary'>{item.icon}</span>
               </div>
               <p className='paragraph text-sm'>{item.description}</p>
-              <button className='mt-5 custom-btn w-max'>Contrata ahora</button>
+              <button className='mt-5 custom-btn w-max'>
+                {t('ourServices.action')}
+              </button>
             </div>
           </Card>
         ))}

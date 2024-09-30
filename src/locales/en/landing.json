@@ -1,0 +1,100 @@
+{
+  "landing": {
+    "title": "Boost your business with digital solutions.",
+    "description": "Increase your digital presence and optimize your business with websites and web applications, functional and tailored to your needs.",
+    "action": "Book today",
+    "benefits": ["Affordable prices", "24/7 Support", "100% Customized"]
+  },
+
+  "aboutUs": {
+    "title": "Who am I?",
+    "description1": "Hi! I'm Seba, a software developer, creating digital solutions tailored to the needs of each business. My goal is to help you improve your online presence and attract more clients, ensuring that your business is optimized to grow in the digital world.",
+    "description2": "With my experience, you will not only enhance the appearance and functionality of your website or web application, but also better organize your business with tools that allow you to manage all your information efficiently and hassle-free."
+  },
+
+  "steps": {
+    "title": "How will we work?",
+    "content": [
+      {
+        "id": "01",
+        "title": "Understanding your needs",
+        "description": "We listen to your ideas and goals to understand how we can help you."
+      },
+      {
+        "id": "02",
+        "title": "Design creation",
+        "description": "We will create a design focused on usability and aesthetics, tailored to your expectations and goals."
+      },
+      {
+        "id": "03",
+        "title": "Project development",
+        "description": "We build your product efficiently, paying attention to every detail to ensure quality."
+      },
+      {
+        "id": "04",
+        "title": "Launch",
+        "description": "We present your product to the world and ensure everything works perfectly from the start."
+      },
+      {
+        "id": "05",
+        "title": "Continuous support",
+        "description": "We provide ongoing support and make improvements so you’re always one step ahead."
+      }
+    ]
+  },
+
+  "ourServices": {
+    "title": "My Services",
+    "action": "Hire now",
+    "content": [
+      {
+        "id": 1,
+        "title": "Custom websites",
+        "description": "Create a professional online presence that will attract more clients and help your business grow."
+      },
+      {
+        "id": 2,
+        "title": "Attractive visual designs",
+        "description": "Modern and eye-catching designs that capture the attention of your visitors and turn them into customers."
+      },
+      {
+        "id": 3,
+        "title": "Continuous assistance and support",
+        "description": "We support you every step of the way, resolving issues to ensure your site or application runs smoothly."
+      },
+      {
+        "id": 4,
+        "title": "Responsive websites",
+        "description": "Your website will look perfect on any device: mobile, tablet, or desktop, ensuring it's always accessible."
+      }
+    ]
+  },
+
+  "benefits": {
+    "title": "Why choose CodeVibes?",
+    "content": [
+      {
+        "id": 1,
+        "title": "Personalized Budget",
+        "description": "At CodeVibes, we offer a highly affordable and customized pricing list depending on the complexity of the requirements."
+      },
+      {
+        "id": 2,
+        "title": "Guaranteed Satisfaction",
+        "description": "At CodeVibes, your satisfaction is our priority! Pay only if the final product meets your expectations."
+      },
+      {
+        "id": 3,
+        "title": "Support",
+        "description": "At CodeVibes, we are always available to optimize your application's performance, ensuring efficient deliveries and tailored solutions."
+      }
+    ]
+  },
+
+  "footer": {
+    "title": "Join the digital revolution to ",
+    "strong": "empower your business",
+    "description": "No matter your industry, improving your digital presence is just a click away. I can help you achieve your goals.",
+    "action": "Contact me!"
+  }
+}

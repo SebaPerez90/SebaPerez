@@ -1,0 +1,100 @@
+{
+  "landing": {
+    "title": "Impulsa tu negocio con soluciones digitales.",
+    "description": "Aumenta tu presencia digital y optimiza tu negocio con sitios y aplicaciones web, funcionales y diseñadas a tu medida.",
+    "callToAction": "Reservá hoy",
+    "benefits": ["Precios accesibles", "Soporte 24/7", "100% Personalizadas"]
+  },
+
+  "aboutUs": {
+    "title": "¿Quién soy?",
+    "description1": "¡Hola! Soy Seba, desarrollador de software, creo soluciones digitales adaptadas las necesidades de cada negocio. Mi objetivo es ayudarte a mejorar tu presencia online y atraer más clientes, asegurando que tu negocio esté optimizado para crecer en el mundo digital.",
+    "description2": "Con mi experiencia, no solo podrás mejorar la apariencia y funcionalidad de tu sitio o aplicación web, sino también organizar mejor tu negocio con herramientas que te permitirán gestionar toda la información de manera eficiente y sin complicaciones."
+  },
+
+  "steps": {
+    "title": "¿Cómo vamos a trabajar?",
+    "content": [
+      {
+        "id": "01",
+        "title": "Conociendo tus necesidades",
+        "description": "Escuchamos tus ideas y objetivos para entender cómo podemos ayudarte."
+      },
+      {
+        "id": "02",
+        "title": "Creación del diseño",
+        "description": "Crearemos un diseño centrado en usabilidad y estética, ajustado a tus expectativas y objetivos."
+      },
+      {
+        "id": "03",
+        "title": "Desarrollo de tu proyecto",
+        "description": "Creamos tu producto de manera eficiente y cuidamos cada detalle para garantizar calidad."
+      },
+      {
+        "id": "04",
+        "title": "Lanzamiento",
+        "description": "Presentamos tu producto al mundo y nos aseguramos de que todo funcione perfectamente desde el inicio."
+      },
+      {
+        "id": "05",
+        "title": "Soporte continuo",
+        "description": "Te brindamos soporte continuo y hacemos mejoras para que siempre estés un paso adelante."
+      }
+    ]
+  },
+
+  "ourServices": {
+    "title": "Mis servicios",
+    "callToAction": "Contrata ahora",
+    "content": [
+      {
+        "id": 1,
+        "title": "Sitios web a medida",
+        "description": "Creá una presencia online profesional que atraerá más clientes y hará crecer tu negocio."
+      },
+      {
+        "id": 2,
+        "title": "Diseños visuales atractivos",
+        "description": "Diseños modernos y llamativos que capturan la atención de tus visitantes y los convierten en clientes."
+      },
+      {
+        "id": 3,
+        "title": "Asistencia y soporte continuo",
+        "description": "Te acompañamos en cada paso, resolviendo problemas para que tu sitio o aplicación siempre esté funcionando sin problemas."
+      },
+      {
+        "id": 4,
+        "title": "Webs adaptables",
+        "description": "Tu sitio web lucirá perfecto en cualquier dispositivo: móvil, tablet o computadora, para que siempre esté accesible."
+      }
+    ]
+  },
+
+  "benefits": {
+    "title": "¿Porqué elegir CodeVibes?",
+    "content": [
+      {
+        "id": 1,
+        "title": "Presupuesto Personalizado",
+        "description": "En CodeVibes manejamos una lista de precios super accesibles y personalizados dependiendo de la complejidad de los requisitos."
+      },
+      {
+        "id": 2,
+        "title": "Plata asegurada",
+        "description": "Con CodeVibes tu satisfacción, también es la nuestra! paga solo si el producto final cumple con tus expectativas."
+      },
+      {
+        "id": 3,
+        "title": "Soporte",
+        "description": "En CodeVibes estamos siempre disponible para optimizar el rendimiento de tu aplicación, garantizando entregas eficientes y soluciones a medida."
+      }
+    ]
+  },
+
+  "footer": {
+    "title": "Únete a la revolución digital para ",
+    "strong": "potenciar tu negocio",
+    "description": "No importa tu rubro, mejorar tu presencia digital está a un click de distancia. Te ayudo a cumplir tus objetivos.",
+    "action": "Contáctame!"
+  }
+}

@@ -1,26 +1,23 @@
-import { Button } from "../ui/button"
-
-const benefitsLabels = [
-  'Precios accesibles',
-  'Soporte 24/7',
-  '100% Personalizadas',
-]
+import { Button } from '../ui/button'
+import { useTranslation } from 'react-i18next'
 
 const Landing = () => {
+  const { t } = useTranslation()
+  const benefits = t('landing.benefits', { returnObjects: true })
+
   return (
     <section className='py-28 w-full h-dvh relative flex justify-center bg-white'>
       <div className='z-10 col-center gap-0 w-[50em] text-center'>
         <h1
           style={{ fontFamily: 'Poppins, sans-serif' }}
           className='font-bold text-6xl [line-height:1.1em] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-t from-purple-900 via-violet-500 to-pink-500 py-3'>
-          Impulsa tu negocio con soluciones digitales.
+          {t('landing.title')}
         </h1>
         <p className='text-lg font-medium text-slate-700 w-[70%]'>
-          Aumenta tu presencia digital y optimiza tu negocio con sitios y
-          aplicaciones web, funcionales y diseñadas a tu medida.
+          {t('landing.description')}
         </p>
         <ul className='row-center my-12'>
-          {benefitsLabels.map((item, index) => (
+          {(benefits as Array<string>).map((item, index: number) => (
             <li
               key={index}
               className='flex gap-1 items-center'>
@@ -44,7 +41,7 @@ const Landing = () => {
         <Button
           type='button'
           className='p-6 border-2 rounded-full bg-black text-white border-black'>
-          Reservá hoy
+          {t('landing.action')}
         </Button>
       </div>
 
