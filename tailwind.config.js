@@ -16,6 +16,9 @@ export default {
           neutral: '#212121',
           deep: '#171717',
         },
+        ligth : {
+          soft: '#f3f3f3',
+        },
         secondary: {
           DEFAULT: 'hsl(var(--secondary))',
           foreground: 'hsl(var(--secondary-foreground))',

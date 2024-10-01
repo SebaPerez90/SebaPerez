@@ -16,7 +16,7 @@ const ContactMeForm = () => {
     <form
       id='signup-form'
       name='signup-form'
-      className='col-center bg-white backdrop-blur-md shadow-lg rounded-lg w-full max-w-lg p-10 gap-5'>
+      className='col-center bg-white /50 backdrop-blur-md shadow-lg rounded-lg w-full max-w-lg p-10 gap-5'>
       <h2 className='text-2xl font-semibold text-gray-800'>
         {t('projectRequestForm.subtitle')}
       </h2>
@@ -32,7 +32,7 @@ const ContactMeForm = () => {
             type={item.type}
             name={item.name}
             placeholder={item.placeholder}
-            className='border border-purple-400 focus:border-purple-600 placeholder:opacity-70 placeholder:italic placeholder-gray-500'
+            className='bg-white border border-purple-400 focus:border-purple-600 placeholder:opacity-70 placeholder:italic placeholder-gray-500'
           />
         </Label>
       ))}
@@ -43,7 +43,7 @@ const ContactMeForm = () => {
         <Textarea
           id='message'
           placeholder={t('projectRequestForm.textarea.placeholder')}
-          className='border border-purple-400 focus:border-purple-600 placeholder:opacity-70 placeholder:italic placeholder-gray-500 min-h-[10em]'
+          className='bg-white border border-purple-400 focus:border-purple-600 placeholder:opacity-70 placeholder:italic placeholder-gray-500 min-h-[10em]'
         />
       </Label>
 
