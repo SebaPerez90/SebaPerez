@@ -29,7 +29,7 @@ const FaqAccordion = () => {
               <AccordionTrigger className='text-start text-base font-semibold'>
                 {item.question}
               </AccordionTrigger>
-              <AccordionContent className='text-start font-medium text-black/60'>
+              <AccordionContent className='text-start font-medium text-black/60 dark:text-ligth-soft'>
                 {item.answer}
               </AccordionContent>
             </AccordionItem>

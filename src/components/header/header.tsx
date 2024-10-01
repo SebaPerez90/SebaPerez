@@ -26,7 +26,7 @@ const Header = () => {
       className='flex items-center fixed w-full justify-between px-7 py-4 backdrop-blur-[8px] bg-white/50 z-50 dark:bg-dark-deep'>
       <Logo styles={{}} />
       <NavLinks />
-      <div className='row-center'>
+      <div className='row-center gap-2'>
         <LanguageSelect />
         <ThemeButton />
       </div>

@@ -42,7 +42,7 @@ const Landing = () => {
         </ul>
         <Button
           type='button'
-          className='p-6 border-2 rounded-full bg-black text-white border-black'>
+          className='p-6 rounded-full dark:custom-btn2 bg-black text-white border-black'>
           {t('landing.action')}
         </Button>
       </div>

@@ -16,7 +16,7 @@ const QuestionBox = () => {
           placeholder='Escribí tu pregunta aquí...'
           rows={8}
           required
-          className='resize-none bg-white border border-purple-400 focus:border-purple-600 placeholder:opacity-70 placeholder:italic placeholder-gray-500'
+          className='resize-none bg-white dark:bg-dark-neutral border border-purple-400 focus:border-purple-600 placeholder:opacity-70 placeholder:italic placeholder-gray-500'
         />
         <div className='grid grid-cols-2 gap-8 mt-4'>
           <button
