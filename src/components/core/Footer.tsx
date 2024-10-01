@@ -1,16 +1,30 @@
 import 'swiper/css'
 import 'swiper/css/effect-fade'
-import { Button } from './ui/button'
+import { Button } from '../ui/button'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, EffectFade } from 'swiper/modules'
-import { images, listData } from '@/constants/index'
 import { useTranslation } from 'react-i18next'
+import Logo from './Logo'
+import SocialLinks from './SocialLinks'
+
+const images = [
+  '/footer.webp',
+  '/footer2.webp',
+  '/footer3.webp',
+  '/footer4.webp',
+  '/footer5.webp',
+  '/footer6.webp',
+]
 
 const Footer = () => {
   const { t } = useTranslation()
 
+  const styles = {
+    color: '#fff',
+  }
+
   return (
-    <footer className='bg-white col-center gap-5 sm:gap-20 pt-32 pb-4'>
+    <footer className='bg-white dark:bg-dark-neutral col-center gap-28 pt-32 pb-1'>
       <div className='flex-col-reverse sm:flex-row flex items-center justify-center h-[50em] sm:h-[20em] gap-0 sm:gap-16'>
         <div className='w-[25em] sm:w-[22em] col-center h-full justify-center sm:justify-between items-starat'>
           <div>
@@ -25,7 +39,7 @@ const Footer = () => {
           </div>
           <Button
             size={'lg'}
-            className='w-full py-6'>
+            className='w-full py-6 dark:custom-btn2'>
             {t('footer.action')}
           </Button>
         </div>
@@ -51,27 +65,16 @@ const Footer = () => {
         </Swiper>
       </div>
 
-      <div className='col-center w-full'>
-        <div className='flex justify-evenly [width:clamp(300px,100%,900px)] py-6 sm:py-16'>
-          {listData.map((data) => (
-            <ul
-              key={data.id}
-              className='flex flex-col gap-1'>
-              <span className='font-bold text-lg py-2 text-black'>
-                {data.title}
-              </span>
-              {data.items.map((item) => (
-                <li
-                  key={item}
-                  className='text-slate-400 font-medium text-sm cursor-pointer hover:text-slate-600 hover:duration-150'>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          ))}
+      <div className='col-center gap-0 w-full'>
+        <div className='col-center w-full py-10 gap-3 bg-gradient-to-b from-[#793dfa] to-[#9C6DF3] dark:to-dark-soft text-slate-200'>
+          <Logo styles={styles} />
+          <h2 className='font-medium italic '>
+            Convierte tu visión en una experiencia digital excepcional.
+          </h2>
+          <SocialLinks />
         </div>
-        <span className='w-max mt-4 font-medium'>
-          CodeVibes © 2024 | codevibes@gmail.com
+        <span className='w-max font-medium text-xs my-1'>
+          © 2024 CodeVibes | sebastian.perez.jobs@gmail.com
         </span>
       </div>
     </footer>

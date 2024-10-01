@@ -25,7 +25,7 @@ export function LanguageSelect() {
     <Select
       value={currentLang}
       onValueChange={(value) => setCurrentLang(value)}>
-      <SelectTrigger className='w-max overflow-visible custom-btn px-2 border-2 border-purple-500'>
+      <SelectTrigger className='w-max overflow-visible custom-btn px-0 pl-2 border border-purple-500 scale-90 dark:bg-purple-400 dark:text-white'>
         <div className='row-center gap-1'>
           <span className='text-sm'>
             {currentLang === 'en' ? 'English' : 'Español'}

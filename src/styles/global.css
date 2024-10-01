@@ -95,6 +95,10 @@
     @apply font-bold [font-family:'Poppins',sans-serif] text-transparent bg-clip-text bg-gradient-to-l from-purple-500 to-blue-400;
   }
 
+  .gradient-title-dark {
+    @apply font-bold [font-family:'Poppins',sans-serif] text-transparent bg-clip-text bg-gradient-to-b from-pink-300 to-indigo-300 dark:from-pink-500 dark:to-indigo-400;
+  }
+
   .title {
     @apply text-2xl font-extrabold [font-family:'Poppins',sans-serif] text-black dark:text-white;
   }
@@ -145,15 +149,12 @@ body {
   }
 
   /* need stylizing the right scroll bar, need modify the width and bg color */
-
   ::-webkit-scrollbar {
     width: 7px;
-    background-color: #fff;
   }
 
   ::-webkit-scrollbar-thumb {
     background-color: #b247ff;
     border-radius: 10px;
   }
-
 }

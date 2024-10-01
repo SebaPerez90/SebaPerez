@@ -6,14 +6,16 @@ const Landing = () => {
   const benefits = t('landing.benefits', { returnObjects: true })
 
   return (
-    <section className='py-28 w-full h-dvh relative flex justify-center bg-white'>
+    <section className='dark:bg-dark-deep py-28 w-full h-dvh relative flex justify-center bg-white'>
       <div className='z-10 col-center gap-0 w-[50em] text-center'>
         <h1
           style={{ fontFamily: 'Poppins, sans-serif' }}
-          className='font-bold text-6xl [line-height:1.1em] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-t from-purple-900 via-violet-500 to-pink-500 py-3'>
+          className='font-bold text-6xl [line-height:1.1em] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-t from-purple-900 via-violet-500 to-pink-500 py-3
+          dark:gradient-title-dark
+          '>
           {t('landing.title')}
         </h1>
-        <p className='text-lg font-medium text-slate-700 w-[70%]'>
+        <p className='text-lg font-medium dark:text-ligth-soft text-slate-700 w-[70%]'>
           {t('landing.description')}
         </p>
         <ul className='row-center my-12'>
@@ -34,7 +36,7 @@ const Landing = () => {
                   <title>check svg icon</title>
                 </svg>
               </span>
-              <span className='font-medium text-sm text-slate-600'>{item}</span>
+              <span className='font-medium text-sm dark:text-ligth-soft text-slate-600'>{item}</span>
             </li>
           ))}
         </ul>

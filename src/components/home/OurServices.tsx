@@ -18,19 +18,17 @@ const OurServices = () => {
   const services = t('ourServices.content', { returnObjects: true })
 
   return (
-    <section
-      id='#services'
-      className='w-full bg-secondary col-center gap-20 py-36'>
+    <section className='w-full bg-ligth-soft dark:bg-dark-neutral col-center gap-20 py-36'>
       <h1 className='title text-lg'>{t('ourServices.title')}</h1>
       <div className='col-center md:grid grid-cols-2 place-items-center gap-12'>
         {(services as Array<LocaleData>).map((item) => (
           <Card
             key={item.id}
-            className='w-[25em] p-5 bg-white shadow-neutral rounded-lg row-center '>
+            className='w-[25em] p-5 bg-white dark:bg-dark-deep shadow-neutral rounded-lg row-center '>
             <div className='flex flex-col gap-1'>
               <div className='row-center justify-between'>
                 <h3 className='title text-xl text-balance'>{item.title}</h3>
-                <span className='text-purple-500 p-3 rounded-md bg-secondary'>
+                <span className='text-purple-500 p-3 rounded-md dark:bg-dark-neutral bg-ligth-soft'>
                   {iconDictionary[item.id]}
                 </span>
               </div>

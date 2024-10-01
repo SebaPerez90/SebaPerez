@@ -22,16 +22,16 @@ const Benefits = () => {
           <div
             key={data.id}
             className='col-center w-[20em] text-center lg:mt-0 mt-16'>
-            <figure className='w-[12em] h-[12em] rounded-md overflow-hidden'>
+            <figure className='w-[90%] h-[15em] rounded-2xl overflow-hidden dark:bg-dark-neutral p-5 dark:shadow-neutral dark:shadow-purple-500/30'>
               <img
                 loading='lazy'
-                className='h-full w-full object-cover'
+                className='h-full w-full object-contain'
                 src={imgDictionary[data.id]}
                 alt='image-service'
               />
             </figure>
             <div>
-              <h2 className='title text-lg'>{data.title}</h2>
+              <h2 className='title text-lg dark:text-white'>{data.title}</h2>
               <p className='paragraph text-sm mt-2'>{data.description}</p>
             </div>
           </div>

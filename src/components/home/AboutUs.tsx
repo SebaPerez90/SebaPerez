@@ -15,7 +15,7 @@ const AboutUs = () => {
         <h1 className='title text-lg'>{t('aboutUs.title')}</h1>
         <div className='max-[640px]:col-center row-center items-start gap-20'>
           <div>
-            <figure className='w-[13em] h-[13em] rounded-full overflow-hidden'>
+            <figure className='w-[15em] h-[15em] rounded-full overflow-hidden'>
               <img
                 loading='lazy'
                 className='h-full w-full object-cover'
@@ -23,15 +23,16 @@ const AboutUs = () => {
                 alt='avatar de desarrollador Seba'
               />
             </figure>
-            <span className='mt-3 text-slate-500 justify-center text-sm font-semibold flex items-center'>
+            <span className='mt-3 text-slate-500 dark:text-ligth-soft justify-center font-semibold flex items-center'>
               <MdLocationPin
                 color='#f00'
-                size={20}
+                size={26}
               />
               Argentina, Buenos Aires.
             </span>
+              <strong className='block font-medium text-sm dark:text-ligth-soft text-slate-500 text-center'>(UTC -03:00)</strong>
           </div>
-          <p className='w-[25em] paragraph text-black'>
+          <p className='w-[25em] paragraph text-black dark:text-ligth-soft'>
             {t('aboutUs.description1')}
             <br></br>
             <br></br>
@@ -74,7 +75,7 @@ const AboutUs = () => {
               <h2 className='title w-max max-[400px]:w-auto text-purple-500'>
                 {data.title}
               </h2>
-              <p className='paragraph text-black mt-4'>{data.description}</p>
+              <p className='paragraph text-black mt-4 dark:text-ligth-soft'>{data.description}</p>
             </div>
           </div>
         ))}
