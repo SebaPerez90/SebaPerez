@@ -25,7 +25,10 @@
   --circle-transition: .3s cubic-bezier(0, -0.02, 0.35, 1.17);
 }
 
-.theme-switch, .theme-switch *, .theme-switch *::before, .theme-switch *::after {
+.theme-switch,
+.theme-switch *,
+.theme-switch *::before,
+.theme-switch *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
@@ -171,15 +174,15 @@
 
 /* actions */
 
-.theme-switch__checkbox:checked + .theme-switch__container {
+.theme-switch__checkbox:checked+.theme-switch__container {
   background-color: var(--container-night-bg);
 }
 
-.theme-switch__checkbox:checked + .theme-switch__container .theme-switch__circle-container {
+.theme-switch__checkbox:checked+.theme-switch__container .theme-switch__circle-container {
   left: calc(100% - var(--circle-container-offset) - var(--circle-container-diameter));
 }
 
-.theme-switch__checkbox:checked + .theme-switch__container .theme-switch__circle-container:hover {
+.theme-switch__checkbox:checked+.theme-switch__container .theme-switch__circle-container:hover {
   left: calc(100% - var(--circle-container-offset) - var(--circle-container-diameter) - 0.187em)
 }
 
@@ -187,17 +190,17 @@
   left: calc(var(--circle-container-offset) + 0.187em);
 }
 
-.theme-switch__checkbox:checked + .theme-switch__container .theme-switch__moon {
+.theme-switch__checkbox:checked+.theme-switch__container .theme-switch__moon {
   -webkit-transform: translate(0);
   -ms-transform: translate(0);
   transform: translate(0);
 }
 
-.theme-switch__checkbox:checked + .theme-switch__container .theme-switch__clouds {
+.theme-switch__checkbox:checked+.theme-switch__container .theme-switch__clouds {
   bottom: -4.062em;
 }
 
-.theme-switch__checkbox:checked + .theme-switch__container .theme-switch__stars-container {
+.theme-switch__checkbox:checked+.theme-switch__container .theme-switch__stars-container {
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -214,11 +217,10 @@
 
 .tooltip {
   position: absolute;
-  top: -0.5em;
-  left: 50%;
-  transform: translateX(-50%) translateY(0%) scale(0);
+  top: 0;
+  left: -0.5em;
+  transform: translateY(0%) scale(0);
   padding: 0.3em 0.6em;
-  opacity: 0;
   pointer-events: none;
   transition: all 0.2s;
   background: black;
@@ -231,7 +233,7 @@
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  transform: translateX(-50%) translateY(-100%) scale(1);
+  transform: translateY(2.5em) scale(1);
 }
 
 

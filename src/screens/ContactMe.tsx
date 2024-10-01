@@ -2,6 +2,10 @@ import contactme from '@/assets/get_services.webp'
 import { lazy, Suspense } from 'react'
 import Loader from '@/components/Loader'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
+import { Routes } from '@/routes/paths'
+import { IoMdArrowRoundBack } from 'react-icons/io'
+import { Button } from '@/components/ui/button'
 const ContactMeForm = lazy(() => import('@/components/ContactMeForm'))
 
 const ContactMe = () => {
@@ -11,9 +15,17 @@ const ContactMe = () => {
 
   return (
     <main
-      className={`${beforeStyles} min-h-screen flex flex-col lg:flex-row items-center justify-center gap-12 py-14 px-6 bg-ligth-soft `}>
+      className={`${beforeStyles} min-h-screen flex flex-col lg:flex-row items-center justify-center gap-12 py-20 px-6 bg-ligth-soft`}>
+      <Link
+        to={Routes.home}
+        className='absolute left-8 top-4 max-[500px]:-top-7'>
+        <Button className='tooltip-container'>
+          <span className='tooltip'>Volver</span>
+          <IoMdArrowRoundBack />
+        </Button>
+      </Link>
       <div className='w-[40em] col-center gap-8 items-start p-6'>
-        <div className=''>
+        <div>
           <h1 className='text-5xl gradient-title pb-2'>
             {t('projectRequestForm.title')}
           </h1>
