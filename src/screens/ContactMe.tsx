@@ -6,12 +6,13 @@ import { Link } from 'react-router-dom'
 import { Routes } from '@/routes/paths'
 import { IoMdArrowRoundBack } from 'react-icons/io'
 import { Button } from '@/components/ui/button'
-const ContactMeForm = lazy(() => import('@/components/ContactMeForm'))
+const ContactMeForm = lazy(() => import('@/components/auth/ContactMeForm'))
 
 const ContactMe = () => {
   const { t } = useTranslation()
+
   const beforeStyles =
-    ' relative dark:before:[background:linear-gradient(to_right,#171717,#b06ab3,#a855f7)] before:[background:linear-gradient(to_right,#f3f3f3,#b06ab3,#a855f7)] before:absolute before:right-0 before:top-0 before:w-[60%] before:h-full before:-z-10 z-10 before:opacity-40'
+    'relative dark:before:[background:linear-gradient(to_right,#171717,#b06ab3,#a855f7)] before:[background:linear-gradient(to_right,#f3f3f3,#b06ab3,#a855f7)] before:absolute before:right-0 before:top-0 before:w-[60%] before:h-full before:-z-10 z-10 before:opacity-40'
 
   return (
     <Suspense fallback={<Loader />}>
@@ -21,7 +22,9 @@ const ContactMe = () => {
           to={Routes.home}
           className='absolute left-8 top-4 max-[500px]:-top-7'>
           <Button className='tooltip-container'>
-            <span className='tooltip bg-black dark:bg-[#dddddd] dark:text-black text-white'>Volver</span>
+            <span className='tooltip bg-black dark:bg-[#dddddd] dark:text-black text-white'>
+              Volver
+            </span>
             <IoMdArrowRoundBack />
           </Button>
         </Link>

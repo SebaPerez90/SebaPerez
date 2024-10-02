@@ -45,7 +45,7 @@
 
   "ourServices": {
     "title": "Mis servicios",
-    "callToAction": "Contrata ahora",
+    "action": "Ver planes",
     "content": [
       {
         "id": 1,

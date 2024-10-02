@@ -5,6 +5,8 @@ import { FaLaptopCode } from 'react-icons/fa'
 import { LocaleData } from '@/types'
 import { Card } from '../ui/card'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
+import { Routes } from '@/routes/paths'
 
 const iconDictionary: { [key: number | string]: JSX.Element } = {
   1: <FaLaptopCode size={43} />,
@@ -33,9 +35,12 @@ const OurServices = () => {
                 </span>
               </div>
               <p className='paragraph text-sm'>{item.description}</p>
-              <button className='mt-5 custom-btn w-max'>
+              <Link
+                to={Routes.plans}
+                aria-label='link to plans section'
+                className='mt-5 custom-btn w-max'>
                 {t('ourServices.action')}
-              </button>
+              </Link>
             </div>
           </Card>
         ))}
