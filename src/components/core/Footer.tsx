@@ -74,7 +74,7 @@ const Footer = () => {
           <SocialLinks />
         </div>
         <span className='w-max font-medium text-xs my-1'>
-          © 2024 CodeVibes | sebastian.perez.jobs@gmail.com
+          © 2024 CodeVibes | codevibes.arg@gmail.com
         </span>
       </div>
     </footer>

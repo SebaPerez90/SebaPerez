@@ -5,19 +5,22 @@ import { Textarea } from '../ui/textarea'
 import { useTranslation } from 'react-i18next'
 import { LocaleProjectRequestForm } from '@/types'
 import { useFormik } from 'formik'
-import { useRef } from 'react'
 import { ContactSchema } from '../schemas/contact.schema'
+import toast from 'react-hot-toast'
+import { useState } from 'react'
+const formspreeURL: string = import.meta.env.VITE_FORMSPREE_URL
 
 const ContactMeForm = () => {
-  //usamos este tipo para poder hacer un type assertion y evitar problemas de tipado
-  //con los types de "initialValues" y los strings del mapeo de los inputs
+  //usamos este tipo para poder hacer un type assertion y evitar problemas de tipado con los types de "initialValues" y los strings del mapeo de los inputs
   type FormFieldName = keyof typeof formik.values
+
+  const [loading, setLoading] = useState(false)
+
   const { t } = useTranslation()
 
   const projectRequestForm = t('projectRequestForm.inputs', {
     returnObjects: true,
   })
-  const submitBtnRef = useRef(null)
 
   const formik = useFormik({
     initialValues: {
@@ -28,9 +31,35 @@ const ContactMeForm = () => {
     },
     validationSchema: ContactSchema,
     onSubmit: async (values) => {
-      console.log(submitBtnRef.current)
-      // await new Promise((resolve) => setTimeout(resolve, 1000))
-      alert(JSON.stringify(values, null, 2))
+      setLoading(true)
+      await new Promise((resolve) => setTimeout(resolve, 3000))
+
+      try {
+        const response = await fetch(`${formspreeURL}`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(values),
+        })
+
+        if (response.ok) {
+        toast.success('Mensaje enviado!', {
+          duration: 3000,
+          style: { fontWeight: 500 },
+        })
+        formik.resetForm()
+        }
+      } catch (error) {
+        if (error) {
+          toast.error('Hubo un error al enviar el mensaje!', {
+            duration: 3000,
+            style: { fontWeight: 500 },
+          })
+        }
+      } finally {
+        setLoading(false)
+      }
     },
   })
 
@@ -39,14 +68,14 @@ const ContactMeForm = () => {
       id='signup-form'
       name='signup-form'
       onSubmit={formik.handleSubmit}
-      className='col-center bg-white dark:bg-dark-neutral backdrop-blur-md rounded-lg w-full max-w-lg p-10 gap-5 shadow-purple-500/30 shadow-2xl'>
+      className='col-center bg-white dark:bg-dark-neutral backdrop-blur-md rounded-lg w-full max-w-lg p-10 gap-3a shadow-purple-500/30 shadow-2xl'>
       <h2 className='text-2xl font-semibold text-gray-800 dark:text-slate-50'>
         {t('projectRequestForm.subtitle')}
       </h2>
       {(projectRequestForm as Array<LocaleProjectRequestForm>).map((item) => (
         <Label
           key={item.id}
-          className='flex flex-col gap-1 relative w-[90%]'
+          className='flex flex-col gap-1 w-[90%] relative mt-2'
           htmlFor={item.name}>
           {item.label}
           <Input
@@ -61,7 +90,7 @@ const ContactMeForm = () => {
             className='bg-white dark:bg-dark-neutral border border-purple-400 focus:border-purple-600 placeholder:opacity-70 placeholder:italic placeholder-gray-500'
           />
           {formik.touched[item.name as FormFieldName] && (
-            <span className='text-red-500 text-sm'>
+            <span className='text-red-600 text-xs absolute -bottom-5 left-2'>
               {formik.errors[item.name as FormFieldName]}
             </span>
           )}
@@ -69,7 +98,7 @@ const ContactMeForm = () => {
       ))}
       <Label
         htmlFor='message'
-        className='flex flex-col gap-1  relative w-[90%]'>
+        className='flex flex-col gap-1  relative w-[90%] mt-2'>
         {t('projectRequestForm.textarea.label')}
         <Textarea
           id='message'
@@ -88,8 +117,8 @@ const ContactMeForm = () => {
           {t('projectRequestForm.buttonLabel.cancel')}
         </Button>
         <Button
-          ref={submitBtnRef}
           type='submit'
+          loading={loading ? true : false}
           className='w-full custom-btn2 dark:text-white'>
           {t('projectRequestForm.buttonLabel.submit')}
         </Button>
