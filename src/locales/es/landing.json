@@ -1,4 +1,23 @@
 {
+  "header": {
+    "content": [
+      {
+        "id": 1,
+        "label": "Contacto",
+        "ariaLabel": "contactame"
+      },
+      {
+        "id": 2,
+        "label": "Planes",
+        "ariaLabel": "precio de los planes"
+      },
+      {
+        "id": 3,
+        "label": "Preguntas",
+        "ariaLabel": "preguntas frecuentes"
+      }
+    ]
+  },
   "landing": {
     "title": "Impulsa tu negocio con soluciones digitales.",
     "description": "Aumenta tu presencia digital y optimiza tu negocio con sitios y aplicaciones web, funcionales y diseñadas a tu medida.",

@@ -2,6 +2,8 @@ import { Button } from '../ui/button'
 import { useTranslation } from 'react-i18next'
 import { TextGenerateEffect } from '../ui/text-generate-effect'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
+import { Routes } from '@/routes/paths'
 
 const Landing = () => {
   const { t } = useTranslation()
@@ -62,11 +64,13 @@ const Landing = () => {
             </motion.li>
           ))}
         </motion.ul>
-        <Button
-          type='button'
-          className='animate-[appear-element_300ms_ease-out_forwards] [animation-delay:2s] p-6 rounded-full dark:custom-btn2 opacity-0 bg-black text-white border-black'>
-          {t('landing.action')}
-        </Button>
+        <Link to={Routes.contact}>
+          <Button
+            type='button'
+            className='animate-[appear-element_300ms_ease-out_forwards] [animation-delay:2s] p-6 rounded-full dark:custom-btn2 opacity-0 bg-black text-white border-black'>
+            {t('landing.action')}
+          </Button>
+        </Link>
       </div>
 
       <div className='custom-shape-divider-bottom-1727069719'>

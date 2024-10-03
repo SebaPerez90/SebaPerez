@@ -1,4 +1,24 @@
 {
+  "header": {
+    "content": [
+      {
+        "id": 1,
+        "label": "Contact",
+        "ariaLabel": "contact me"
+      },
+      {
+        "id": 2,
+        "label": "Plans",
+        "ariaLabel": "pricing plans"
+      },
+      {
+        "id": 3,
+        "label": "Questions",
+        "ariaLabel": "frequently asked questions"
+      }
+    ]
+  },
+
   "landing": {
     "title": "Boost your business with digital solutions.",
     "description": "Increase your digital presence and optimize your business with websites and web applications, functional and tailored to your needs.",

@@ -5,6 +5,12 @@ export type LocaleData = {
   description: string
 }
 
+export type LocaleNavLinks = {
+  id: number
+  label: string
+  ariaLabel: string
+}
+
 export type LocaleFaqData = {
   question: string
   answer: string
