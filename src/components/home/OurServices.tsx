@@ -3,10 +3,11 @@ import { SlEarphonesAlt } from 'react-icons/sl'
 import { MdDesignServices } from 'react-icons/md'
 import { FaLaptopCode } from 'react-icons/fa'
 import { LocaleData } from '@/types'
-import { Card } from '../ui/card'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { Routes } from '@/routes/paths'
+import { motion } from "framer-motion"
+
 
 const iconDictionary: { [key: number | string]: JSX.Element } = {
   1: <FaLaptopCode size={43} />,
@@ -24,7 +25,15 @@ const OurServices = () => {
       <h1 className='title text-lg'>{t('ourServices.title')}</h1>
       <div className='col-center md:grid grid-cols-2 place-items-center gap-12'>
         {(services as Array<LocaleData>).map((item) => (
-          <Card
+          <motion.div
+          transition={{
+            duration: 0.5,
+            delay: 0.25,
+            staggerChildren: 2,
+          }}
+          initial={{ scale: 0, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          viewport={{ once: true }}
             key={item.id}
             className='w-[25em] p-5 bg-white dark:bg-dark-deep shadow-neutral rounded-lg row-center '>
             <div className='flex flex-col gap-1'>
@@ -42,7 +51,7 @@ const OurServices = () => {
                 {t('ourServices.action')}
               </Link>
             </div>
-          </Card>
+          </motion.div>
         ))}
       </div>
     </section>

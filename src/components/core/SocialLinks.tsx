@@ -7,19 +7,19 @@ const socialLinks = [
   {
     label: 'Linkedin',
     path: 'https://www.linkedin.com/in/sebaperez90/',
-    icon: <FaLinkedinIn />,
+    icon: <FaLinkedinIn size={15}/>,
     styles: 'bg-[#0A66C2]',
   },
   {
     label: 'Github',
     path: 'https://github.com/SebaPerez90',
-    icon: <FiGithub />,
+    icon: <FiGithub size={15}/>,
     styles: 'bg-[#171515]'
   },
   {
     label: 'Twitter',
     path: 'https://x.com/_SebaPerez_',
-    icon: <FaXTwitter />,
+    icon: <FaXTwitter size={15}/>,
     styles: 'bg-[#000000]'
   },
 ]

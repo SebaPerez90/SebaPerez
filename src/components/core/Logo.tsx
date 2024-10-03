@@ -2,7 +2,7 @@ import icon from '@/assets/icon.png'
 import { Routes } from '@/routes/paths'
 import { Link } from 'react-router-dom'
 
-const Logo = ({ styles }: { styles: React.CSSProperties }) => {
+const Logo = () => {
   return (
     <div className='row-center gap-1 items-center'>
       <figure>
@@ -15,8 +15,7 @@ const Logo = ({ styles }: { styles: React.CSSProperties }) => {
       <Link
         to={Routes.home}
         aria-label='Ir al inicio'
-        className='gradient-title dark:gradient-title-dark translate-y-[5px] text-2xl'
-        style={styles}>
+        className='gradient-title dark:gradient-title-dark translate-y-[5px] text-2xl'>
         CodeVibes
       </Link>
     </div>

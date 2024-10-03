@@ -1,8 +1,8 @@
-// import { aboutData } from '@/constants/index'
 import avatar_image from '@/assets/avatar-image.jpg'
 import { MdLocationPin } from 'react-icons/md'
 import { useTranslation } from 'react-i18next'
 import { LocaleData } from '@/types'
+import { motion } from 'framer-motion'
 
 const AboutUs = () => {
   const { t } = useTranslation()
@@ -30,7 +30,9 @@ const AboutUs = () => {
               />
               Argentina, Buenos Aires.
             </span>
-              <strong className='block font-medium text-sm dark:text-ligth-soft text-slate-500 text-center'>(UTC -03:00)</strong>
+            <strong className='block font-medium text-sm dark:text-ligth-soft text-slate-500 text-center'>
+              (UTC -03:00)
+            </strong>
           </div>
           <p className='w-[25em] paragraph text-black dark:text-ligth-soft'>
             {t('aboutUs.description1')}
@@ -58,7 +60,14 @@ const AboutUs = () => {
       <section className='z-10 col-center gap-44 [width:clamp(300px,80%,1200px)] pt-20 pb-32'>
         <h1 className='title text-lg'>{t('steps.title')}</h1>
         {(stepByStepContent as Array<LocaleData>).map((data) => (
-          <div
+          <motion.div
+            transition={{
+              duration: 0.3,
+              delay: 0.2,
+            }}
+            initial={{ scale: 0.5, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            viewport={{ once: true }}
             key={data.id}
             className='row-center'
             style={
@@ -75,9 +84,11 @@ const AboutUs = () => {
               <h2 className='title w-max max-[400px]:w-auto text-purple-500'>
                 {data.title}
               </h2>
-              <p className='paragraph text-black mt-4 dark:text-ligth-soft'>{data.description}</p>
+              <p className='paragraph text-black mt-4 dark:text-ligth-soft'>
+                {data.description}
+              </p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </section>
     </>

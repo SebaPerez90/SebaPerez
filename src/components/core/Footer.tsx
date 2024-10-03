@@ -6,6 +6,10 @@ import { Autoplay, EffectFade } from 'swiper/modules'
 import { useTranslation } from 'react-i18next'
 import Logo from './Logo'
 import SocialLinks from './SocialLinks'
+import { FaLocationDot } from 'react-icons/fa6'
+import { HiOutlineMailOpen } from 'react-icons/hi'
+import { FaPhoneAlt } from 'react-icons/fa'
+import { LocaleData } from '@/types'
 
 const images = [
   '/footer.webp',
@@ -16,15 +20,33 @@ const images = [
   '/footer6.webp',
 ]
 
+const iconDictionary: { [key: number | string]: JSX.Element } = {
+  1: (
+    <FaLocationDot
+      size={20}
+      color='#a855f7'
+    />
+  ),
+  2: (
+    <HiOutlineMailOpen
+      size={20}
+      color='#a855f7'
+    />
+  ),
+  3: (
+    <FaPhoneAlt
+      size={20}
+      color='#a855f7'
+    />
+  ),
+}
 const Footer = () => {
   const { t } = useTranslation()
 
-  const styles = {
-    color: '#fff',
-  }
+  const contactData = t('footer.content', { returnObjects: true })
 
   return (
-    <footer className='bg-white dark:bg-dark-neutral col-center gap-28 pt-32 pb-1'>
+    <footer className='bg-ligth-soft dark:bg-dark-neutral col-center gap-28 pt-32'>
       <div className='flex-col-reverse sm:flex-row flex items-center justify-center h-[50em] sm:h-[20em] gap-0 sm:gap-16'>
         <div className='w-[25em] sm:w-[22em] col-center h-full justify-center sm:justify-between items-starat'>
           <div>
@@ -65,15 +87,29 @@ const Footer = () => {
         </Swiper>
       </div>
 
-      <div className='col-center gap-0 w-full'>
-        <div className='col-center w-full py-10 gap-3 bg-gradient-to-b from-[#793dfa] to-[#9C6DF3] dark:to-dark-soft text-slate-200'>
-          <Logo styles={styles} />
-          <h2 className='font-medium italic '>
-            Convierte tu visión en una experiencia digital excepcional.
-          </h2>
+      <div className='col-center bg-white dark:bg-dark-deep dark:text-white text-black gap-10 w-full pt-16'>
+        <div className='col-center'>
+          <Logo />
+          <p className='font-semibold text-lg'>{t('footer.slogan')}</p>
+          <ul className='row-center gap-20 mt-14'>
+            {(contactData as Array<LocaleData>).map((element, index) => (
+              <li
+                key={index}
+                className='flex items-center gap-1'>
+                {iconDictionary[element.id]}
+                <div className='flex flex-col'>
+                  <span className='font-bold'>{element.title}</span>
+                  <span className='font-medium text-sm'>
+                    {element.description}
+                  </span>
+                </div>
+              </li>
+            ))}
+          </ul>
           <SocialLinks />
         </div>
-        <span className='w-max font-medium text-xs my-1'>
+        <hr className='h-[2px] bg-gray-300 w-[70%]' />
+        <span className='w-max font-medium text-sm my-2'>
           © 2024 CodeVibes | codevibes.arg@gmail.com
         </span>
       </div>

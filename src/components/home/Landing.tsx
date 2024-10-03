@@ -1,5 +1,7 @@
 import { Button } from '../ui/button'
 import { useTranslation } from 'react-i18next'
+import { TextGenerateEffect } from '../ui/text-generate-effect'
+import { motion } from 'framer-motion'
 
 const Landing = () => {
   const { t } = useTranslation()
@@ -8,19 +10,37 @@ const Landing = () => {
   return (
     <section className='dark:bg-dark-deep py-28 w-full h-dvh relative flex justify-center bg-white'>
       <div className='z-10 col-center gap-0 w-[50em] text-center'>
-        <h1
-          style={{ fontFamily: 'Poppins, sans-serif' }}
+        <TextGenerateEffect
+          words={t('landing.title')}
           className='font-bold text-6xl [line-height:1.1em] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-t from-purple-900 via-violet-500 to-pink-500 py-3
-          dark:gradient-title-dark
-          '>
-          {t('landing.title')}
-        </h1>
-        <p className='text-lg font-medium dark:text-ligth-soft text-slate-700 w-[70%]'>
+            dark:gradient-title-dark
+            '
+        />
+
+        <motion.p
+          transition={{
+            duration: 1,
+            delay: 1.3,
+          }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className='text-lg font-medium dark:text-ligth-soft text-slate-700 w-[70%]'>
           {t('landing.description')}
-        </p>
-        <ul className='row-center my-12'>
+        </motion.p>
+        <motion.ul
+          transition={{
+            duration: 0.4,
+            delay: 1.6,
+            type: 'spring',
+            damping: 10,
+          }}
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          className='row-center my-12'>
           {(benefits as Array<string>).map((item, index: number) => (
-            <li
+            <motion.li
               key={index}
               className='flex gap-1 items-center'>
               <span className='row-center w-5 h-5 bg-[#8731f6] rounded-full'>
@@ -36,13 +56,15 @@ const Landing = () => {
                   <title>check svg icon</title>
                 </svg>
               </span>
-              <span className='font-medium text-sm dark:text-ligth-soft text-slate-600'>{item}</span>
-            </li>
+              <span className='font-medium text-sm dark:text-ligth-soft text-slate-600'>
+                {item}
+              </span>
+            </motion.li>
           ))}
-        </ul>
+        </motion.ul>
         <Button
           type='button'
-          className='p-6 rounded-full dark:custom-btn2 bg-black text-white border-black'>
+          className='animate-[appear-element_300ms_ease-out_forwards] [animation-delay:2s] p-6 rounded-full dark:custom-btn2 opacity-0 bg-black text-white border-black'>
           {t('landing.action')}
         </Button>
       </div>
