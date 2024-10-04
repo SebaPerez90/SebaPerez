@@ -15,7 +15,7 @@ const Logo = () => {
       <Link
         to={Routes.home}
         aria-label='Ir al inicio'
-        className='gradient-title dark:gradient-title-dark translate-y-[5px] text-2xl'>
+        className='gradient-title dark:gradient-title-dark translate-y-[3px] text-2xl'>
         CodeVibes
       </Link>
     </div>
