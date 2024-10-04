@@ -5,5 +5,9 @@
       "success": "Message sent!",
       "error": "An error occurred"
     }
+  },
+  "navbar": {
+    "toggleLang": "Idioma cambiado",
+    "toggleTheme": "Theme changed"
   }
 }

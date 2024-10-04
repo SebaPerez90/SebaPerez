@@ -13,7 +13,7 @@ import toast from 'react-hot-toast'
 import { IoMdInformationCircle } from 'react-icons/io'
 
 export function LanguageSelect() {
-  const { i18n } = useTranslation()
+  const { i18n, t } = useTranslation()
   const [currentLang, setCurrentLang] = useState(
     localStorage.getItem('lang') || 'en'
   )
@@ -26,12 +26,12 @@ export function LanguageSelect() {
   const toggleLanguage = (value: string) => {
     setCurrentLang(value)
     toast.custom(
-      <p className='py-3 px-5 bg-white shadow-lg dark:bg-dark-soft font-medium text-lg rounded-md flex items-center mt-4 gap-1'>
+      <p className='py-3 px-5 bg-white shadow-lg dark:bg-dark-soft font-medium rounded-md flex items-center mt-4 gap-2'>
         <IoMdInformationCircle
           size={20}
           color='#6897fc'
         />
-        Tema cambiado
+        {t('navbar.toggleLang')}
       </p>
     )
   }

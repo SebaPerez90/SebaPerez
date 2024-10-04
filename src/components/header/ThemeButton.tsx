@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react'
 import toast from 'react-hot-toast'
+import { useTranslation } from 'react-i18next'
 import { IoMdInformationCircle } from 'react-icons/io'
 
 const ThemeButton = () => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light')
+  const { t } = useTranslation()
 
   useEffect(() => {
     localStorage.setItem('theme', theme)
@@ -13,12 +15,12 @@ const ThemeButton = () => {
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'))
     toast.custom(
-      <p className='py-3 px-5 bg-white shadow-lg dark:bg-dark-soft font-medium text-lg rounded-md flex items-center mt-4 gap-1'>
+      <p className='py-3 px-5 bg-white shadow-lg dark:bg-dark-soft font-medium rounded-md flex items-center mt-4 gap-2'>
         <IoMdInformationCircle
           size={20}
           color='#6897fc'
         />
-        Tema cambiado
+        {t('navbar.toggleTheme')}
       </p>
     )
   }
