@@ -1,8 +1,8 @@
 import PrincigCard from '@/components/PrincigCard'
-// import pricingData from '@/jsons/pricing.json'
 import { IoIosInformationCircle } from 'react-icons/io'
 import { useTranslation } from 'react-i18next'
 import { LocalePricingData } from '@/types'
+import { motion } from 'framer-motion'
 
 const Princing = () => {
   const { t } = useTranslation()
@@ -11,13 +11,29 @@ const Princing = () => {
   return (
     <main className=' col-center min-h-dvh max-h-max gap-24 pb-28 pt-36 bg-secondary'>
       <header className='col-center [width:clamp(300px,80%,700px)] pl-8 sm:px-0'>
-        <h1 className='title text-5xl'>{t('home.title')}</h1>
-        <p className='paragraph sm:text-lg text-xl'>
+        <motion.h1
+          transition={{
+            duration: 0.5,
+            ease: 'easeInOut',
+          }}
+          initial={{ opacity: 0, scale: 0.3, y: 50 }}
+          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          className='title text-5xl'>
+          {t('home.title')}
+        </motion.h1>
+        <motion.p
+          transition={{
+            duration: 1.5,
+            delay: 0.4,
+          }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          className='paragraph text-xl'>
           {t('home.description1')}
           <br></br>
           <br></br>
           {t('home.description2')}
-        </p>
+        </motion.p>
       </header>
       <section>
         <div className='row-center flex-wrap gap-10 mx-8 z-10'>
