@@ -10,6 +10,8 @@ import { FaLocationDot } from 'react-icons/fa6'
 import { HiOutlineMailOpen } from 'react-icons/hi'
 import { FaPhoneAlt } from 'react-icons/fa'
 import { LocaleData } from '@/types'
+import { motion, useInView } from 'framer-motion'
+import { useRef } from 'react'
 
 const images = [
   '/footer.webp',
@@ -41,12 +43,16 @@ const iconDictionary: { [key: number | string]: JSX.Element } = {
   ),
 }
 const Footer = () => {
+  const btnRef = useRef(null)
+  const isInView = useInView(btnRef)
   const { t } = useTranslation()
 
+
+  
   const contactData = t('footer.content', { returnObjects: true })
 
   return (
-    <footer className='bg-ligth-soft dark:bg-dark-neutral col-center gap-28 pt-32'>
+    <motion.footer className='bg-ligth-soft dark:bg-dark-neutral col-center gap-28 pt-32'>
       <div className='flex-col-reverse sm:flex-row flex items-center justify-center h-[50em] sm:h-[20em] gap-0 sm:gap-16'>
         <div className='w-[25em] sm:w-[22em] col-center h-full justify-center sm:justify-between items-starat'>
           <div>
@@ -60,8 +66,10 @@ const Footer = () => {
             <p className='paragraph mt-4'>{t('footer.description')}</p>
           </div>
           <Button
+            ref={btnRef}
             size={'lg'}
-            className='w-full py-6 dark:custom-btn2'>
+            style={{ animation: isInView ? 'appear-element 300ms ease-out forwards' : '' }}
+            className='opacity-0 w-full py-6 dark:custom-btn2'>
             {t('footer.action')}
           </Button>
         </div>
@@ -113,7 +121,7 @@ const Footer = () => {
           © 2024 CodeVibes | codevibes.arg@gmail.com
         </span>
       </div>
-    </footer>
+    </motion.footer>
   )
 }
 

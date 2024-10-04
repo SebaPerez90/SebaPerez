@@ -1,3 +1,5 @@
+import { stagger, useAnimate, useInView, motion } from 'framer-motion'
+import { useEffect } from 'react'
 import { FaLinkedinIn } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 import { FiGithub } from 'react-icons/fi'
@@ -7,29 +9,46 @@ const socialLinks = [
   {
     label: 'Linkedin',
     path: 'https://www.linkedin.com/in/sebaperez90/',
-    icon: <FaLinkedinIn size={15}/>,
+    icon: <FaLinkedinIn size={15} />,
     styles: 'bg-[#0A66C2]',
   },
   {
     label: 'Github',
     path: 'https://github.com/SebaPerez90',
-    icon: <FiGithub size={15}/>,
-    styles: 'bg-[#171515]'
+    icon: <FiGithub size={15} />,
+    styles: 'bg-[#171515]',
   },
   {
     label: 'Twitter',
     path: 'https://x.com/_SebaPerez_',
-    icon: <FaXTwitter size={15}/>,
-    styles: 'bg-[#000000]'
+    icon: <FaXTwitter size={15} />,
+    styles: 'bg-[#000000]',
   },
 ]
 
 const SocialLinks = () => {
+  const [scope, animate] = useAnimate()
+  const isInView = useInView(scope)
+
+  useEffect(() => {
+    if (isInView) {
+      animate(
+        'li',
+        { opacity: 1, y: 0 },
+        { delay: stagger(0.1), duration: 0.4 }
+      )
+    }
+  }, [animate, isInView, scope])
+
   return (
     <nav className='mt-5'>
-      <ul className='row-center gap-1'>
+      <ul
+        ref={scope}
+        className='row-center gap-1'>
         {socialLinks.map((link, index) => (
-          <li
+          <motion.li
+            transition={{ delay: 0.5 }}
+            initial={{ opacity: 0, y: 100 }}
             key={index}
             className='group'>
             <a
@@ -38,7 +57,8 @@ const SocialLinks = () => {
               rel='noopener noreferrer'
               target='_blank'
               className='col-center gap-2'>
-              <span className={`${link.styles} hover:duration-150 duration-150 hover:opacity-80 p-3 text-white rounded-full`}>
+              <span
+                className={`${link.styles} hover:duration-150 duration-150 hover:opacity-80 p-3 text-white rounded-full`}>
                 {link.icon}
               </span>
               <span className='text-xs font-medium opacity-0 group-hover:opacity-100 row-center gap-1 transition-opacity duration-150'>
@@ -46,7 +66,7 @@ const SocialLinks = () => {
                 <HiOutlineExternalLink size={10} />
               </span>
             </a>
-          </li>
+          </motion.li>
         ))}
       </ul>
     </nav>

@@ -16,7 +16,7 @@ const NavLinks = () => {
       animate(
         'li',
         { opacity: 1, x: 0 },
-        { delay: stagger(0.3), duration: 0.4 }
+        { delay: stagger(0.1), duration: 0.9 }
       )
     }
   }, [animate, isInView, scope])

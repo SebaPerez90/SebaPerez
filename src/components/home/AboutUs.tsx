@@ -34,12 +34,19 @@ const AboutUs = () => {
               (UTC -03:00)
             </strong>
           </div>
-          <p className='w-[25em] paragraph text-black dark:text-ligth-soft'>
+          <motion.p
+            transition={{
+              duration: 0.4,
+            }}
+            initial={{ y: 150, scale: 0.2, opacity: 0 }}
+            whileInView={{ y: 0, scale: 1, opacity: 1 }}
+            viewport={{ once: true }}
+            className='w-[25em] paragraph text-black dark:text-ligth-soft'>
             {t('aboutUs.description1')}
             <br></br>
             <br></br>
             {t('aboutUs.description2')}
-          </p>
+          </motion.p>
         </div>
 
         <div className='custom-shape-divider-top-1727131451'>
