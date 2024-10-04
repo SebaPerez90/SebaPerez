@@ -1,8 +1,8 @@
-// import { aboutData } from '@/constants/index'
 import avatar_image from '@/assets/avatar-image.jpg'
 import { MdLocationPin } from 'react-icons/md'
 import { useTranslation } from 'react-i18next'
 import { LocaleData } from '@/types'
+import { motion } from 'framer-motion'
 
 const AboutUs = () => {
   const { t } = useTranslation()
@@ -11,11 +11,11 @@ const AboutUs = () => {
   return (
     <>
       {/* Self-introduce */}
-      <section className='w-full h-[50em] relative col-center gap-32'>
-        <h1 className='title text-lg'>{t('aboutUs.title')}</h1>
+      <section className='w-full h-[70em]  sm:h-[50em] relative col-center gap-32'>
+        <h1 className='title text-lg dark:text-white text-black'>{t('aboutUs.title')}</h1>
         <div className='max-[640px]:col-center row-center items-start gap-20'>
           <div>
-            <figure className='w-[13em] h-[13em] rounded-full overflow-hidden'>
+            <figure className='w-[15em] h-[15em] rounded-full overflow-hidden'>
               <img
                 loading='lazy'
                 className='h-full w-full object-cover'
@@ -23,20 +23,30 @@ const AboutUs = () => {
                 alt='avatar de desarrollador Seba'
               />
             </figure>
-            <span className='mt-3 text-slate-500 justify-center text-sm font-semibold flex items-center'>
+            <span className='mt-3 text-slate-500 dark:text-ligth-soft justify-center font-semibold flex items-center'>
               <MdLocationPin
                 color='#f00'
-                size={20}
+                size={26}
               />
               Argentina, Buenos Aires.
             </span>
+            <strong className='block font-medium text-sm dark:text-ligth-soft text-slate-500 text-center'>
+              (UTC -03:00)
+            </strong>
           </div>
-          <p className='w-[25em] paragraph text-black'>
+          <motion.p
+            transition={{
+              duration: 0.4,
+            }}
+            initial={{ y: 150, scale: 0.2, opacity: 0 }}
+            whileInView={{ y: 0, scale: 1, opacity: 1 }}
+            viewport={{ once: true }}
+            className='w-[25em] paragraph mt-6 sm:mt-0 text-xl sm:text-base text-black dark:text-ligth-soft'>
             {t('aboutUs.description1')}
             <br></br>
             <br></br>
             {t('aboutUs.description2')}
-          </p>
+          </motion.p>
         </div>
 
         <div className='custom-shape-divider-top-1727131451'>
@@ -57,7 +67,14 @@ const AboutUs = () => {
       <section className='z-10 col-center gap-44 [width:clamp(300px,80%,1200px)] pt-20 pb-32'>
         <h1 className='title text-lg'>{t('steps.title')}</h1>
         {(stepByStepContent as Array<LocaleData>).map((data) => (
-          <div
+          <motion.div
+            transition={{
+              duration: 0.3,
+              delay: 0.2,
+            }}
+            initial={{ scale: 0.5, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            viewport={{ once: true }}
             key={data.id}
             className='row-center'
             style={
@@ -74,9 +91,11 @@ const AboutUs = () => {
               <h2 className='title w-max max-[400px]:w-auto text-purple-500'>
                 {data.title}
               </h2>
-              <p className='paragraph text-black mt-4'>{data.description}</p>
+              <p className='paragraph text-black mt-4 dark:text-ligth-soft'>
+                {data.description}
+              </p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </section>
     </>

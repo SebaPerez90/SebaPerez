@@ -9,9 +9,11 @@ import englishIcon from '@/assets/english-icon.png'
 import spanishIcon from '@/assets/spanish-icon.png'
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import toast from 'react-hot-toast'
+import { IoMdInformationCircle } from 'react-icons/io'
 
 export function LanguageSelect() {
-  const { i18n } = useTranslation()
+  const { i18n, t } = useTranslation()
   const [currentLang, setCurrentLang] = useState(
     localStorage.getItem('lang') || 'en'
   )
@@ -21,11 +23,24 @@ export function LanguageSelect() {
     localStorage.setItem('lang', currentLang)
   }, [currentLang, i18n])
 
+  const toggleLanguage = (value: string) => {
+    setCurrentLang(value)
+    toast.custom(
+      <p className='py-3 px-5 bg-white shadow-lg dark:bg-dark-soft font-medium rounded-md flex items-center mt-4 gap-2'>
+        <IoMdInformationCircle
+          size={20}
+          color='#6897fc'
+        />
+        {t('navbar.toggleLang')}
+      </p>
+    )
+  }
+
   return (
     <Select
       value={currentLang}
-      onValueChange={(value) => setCurrentLang(value)}>
-      <SelectTrigger className='w-max overflow-visible custom-btn px-2 border-2 border-purple-500'>
+      onValueChange={(value) => toggleLanguage(value)}>
+      <SelectTrigger className='min-w-max overflow-visible text-purple-500 border border-purple-500 scale-90 dark:border-white dark:text-white font-medium dark:bg-dark-soft'>
         <div className='row-center gap-1'>
           <span className='text-sm'>
             {currentLang === 'en' ? 'English' : 'Español'}

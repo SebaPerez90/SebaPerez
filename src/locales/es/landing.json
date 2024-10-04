@@ -1,8 +1,27 @@
 {
+  "header": {
+    "content": [
+      {
+        "id": 1,
+        "label": "Contacto",
+        "ariaLabel": "contactame"
+      },
+      {
+        "id": 2,
+        "label": "Planes",
+        "ariaLabel": "precio de los planes"
+      },
+      {
+        "id": 3,
+        "label": "Preguntas",
+        "ariaLabel": "preguntas frecuentes"
+      }
+    ]
+  },
   "landing": {
     "title": "Impulsa tu negocio con soluciones digitales.",
     "description": "Aumenta tu presencia digital y optimiza tu negocio con sitios y aplicaciones web, funcionales y diseñadas a tu medida.",
-    "callToAction": "Reservá hoy",
+    "action": "Reservá hoy",
     "benefits": ["Precios accesibles", "Soporte 24/7", "100% Personalizadas"]
   },
 
@@ -45,7 +64,7 @@
 
   "ourServices": {
     "title": "Mis servicios",
-    "callToAction": "Contrata ahora",
+    "action": "Ver planes",
     "content": [
       {
         "id": 1,
@@ -95,6 +114,24 @@
     "title": "Únete a la revolución digital para ",
     "strong": "potenciar tu negocio",
     "description": "No importa tu rubro, mejorar tu presencia digital está a un click de distancia. Te ayudo a cumplir tus objetivos.",
-    "action": "Contáctame!"
+    "action": "Contáctame!",
+    "slogan": "Convierte tu visión en una experiencia digital excepcional. Conectemos!",
+    "content": [
+      {
+        "id": 1,
+        "title": "Ubicación",
+        "description": "Argentina,Buenos Aires"
+      },
+      {
+        "id": 2,
+        "title": "Correo electrónico",
+        "description": "codevibes.arg@gmail.com"
+      },
+      {
+        "id": 3,
+        "title": "Teléfono",
+        "description": "+54 1132830604"
+      }
+    ]
   }
 }

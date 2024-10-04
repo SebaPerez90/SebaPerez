@@ -1,49 +1,63 @@
 import PrincigCard from '@/components/PrincigCard'
-import pricingData from '@/jsons/pricing.json'
 import { IoIosInformationCircle } from 'react-icons/io'
+import { useTranslation } from 'react-i18next'
+import { LocalePricingData } from '@/types'
+import { motion } from 'framer-motion'
 
 const Princing = () => {
+  const { t } = useTranslation()
+  const pricingContent = t('pricing', { returnObjects: true })
+
   return (
     <main className=' col-center min-h-dvh max-h-max gap-24 pb-28 pt-36 bg-secondary'>
       <header className='col-center [width:clamp(300px,80%,700px)] pl-8 sm:px-0'>
-        <h1 className='title text-5xl'>
-          ¿Estás listo para expandir tu negocio?
-        </h1>
-        <p className='paragraph sm:text-lg text-xl'>
-          En la actualidad, no tener una tienda en línea es perder
-          oportunidades. Con 5.45 mil millones de usuarios de internet y un
-          crecimiento constante en las compras digitales, es el momento ideal
-          para expandir tu negocio.
+        <motion.h1
+          transition={{
+            duration: 0.5,
+            ease: 'easeInOut',
+          }}
+          initial={{ opacity: 0, scale: 0.3, y: 50 }}
+          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          viewport={{ once: true }}
+          className='title text-5xl'>
+          {t('home.title')}
+        </motion.h1>
+        <motion.p
+          transition={{
+            duration: 1.5,
+            delay: 0.4,
+          }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className='paragraph text-xl'>
+          {t('home.description1')}
           <br></br>
           <br></br>
-          ¡Estás a unos clics de lograrlo! Se espera que la conexión a internet
-          continúe expandiéndose, así que no dejes pasar la oportunidad de ser
-          parte de esta transformación.
-        </p>
+          {t('home.description2')}
+        </motion.p>
       </header>
       <section>
-        <div className='row-center flex-wrap gap-10 mx-8 z-10'>
-          {pricingData.map((item) => (
+        <div className='row-center flex-wrap gap-16 mx-8 z-10'>
+          {(pricingContent as Array<LocalePricingData>).map((item) => (
             <PrincigCard
               key={item.id}
               title={item.title}
-              subtitle={item.subtitle}
+              description={item.description}
               price={item.price}
               listItems={item.services}
             />
           ))}
         </div>
-        <div className='flex justify-center items-center gap-4 w-[70%] mx-auto mt-16 p-5 bg-white rounded-lg shadow-lg'>
+        <div className='flex justify-center items-center gap-4 w-[70%] mx-auto mt-16 p-5 bg-white dark:bg-dark-neutral rounded-lg shadow-lg'>
           <IoIosInformationCircle
             size={80}
-            className='text-blue-600'
+            color='#2563eb'
           />
-          <p className='text-gray-700 font-medium'>
-            Los precios son indicativos y se ajustan según la complejidad del
-            proyecto. Cada presupuesto es personalizado para adaptarse a tus
-            necesidades. <br />
-            Una vez pactado el precio, no habrá sorpresas: no se realizarán
-            modificaciones posteriores.
+          <p className='text-gray-700 dark:text-white font-medium'>
+            {t('home.description3')}
+            <br />
+            {t('home.description4')}
           </p>
         </div>
       </section>

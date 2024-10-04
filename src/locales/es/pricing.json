@@ -1,100 +1,109 @@
 {
-  "landing": {
-    "title": "Impulsa tu negocio con soluciones digitales.",
-    "description": "Aumenta tu presencia digital y optimiza tu negocio con sitios y aplicaciones web, funcionales y diseñadas a tu medida.",
-    "callToAction": "Reservá hoy",
-    "benefits": ["Precios accesibles", "Soporte 24/7", "100% Personalizadas"]
+  "home": {
+    "title": "¿Estás listo para expandir tu negocio?",
+    "description1": "En la actualidad, no tener una tienda en línea es perder oportunidades. Con 5.45 mil millones de usuarios de internet y un crecimiento constante en las compras digitales, es el momento ideal para expandir tu negocio.",
+    "description2": "¡Estás a unos clics de lograrlo! Se espera que la conexión a internet continúe expandiéndose, así que no dejes pasar la oportunidad de ser parte de esta transformación.",
+    "description3": "Los precios son indicativos y se ajustan según la complejidad del proyecto. Cada presupuesto es personalizado para adaptarse a tus necesidades.",
+    "description4": "Una vez pactado el precio, no habrá sorpresas: no se realizarán modificaciones posteriores.",
+    "description5": "Contactame!",
+    "description6": "¿Tienes dudas?"
   },
 
-  "aboutUs": {
-    "title": "¿Quién soy?",
-    "description1": "¡Hola! Soy Seba, desarrollador de software, creo soluciones digitales adaptadas las necesidades de cada negocio. Mi objetivo es ayudarte a mejorar tu presencia online y atraer más clientes, asegurando que tu negocio esté optimizado para crecer en el mundo digital.",
-    "description2": "Con mi experiencia, no solo podrás mejorar la apariencia y funcionalidad de tu sitio o aplicación web, sino también organizar mejor tu negocio con herramientas que te permitirán gestionar toda la información de manera eficiente y sin complicaciones."
-  },
-
-  "steps": {
-    "title": "¿Cómo vamos a trabajar?",
-    "content": [
+  "content": {
+    "Pagos": [
       {
-        "id": "01",
-        "title": "Conociendo tus necesidades",
-        "description": "Escuchamos tus ideas y objetivos para entender cómo podemos ayudarte."
+        "question": "¿Puedo pagar con criptomonedas?",
+        "answer": "Sí. Podés transferir el dinero a nuestra billetera virtual sin inconvenientes."
       },
       {
-        "id": "02",
-        "title": "Creación del diseño",
-        "description": "Crearemos un diseño centrado en usabilidad y estética, ajustado a tus expectativas y objetivos."
+        "question": "¿El precio cambia?",
+        "answer": "No. El precio pactado no se modifica, la facturación es sin sorpresas."
       },
       {
-        "id": "03",
-        "title": "Desarrollo de tu proyecto",
-        "description": "Creamos tu producto de manera eficiente y cuidamos cada detalle para garantizar calidad."
+        "question": "¿Si tengo una base de datos, pago más?",
+        "answer": "El servicio de alojamiento de bases de datos se paga una vez al año."
       },
       {
-        "id": "04",
-        "title": "Lanzamiento",
-        "description": "Presentamos tu producto al mundo y nos aseguramos de que todo funcione perfectamente desde el inicio."
+        "question": "¿Se puede pagar en cuotas?",
+        "answer": "Sí. Analizamos cada caso particular para ser lo más accesibles posible."
       },
       {
-        "id": "05",
-        "title": "Soporte continuo",
-        "description": "Te brindamos soporte continuo y hacemos mejoras para que siempre estés un paso adelante."
+        "question": "¿Debo pagar por el dominio y el hosting?",
+        "answer": "Sí, el dominio y el hosting son necesarios para que tu sitio esté en línea. Puedo asesorarte o gestionar la compra para que tengas todo listo de manera rápida y sencilla."
+      }
+    ],
+    "Extras": [
+      {
+        "question": "¿Qué información necesito proporcionarte para empezar?",
+        "answer": "Solo necesito saber qué querés lograr con tu producto o servicio. En base a eso, te guiaré para recolectar toda la información necesaria."
+      },
+      {
+        "question": "¿El sitio web será compatible con celulares?",
+        "answer": "Sí. Todos los sitios que desarrollamos son totalmente responsivos y funcionan perfectamente en todo dispositivo."
+      },
+      {
+        "question": "¿Puedo agregar funcionalidades?",
+        "answer": "Sí. Podés agregar las funcionalidades que quieras, y el precio variará dependiendo de tu requerimiento."
+      },
+      {
+        "question": "¿Cuánto tiempo demora tener mi producto?",
+        "answer": "Depende de la complejidad del proyecto. Las pautas de entrega se establecen luego de nuestro primer encuentro."
+      }
+    ],
+    "Garantias": [
+      {
+        "question": "¿Qué garantías ofrecés?",
+        "answer": "Si estás disconforme con tu producto final, podés apelar. Seguiremos trabajando en el proyecto hasta que cumpla tus expectativas."
+      },
+      {
+        "question": "¿Cuánto tiempo tengo para reclamar la garantía?",
+        "answer": "Tenés un plazo de 1 semana para reclamar si estás disconforme."
+      },
+      {
+        "question": "¿Y si tengo un problema después de ese tiempo?",
+        "answer": "Si es un problema funcional, podés contactarnos nuevamente sin problemas, ya que tu satisfacción es nuestra."
       }
     ]
   },
 
-  "ourServices": {
-    "title": "Mis servicios",
-    "callToAction": "Contrata ahora",
-    "content": [
-      {
-        "id": 1,
-        "title": "Sitios web a medida",
-        "description": "Creá una presencia online profesional que atraerá más clientes y hará crecer tu negocio."
-      },
-      {
-        "id": 2,
-        "title": "Diseños visuales atractivos",
-        "description": "Diseños modernos y llamativos que capturan la atención de tus visitantes y los convierten en clientes."
-      },
-      {
-        "id": 3,
-        "title": "Asistencia y soporte continuo",
-        "description": "Te acompañamos en cada paso, resolviendo problemas para que tu sitio o aplicación siempre esté funcionando sin problemas."
-      },
-      {
-        "id": 4,
-        "title": "Webs adaptables",
-        "description": "Tu sitio web lucirá perfecto en cualquier dispositivo: móvil, tablet o computadora, para que siempre esté accesible."
-      }
-    ]
-  },
-
-  "benefits": {
-    "title": "¿Porqué elegir CodeVibes?",
-    "content": [
-      {
-        "id": 1,
-        "title": "Presupuesto Personalizado",
-        "description": "En CodeVibes manejamos una lista de precios super accesibles y personalizados dependiendo de la complejidad de los requisitos."
-      },
-      {
-        "id": 2,
-        "title": "Plata asegurada",
-        "description": "Con CodeVibes tu satisfacción, también es la nuestra! paga solo si el producto final cumple con tus expectativas."
-      },
-      {
-        "id": 3,
-        "title": "Soporte",
-        "description": "En CodeVibes estamos siempre disponible para optimizar el rendimiento de tu aplicación, garantizando entregas eficientes y soluciones a medida."
-      }
-    ]
-  },
-
-  "footer": {
-    "title": "Únete a la revolución digital para ",
-    "strong": "potenciar tu negocio",
-    "description": "No importa tu rubro, mejorar tu presencia digital está a un click de distancia. Te ayudo a cumplir tus objetivos.",
-    "action": "Contáctame!"
-  }
+  "pricing": [
+    {
+      "id": 1,
+      "title": "Sitio Web",
+      "description": "Creo tu sitio web profesional para destacar lo mejor de tu emprendimiento, asegurando que más personas descubran tus servicios y productos.",
+      "price": 100,
+      "services": [
+        "Landing page",
+        "Diseño web personalizado",
+        "Integración con redes sociales",
+        "Formularios varios"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Aplicaciones Web",
+      "description": "Desarrollo aplicaciones web que optimizan la gestión interna y mejoran la experiencia del usuario.",
+      "price": 200,
+      "services": [
+        "Desarrollo de aplicaciones a medida",
+        "Aplicaciones fáciles de usar",
+        "Gestión de usuarios",
+        "Funcionalidades adaptadas a tu negocio",
+        "Soporte técnico continuo"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Automatización y Ecommerce",
+      "description": "Te ayudo a modernizar tu negocio con soluciones automatizadas y tiendas online que te permiten vender fácilmente en internet.",
+      "price": 300,
+      "services": [
+        "Creación de tiendas online",
+        "Automatización de procesos repetitivos",
+        "Sistema de cobro online",
+        "Automatización de procesos",
+        "Seguridad mejorada para tu web"
+      ]
+    }
+  ]
 }

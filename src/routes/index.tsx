@@ -5,6 +5,7 @@ import AuthLayout from '@/layouts/Auth.layout'
 import { AuthRotes } from './auth.router'
 import { Routes } from './paths'
 import FrecuentlyAskQuestion from '@/screens/FrecuentlyAskQuestion'
+import ContactMe from '@/screens/ContactMe'
 
 export const router = createBrowserRouter([
   {
@@ -18,5 +19,9 @@ export const router = createBrowserRouter([
   {
     path: Routes.faq,
     element: <FrecuentlyAskQuestion />,
+  },
+  {
+    path: Routes.contact,
+    element: <ContactMe />,
   },
 ])

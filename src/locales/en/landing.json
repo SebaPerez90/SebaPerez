@@ -1,4 +1,24 @@
 {
+  "header": {
+    "content": [
+      {
+        "id": 1,
+        "label": "Contact",
+        "ariaLabel": "contact me"
+      },
+      {
+        "id": 2,
+        "label": "Plans",
+        "ariaLabel": "pricing plans"
+      },
+      {
+        "id": 3,
+        "label": "Questions",
+        "ariaLabel": "frequently asked questions"
+      }
+    ]
+  },
+
   "landing": {
     "title": "Boost your business with digital solutions.",
     "description": "Increase your digital presence and optimize your business with websites and web applications, functional and tailored to your needs.",
@@ -45,7 +65,7 @@
 
   "ourServices": {
     "title": "My Services",
-    "action": "Hire now",
+    "action": "View plans",
     "content": [
       {
         "id": 1,
@@ -95,6 +115,24 @@
     "title": "Join the digital revolution to ",
     "strong": "empower your business",
     "description": "No matter your industry, improving your digital presence is just a click away. I can help you achieve your goals.",
-    "action": "Contact me!"
+    "action": "Contact me!",
+    "slogan": "Turn your vision into an exceptional digital experience. Let's connect!",
+    "content": [
+      {
+        "id": 1,
+        "title": "Location",
+        "description": "Argentina, Buenos Aires"
+      },
+      {
+        "id": 2,
+        "title": "Email",
+        "description": "codevibes.arg@gmail.com"
+      },
+      {
+        "id": 3,
+        "title": "Phone",
+        "description": "+54 1132830604"
+      }
+    ]
   }
 }

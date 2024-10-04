@@ -1,0 +1,13 @@
+{
+  "contactMe": {
+    "toaster": {
+      "loading": "Sending...",
+      "success": "Message sent!",
+      "error": "An error occurred"
+    }
+  },
+  "navbar": {
+    "toggleLang": "Idioma cambiado",
+    "toggleTheme": "Theme changed"
+  }
+}

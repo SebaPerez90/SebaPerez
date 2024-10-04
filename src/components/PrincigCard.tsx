@@ -2,26 +2,29 @@ import { Link } from 'react-router-dom'
 import { Button } from './ui/button'
 import { Card } from './ui/card'
 import { Routes } from '@/routes/paths'
+import { useTranslation } from 'react-i18next'
 
 interface PrincigCardProps {
   title: string
-  subtitle: string
+  description: string
   price: number
   listItems: string[]
 }
 
 const PrincigCard = ({
   title,
-  subtitle,
+  description,
   listItems,
   price,
 }: PrincigCardProps) => {
+  const { t } = useTranslation()
+
   return (
-    <Card className='bg-white flex flex-col  flex-grow-[0.3] sm:flex-grow-0 h-[36em] w-[20em] justify-between'>
+    <Card className='animate-[appear-element_300ms_ease-out_forwards] bg-white dark:bg-dark-neutral flex flex-col  flex-grow-[0.3] sm:flex-grow-0 h-[36em] w-[20em] justify-between'>
       <div className='col-center items-start'>
         <div className='flex flex-col gap-3'>
           <h2 className='title text-purple-500'>{title}</h2>
-          <p className='paragraph'>{subtitle}</p>
+          <p className='paragraph'>{description}</p>
           <span className='title text-4xl font-bold w-full text-center'>
             ${price}
           </span>
@@ -45,14 +48,26 @@ const PrincigCard = ({
                   <title>check svg icon</title>
                 </svg>
               </span>
-              <span className='font-medium text-sm text-black'>{item}</span>
+              <span className='font-medium text-sm text-black dark:text-white'>
+                {item}
+              </span>
             </li>
           ))}
         </ul>
       </div>
       <div className='col-center gap-0 relative w-full mb-3'>
-        <Button className='py-5 w-full'>Contáctame</Button>
-        <Link to={Routes.faq} className='text-sm absolute hover:duration-200 duration-200 hover:text-purple-500 underline hover:no-underline text-purple-600 font-semibold -bottom-6'>¿Tienes dudas?</Link>
+        <Link
+          to={Routes.contact}
+          className='w-full'>
+          <Button className='py-5 w-full dark:custom-btn2'>
+            {t('home.description5')}
+          </Button>
+        </Link>
+        <Link
+          to={Routes.faq}
+          className='text-sm absolute hover:duration-200 duration-200 hover:text-purple-500 underline hover:no-underline text-purple-600 dark:text-purple-400 font-semibold -bottom-6'>
+          {t('home.description6')}
+        </Link>
       </div>
     </Card>
   )
