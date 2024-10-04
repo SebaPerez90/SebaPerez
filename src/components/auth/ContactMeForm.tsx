@@ -35,21 +35,21 @@ const ContactMeForm = () => {
       await new Promise((resolve) => setTimeout(resolve, 3000))
 
       try {
-        const response = await fetch(`${formspreeURL}`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(values),
-        })
+        // const response = await fetch(`${formspreeURL}`, {
+        //   method: 'POST',
+        //   headers: {
+        //     'Content-Type': 'application/json',
+        //   },
+        //   body: JSON.stringify(values),
+        // })
 
-        if (response.ok) {
+        // if (response.ok) {
         toast.success('Mensaje enviado!', {
           duration: 3000,
           style: { fontWeight: 500 },
         })
         formik.resetForm()
-        }
+        // }
       } catch (error) {
         if (error) {
           toast.error('Hubo un error al enviar el mensaje!', {
@@ -119,7 +119,9 @@ const ContactMeForm = () => {
         <Button
           type='submit'
           loading={loading ? true : false}
-          className='w-full custom-btn2 dark:text-white'>
+          className={`${
+            loading && 'text-transparent'
+          } w-full custom-btn2 dark:text-white`}>
           {t('projectRequestForm.buttonLabel.submit')}
         </Button>
       </div>

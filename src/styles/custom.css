@@ -43,6 +43,8 @@
   border: 4px solid rgba(0, 0, 0, .1);
   border-left-color: transparent;
   border-radius: 50%;
+  position: relative;
+  right: 1em;
 }
 
 .loader {
