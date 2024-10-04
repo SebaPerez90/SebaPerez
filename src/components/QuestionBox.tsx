@@ -14,10 +14,8 @@ const QuestionBox = () => {
   )
 
   return (
-    <section className='[width:clamp(320px,100%,600px)] col-center gap-16 px-12'>
-      <h2 className='title text-center'>
-        ¿No encontraste tu pregunta? ¡Pregúntanos directamente!
-      </h2>
+    <section className='z-10 [width:clamp(320px,100%,600px)] col-center gap-16 px-12'>
+      <h2 className='title text-center'>{t('faq.title')}</h2>
       <form
         id='question-form'
         name='question-form'
@@ -26,7 +24,7 @@ const QuestionBox = () => {
         <Label
           htmlFor='email'
           className='w-full relative'>
-          <span className='font-semibold text-lg'>Correo electrónico</span>
+          <span className='font-semibold text-lg'>{t('faq.form.emailLabel')}</span>
           <Input
             id='email'
             autoComplete='on'
@@ -36,10 +34,10 @@ const QuestionBox = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.email}
-            className='resize-none bg-white dark:bg-dark-neutral border border-purple-400 focus:border-purple-600 placeholder:opacity-70 placeholder:italic placeholder-gray-500 my-1'
+            className='text-lg py-6 sm:py-4 sm:text-sm bg-white dark:bg-dark-neutral border border-purple-400 focus:border-purple-600 placeholder:opacity-70 placeholder:italic placeholder-gray-500 my-1'
           />
           {formik.touched.email && (
-            <span className='text-red-600 text-sm absolute -bottom-5 left-2'>
+            <span className='text-red-600 absolute -bottom-5 left-2 text-base md:text-xs'>
               {formik.errors.email}
             </span>
           )}
@@ -47,19 +45,19 @@ const QuestionBox = () => {
         <Label
           htmlFor='question'
           className='w-full relative'>
-          <span className='font-semibold text-lg'>Tu pregunta</span>
+          <span className='font-semibold text-lg'>{t('faq.form.questionLabel')}</span>
           <Textarea
             id='question'
             name='question'
-            placeholder='Escribí tu pregunta aquí...'
+            placeholder={t('faq.form.questionPlaceholder')}
             rows={4}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.question}
-            className='resize-none bg-white dark:bg-dark-neutral border border-purple-400 focus:border-purple-600 placeholder:opacity-70 placeholder:italic placeholder-gray-500'
+            className='resize-none text-lg sm:text-sm bg-white dark:bg-dark-neutral border border-purple-400 focus:border-purple-600 placeholder:opacity-70 placeholder:italic placeholder-gray-500'
           />
           {formik.touched.question && (
-            <span className='text-red-600 text-sm absolute -bottom-5 left-2'>
+            <span className='text-red-600 absolute -bottom-5 left-2 text-base md:text-xs'>
               {formik.errors.question}
             </span>
           )}

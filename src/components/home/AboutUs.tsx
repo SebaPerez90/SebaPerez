@@ -11,8 +11,8 @@ const AboutUs = () => {
   return (
     <>
       {/* Self-introduce */}
-      <section className='w-full h-[50em] relative col-center gap-32'>
-        <h1 className='title text-lg'>{t('aboutUs.title')}</h1>
+      <section className='w-full h-[70em]  sm:h-[50em] relative col-center gap-32'>
+        <h1 className='title text-lg dark:text-white text-black'>{t('aboutUs.title')}</h1>
         <div className='max-[640px]:col-center row-center items-start gap-20'>
           <div>
             <figure className='w-[15em] h-[15em] rounded-full overflow-hidden'>
@@ -41,7 +41,7 @@ const AboutUs = () => {
             initial={{ y: 150, scale: 0.2, opacity: 0 }}
             whileInView={{ y: 0, scale: 1, opacity: 1 }}
             viewport={{ once: true }}
-            className='w-[25em] paragraph text-black dark:text-ligth-soft'>
+            className='w-[25em] paragraph mt-6 sm:mt-0 text-xl sm:text-base text-black dark:text-ligth-soft'>
             {t('aboutUs.description1')}
             <br></br>
             <br></br>

@@ -9,3 +9,13 @@
         scale: 1;
     }
 }
+
+@keyframes image-filter {
+    0% {
+        filter: grayscale(100%) blur(10px);
+    }
+
+    100% {
+        filter: grayscale(0%) blur(0px);
+    }
+}

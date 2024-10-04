@@ -47,8 +47,6 @@ const Footer = () => {
   const isInView = useInView(btnRef)
   const { t } = useTranslation()
 
-
-  
   const contactData = t('footer.content', { returnObjects: true })
 
   return (
@@ -63,12 +61,18 @@ const Footer = () => {
               </strong>
               .
             </h1>
-            <p className='paragraph mt-4'>{t('footer.description')}</p>
+            <p className='paragraph mt-4 text-lg md:text-base'>
+              {t('footer.description')}
+            </p>
           </div>
           <Button
             ref={btnRef}
             size={'lg'}
-            style={{ animation: isInView ? 'appear-element 300ms ease-out forwards' : '' }}
+            style={{
+              animation: isInView
+                ? 'appear-element 300ms ease-out forwards'
+                : '',
+            }}
             className='opacity-0 w-full py-6 dark:custom-btn2'>
             {t('footer.action')}
           </Button>
@@ -98,23 +102,25 @@ const Footer = () => {
       <div className='col-center bg-white dark:bg-dark-deep dark:text-white text-black gap-10 w-full pt-16'>
         <div className='col-center'>
           <Logo />
-          <p className='font-semibold text-lg'>{t('footer.slogan')}</p>
-          <ul className='row-center gap-20 mt-14'>
-            {(contactData as Array<LocaleData>).map((element, index) => (
-              <li
-                key={index}
-                className='flex items-center gap-1'>
-                {iconDictionary[element.id]}
-                <div className='flex flex-col'>
-                  <span className='font-bold'>{element.title}</span>
-                  <span className='font-medium text-sm'>
-                    {element.description}
-                  </span>
-                </div>
-              </li>
-            ))}
-          </ul>
-          <SocialLinks />
+          <p className='font-semibold text-lg w-[90%] text-center'>{t('footer.slogan')}</p>
+          <div className='mt-8 col-center'>
+            <ul className='flex flex-col items-start gap-10 pl-16 sm:flex sm:items-center sm:flex-row sm:gap-20 sm:pl-0 my-10'>
+              {(contactData as Array<LocaleData>).map((element, index) => (
+                <li
+                  key={index}
+                  className='flex items-center gap-1'>
+                  {iconDictionary[element.id]}
+                  <div className='flex flex-col'>
+                    <span className='font-bold'>{element.title}</span>
+                    <span className='font-medium text-sm'>
+                      {element.description}
+                    </span>
+                  </div>
+                </li>
+              ))}
+            </ul>
+            <SocialLinks />
+          </div>
         </div>
         <hr className='h-[2px] bg-gray-300 w-[70%]' />
         <span className='w-max font-medium text-sm my-2'>

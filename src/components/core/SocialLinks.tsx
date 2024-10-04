@@ -16,7 +16,7 @@ const socialLinks = [
     label: 'Github',
     path: 'https://github.com/SebaPerez90',
     icon: <FiGithub size={15} />,
-    styles: 'bg-[#171515]',
+    styles: 'bg-[#000000]',
   },
   {
     label: 'Twitter',

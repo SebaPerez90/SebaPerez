@@ -14,7 +14,7 @@ const Landing = () => {
       <div className='z-10 col-center gap-0 w-[50em] text-center'>
         <TextGenerateEffect
           words={t('landing.title')}
-          className='font-bold text-6xl [line-height:1.1em] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-t from-purple-900 via-violet-500 to-pink-500 py-3
+          className='font-bold text-5xl min-[500px]:text-6xl min-[500px]:[line-height:1.1em] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-t from-purple-900 via-violet-500 to-pink-500 py-3
             dark:gradient-title-dark
             '
         />
@@ -26,7 +26,6 @@ const Landing = () => {
           }}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
           className='text-lg font-medium dark:text-ligth-soft text-slate-700 w-[70%]'>
           {t('landing.description')}
         </motion.p>

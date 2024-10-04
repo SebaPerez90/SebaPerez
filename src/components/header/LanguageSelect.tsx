@@ -9,6 +9,8 @@ import englishIcon from '@/assets/english-icon.png'
 import spanishIcon from '@/assets/spanish-icon.png'
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import toast from 'react-hot-toast'
+import { IoMdInformationCircle } from 'react-icons/io'
 
 export function LanguageSelect() {
   const { i18n } = useTranslation()
@@ -21,10 +23,23 @@ export function LanguageSelect() {
     localStorage.setItem('lang', currentLang)
   }, [currentLang, i18n])
 
+  const toggleLanguage = (value: string) => {
+    setCurrentLang(value)
+    toast.custom(
+      <p className='py-3 px-5 bg-white shadow-lg dark:bg-dark-soft font-medium text-lg rounded-md flex items-center mt-4 gap-1'>
+        <IoMdInformationCircle
+          size={20}
+          color='#6897fc'
+        />
+        Tema cambiado
+      </p>
+    )
+  }
+
   return (
     <Select
       value={currentLang}
-      onValueChange={(value) => setCurrentLang(value)}>
+      onValueChange={(value) => toggleLanguage(value)}>
       <SelectTrigger className='min-w-max overflow-visible text-purple-500 border border-purple-500 scale-90 dark:border-white dark:text-white font-medium dark:bg-dark-soft'>
         <div className='row-center gap-1'>
           <span className='text-sm'>

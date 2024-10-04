@@ -8,7 +8,7 @@ const Benefits = lazy(() => import('@/components/home/Benefits'))
 
 const Home = () => {
   return (
-    <main className='col-center gap-0 dark:bg-dark-deep'>
+    <main className='col-center gap-0 dark:bg-dark-deep overflow-hidden'>
       <Suspense fallback={<Loader />}>
         <Landing />
         <AboutUs />

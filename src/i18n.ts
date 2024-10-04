@@ -10,6 +10,8 @@ import enContact from '@/locales/en/contact.json'
 import esContact from '@/locales/es/contact.json'
 import enToaster from '@/locales/en/toaster.json'
 import esToaster from '@/locales/es/toaster.json'
+import enFaq from '@/locales/en/faq.json'
+import esFaq from '@/locales/es/faq.json'
 
 // Configurar los recursos de idioma
 const resources = {
@@ -19,6 +21,7 @@ const resources = {
       ...enPricing, // Expande el objeto de pricing
       ...enContact, // Expande el objeto de pricing
       ...enToaster, 
+      ...enFaq, 
     },
   },
   es: {
@@ -27,6 +30,7 @@ const resources = {
       ...esPricing, // Expande el objeto de pricing
       ...esContact, // Expande el objeto de pricing
       ...esToaster,
+      ...esFaq,
     },
   },
 }

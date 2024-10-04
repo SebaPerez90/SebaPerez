@@ -14,9 +14,9 @@ const FrecuentlyAskQuestion = () => {
         <header className='relative w-full'>
           <Link
             to={Routes.home}
-            className='absolute left-8 top-0 max-[500px]:-top-7'>
+            className='fixed left-8 top-4 z-50'>
             <Button className='tooltip-container'>
-              <span className='tooltip'>Volver</span>
+              <span className='tooltip bg-black dark:bg-[#dddddd] dark:text-black text-white'>Volver</span>
               <IoMdArrowRoundBack />
             </Button>
           </Link>

@@ -43,7 +43,7 @@ const OurServices = () => {
                   {iconDictionary[item.id]}
                 </span>
               </div>
-              <p className='paragraph text-sm'>{item.description}</p>
+              <p className='paragraph text-base md:text-sm'>{item.description}</p>
               <Link
                 to={Routes.plans}
                 aria-label='link to plans section'

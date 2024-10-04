@@ -39,8 +39,8 @@ const Benefits = () => {
               />
             </figure>
             <div>
-              <h2 className='title text-lg dark:text-white'>{data.title}</h2>
-              <p className='paragraph text-sm mt-2'>{data.description}</p>
+              <h2 className='title text-2xl md:text-lg dark:text-white'>{data.title}</h2>
+              <p className='paragraph text-base md:text-sm mt-2'>{data.description}</p>
             </div>
           </motion.div>
         ))}

@@ -1,0 +1,10 @@
+{
+  "faq": {
+    "title": "¿No encontraste tu pregunta? ¡Pregúntanos directamente!",
+    "form": {
+      "emailLabel": "Correo electrónico",
+      "questionLabel": "Tu pregunta",
+      "questionPlaceholder": "Escribe tu mensaje aqui..."
+    }
+  }
+}
