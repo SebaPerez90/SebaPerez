@@ -4,70 +4,19 @@ import { Button } from '../ui/button'
 import { Textarea } from '../ui/textarea'
 import { useTranslation } from 'react-i18next'
 import { LocaleProjectRequestForm } from '@/types'
-import { useFormik } from 'formik'
 import { ContactSchema } from '../schemas/contact.schema'
-import toast from 'react-hot-toast'
-import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { Routes } from '@/routes/paths'
-const formspreeURL: string = import.meta.env.VITE_FORMSPREE_URL
+import { useDynamicFormik } from '@/hooks/useFormik'
 
 const ContactMeForm = () => {
-  //usamos este tipo para poder hacer un type assertion y evitar problemas de tipado con los types de "initialValues" y los strings del mapeo de los inputs
-  type FormFieldName = keyof typeof formik.values
-  const navigate = useNavigate()
-  const [loading, setLoading] = useState(false)
   const { t } = useTranslation()
+  const { formik, loading } = useDynamicFormik(
+    ['topic', 'name', 'email', 'message'],
+    ContactSchema
+  )
+  type FormFieldName = keyof typeof formik.values
 
   const projectRequestForm = t('projectRequestForm.inputs', {
     returnObjects: true,
-  })
-
-  const formik = useFormik({
-    initialValues: {
-      topic: '',
-      name: '',
-      email: '',
-      message: '',
-    },
-    validationSchema: ContactSchema,
-    onSubmit: async (values) => {
-      const sendForm = async () => {
-        setLoading(true)
-
-        await new Promise((resolve) => setTimeout(resolve, 3000))
-
-        const response = await fetch(`${formspreeURL}`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(values),
-        })
-
-        if (!response.ok) throw new Error('Hubo un error al enviar el mensaje')
-        return response.json()
-      }
-
-      toast
-        .promise(sendForm(), {
-          loading: t('contactMe.toaster.loading'),
-          success: t('contactMe.toaster.success'),
-          error: t('contactMe.toaster.error'),
-        }, {
-          style: { fontWeight: 600 },
-        })
-        .then(() => {
-          formik.resetForm()
-          setLoading(false)
-          setTimeout(() => {
-            navigate(Routes.home)
-          }, 3000)
-        })
-        .catch((error) => {
-          console.error(error)
-        })
-    },
   })
 
   return (
