@@ -38,7 +38,7 @@ const Princing = () => {
         </motion.p>
       </header>
       <section>
-        <div className='row-center flex-wrap gap-10 mx-8 z-10'>
+        <div className='row-center flex-wrap gap-16 mx-8 z-10'>
           {(pricingContent as Array<LocalePricingData>).map((item) => (
             <PrincigCard
               key={item.id}

@@ -5,6 +5,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion'
 import { LocaleFaqData } from '@/types'
+import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 
 const FaqAccordion = () => {
@@ -15,9 +16,12 @@ const FaqAccordion = () => {
     <Accordion
       type='single'
       collapsible
-      className='w-full px-10 flex gap-14 flex-wrap items-start justify-between max-[560px]:justify-center'>
+      className='w-full px-10 flex gap-14 overflow-hidden flex-wrap items-start justify-between max-[560px]:justify-center'>
       {Object.entries(paymentsContent).map(([section, items]) => (
-        <div
+        <motion.div
+          initial={{ x: -200, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.5 }}
           key={section}
           className='w-[20em] flex-grow max-w-[25em] mt-10'>
           <h2 className='title text-purple-500'>{section}</h2>
@@ -34,7 +38,7 @@ const FaqAccordion = () => {
               </AccordionContent>
             </AccordionItem>
           ))}
-        </div>
+        </motion.div>
       ))}
     </Accordion>
   )

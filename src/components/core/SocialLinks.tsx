@@ -47,7 +47,7 @@ const SocialLinks = () => {
         className='row-center gap-1'>
         {socialLinks.map((link, index) => (
           <motion.li
-            transition={{ delay: 0.5 }}
+            transition={{ delay: 2 }}
             initial={{ opacity: 0, y: 100 }}
             key={index}
             className='group'>
