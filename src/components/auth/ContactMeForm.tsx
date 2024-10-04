@@ -51,9 +51,11 @@ const ContactMeForm = () => {
 
       toast
         .promise(sendForm(), {
-          loading: 'Enviando...',
-          success: 'Mensaje enviado!',
-          error: 'Ocurrió un error',
+          loading: t('contactMe.toaster.loading'),
+          success: t('contactMe.toaster.success'),
+          error: t('contactMe.toaster.error'),
+        }, {
+          style: { fontWeight: 600 },
         })
         .then(() => {
           formik.resetForm()

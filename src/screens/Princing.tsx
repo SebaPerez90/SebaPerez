@@ -31,12 +31,12 @@ const Princing = () => {
             />
           ))}
         </div>
-        <div className='flex justify-center items-center gap-4 w-[70%] mx-auto mt-16 p-5 bg-white rounded-lg shadow-lg'>
+        <div className='flex justify-center items-center gap-4 w-[70%] mx-auto mt-16 p-5 bg-white dark:bg-dark-neutral rounded-lg shadow-lg'>
           <IoIosInformationCircle
             size={80}
             className='text-blue-600'
           />
-          <p className='text-gray-700 font-medium'>
+          <p className='text-gray-700 dark:text-white font-medium'>
             {t('home.description3')}
             <br />
             {t('home.description4')}

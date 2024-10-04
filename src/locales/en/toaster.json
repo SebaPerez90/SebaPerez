@@ -1,0 +1,9 @@
+{
+  "contactMe": {
+    "toaster": {
+      "loading": "Sending...",
+      "success": "Message sent!",
+      "error": "An error occurred"
+    }
+  }
+}
