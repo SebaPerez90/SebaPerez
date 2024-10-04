@@ -17,7 +17,7 @@ const PrincigCard = ({
   price,
 }: PrincigCardProps) => {
   return (
-    <Card className='bg-white dark:bg-dark-neutral flex flex-col  flex-grow-[0.3] sm:flex-grow-0 h-[36em] w-[20em] justify-between'>
+    <Card className='animate-[appear-element_300ms_ease-out_forwards] bg-white dark:bg-dark-neutral flex flex-col  flex-grow-[0.3] sm:flex-grow-0 h-[36em] w-[20em] justify-between'>
       <div className='col-center items-start'>
         <div className='flex flex-col gap-3'>
           <h2 className='title text-purple-500'>{title}</h2>
@@ -45,14 +45,20 @@ const PrincigCard = ({
                   <title>check svg icon</title>
                 </svg>
               </span>
-              <span className='font-medium text-sm text-black dark:text-white'>{item}</span>
+              <span className='font-medium text-sm text-black dark:text-white'>
+                {item}
+              </span>
             </li>
           ))}
         </ul>
       </div>
       <div className='col-center gap-0 relative w-full mb-3'>
         <Button className='py-5 w-full dark:custom-btn2'>Contáctame</Button>
-        <Link to={Routes.faq} className='text-sm absolute hover:duration-200 duration-200 hover:text-purple-500 underline hover:no-underline text-purple-600 font-semibold -bottom-6'>¿Tienes dudas?</Link>
+        <Link
+          to={Routes.faq}
+          className='text-sm absolute hover:duration-200 duration-200 hover:text-purple-500 underline hover:no-underline text-purple-600 dark:text-purple-400 font-semibold -bottom-6'>
+          ¿Tienes dudas?
+        </Link>
       </div>
     </Card>
   )

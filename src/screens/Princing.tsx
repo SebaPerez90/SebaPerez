@@ -18,6 +18,7 @@ const Princing = () => {
           }}
           initial={{ opacity: 0, scale: 0.3, y: 50 }}
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          viewport={{ once: true }}
           className='title text-5xl'>
           {t('home.title')}
         </motion.h1>
@@ -28,6 +29,7 @@ const Princing = () => {
           }}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
           className='paragraph text-xl'>
           {t('home.description1')}
           <br></br>
