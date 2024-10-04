@@ -8,14 +8,15 @@ import { useFormik } from 'formik'
 import { ContactSchema } from '../schemas/contact.schema'
 import toast from 'react-hot-toast'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { Routes } from '@/routes/paths'
 const formspreeURL: string = import.meta.env.VITE_FORMSPREE_URL
 
 const ContactMeForm = () => {
   //usamos este tipo para poder hacer un type assertion y evitar problemas de tipado con los types de "initialValues" y los strings del mapeo de los inputs
   type FormFieldName = keyof typeof formik.values
-
+  const navigate = useNavigate()
   const [loading, setLoading] = useState(false)
-
   const { t } = useTranslation()
 
   const projectRequestForm = t('projectRequestForm.inputs', {
@@ -31,35 +32,39 @@ const ContactMeForm = () => {
     },
     validationSchema: ContactSchema,
     onSubmit: async (values) => {
-      setLoading(true)
-      await new Promise((resolve) => setTimeout(resolve, 3000))
+      const sendForm = async () => {
+        setLoading(true)
 
-      try {
-        // const response = await fetch(`${formspreeURL}`, {
-        //   method: 'POST',
-        //   headers: {
-        //     'Content-Type': 'application/json',
-        //   },
-        //   body: JSON.stringify(values),
-        // })
+        await new Promise((resolve) => setTimeout(resolve, 3000))
 
-        // if (response.ok) {
-        toast.success('Mensaje enviado!', {
-          duration: 3000,
-          style: { fontWeight: 500 },
+        const response = await fetch(`${formspreeURL}`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(values),
         })
-        formik.resetForm()
-        // }
-      } catch (error) {
-        if (error) {
-          toast.error('Hubo un error al enviar el mensaje!', {
-            duration: 3000,
-            style: { fontWeight: 500 },
-          })
-        }
-      } finally {
-        setLoading(false)
+
+        if (!response.ok) throw new Error('Hubo un error al enviar el mensaje')
+        return response.json()
       }
+
+      toast
+        .promise(sendForm(), {
+          loading: 'Enviando...',
+          success: 'Mensaje enviado!',
+          error: 'Ocurrió un error',
+        })
+        .then(() => {
+          formik.resetForm()
+          setLoading(false)
+          setTimeout(() => {
+            navigate(Routes.home)
+          }, 3000)
+        })
+        .catch((error) => {
+          console.error(error)
+        })
     },
   })
 
