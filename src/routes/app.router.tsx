@@ -5,7 +5,7 @@ export const AppRoutes = [
   {
     path: Routes.home,
     async lazy() {
-      const module = await import('@/screens/Home')
+      const module = await import('@/screens/Landing')
       return { Component: module.default }
     },
   },
