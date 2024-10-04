@@ -1,4 +1,4 @@
-import NavLinks from './NavLinks'
+import NavegationLinks from './NavegationLinks'
 import { useEffect, useRef } from 'react'
 import ThemeButton from './ThemeButton'
 import { LanguageSelect } from './LanguageSelect'
@@ -27,7 +27,7 @@ const Header = () => {
       ref={headerRef}
       className='flex items-center fixed w-full justify-between px-7 py-4 backdrop-blur-[8px] bg-white/50 z-50 dark:bg-dark-deep'>
       <Logo />
-      <NavLinks />
+      <NavegationLinks />
       <div className='row-center gap-2'>
         <LanguageSelect />
         <ThemeButton />

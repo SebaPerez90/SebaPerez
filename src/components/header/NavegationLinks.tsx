@@ -6,7 +6,7 @@ import { Routes } from '@/routes/paths'
 import { useTranslation } from 'react-i18next'
 import { LocaleNavLinks } from '@/types'
 
-const NavLinks = () => {
+const NavegationLinks = () => {
   const { t } = useTranslation()
   const [scope, animate] = useAnimate()
   const isInView = useInView(scope)
@@ -51,4 +51,4 @@ const NavLinks = () => {
   )
 }
 
-export default NavLinks
+export default NavegationLinks
