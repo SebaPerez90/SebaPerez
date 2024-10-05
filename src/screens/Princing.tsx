@@ -9,7 +9,9 @@ const Princing = () => {
   const pricingContent = t('pricing', { returnObjects: true })
 
   return (
-    <main className=' col-center min-h-dvh max-h-max gap-24 pb-28 pt-36 bg-secondary'>
+    <main
+      id='pricing-section'
+      className=' col-center min-h-dvh max-h-max gap-24 pb-28 pt-36 bg-secondary'>
       <header className='col-center [width:clamp(300px,80%,700px)] xl:w-[1300px] pl-8 sm:px-0'>
         <motion.h1
           transition={{

@@ -9,7 +9,7 @@ const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className='relative sm:hidden'>
+    <>
       <HamburguerButton
         isOpen={isOpen}
         setIsOpen={setIsOpen}
@@ -17,16 +17,18 @@ const MobileMenu = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
+            id='modal'
             transition={{
               type: 'spring',
               bounce: 0.5,
               staggerChildren: 0.4,
             }}
-            initial={{ x: 100, opacity: 1 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            exit={{ opacity: 0, width: 0 }}
-            className='shadow-xl absolute z-50 w-[21em] h-[25em] -right-20 -top-10 bg-white dark:bg-dark-soft rounded-[0_0_0_0.5em] overflow-hidden'>
-            <div className='col-center gap-10 h-full z-[60] '>
+            className='bg-black/10 backdrop-blur-lg w-full fixed left-0 top-0 h-screen flex justify-end items-start shadow-xl'>
+            <motion.div
+              initial={{ x: 100, opacity: 1 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              exit={{ opacity: 0, width: 0 }}
+              className='col-center gap-14 w-[20em] h-[28em] bg-white dark:bg-dark-soft rounded-[0_0_0_10px]'>
               <NavegationLinks
                 disappear={'mt-8'}
                 flexDirection={'col-center'}
@@ -35,11 +37,11 @@ const MobileMenu = () => {
                 <LanguageSelect />
                 <ThemeButton />
               </div>
-            </div>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </>
   )
 }
 

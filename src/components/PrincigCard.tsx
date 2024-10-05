@@ -20,11 +20,11 @@ const PrincigCard = ({
   const { t } = useTranslation()
 
   return (
-    <Card className='animate-[appear-element_300ms_ease-out_forwards] bg-white dark:bg-dark-neutral flex flex-col  flex-grow-[0.3] sm:flex-grow-0 h-[36em] w-[20em] justify-between'>
+    <Card className='animate-[appear-element_300ms_ease-out_forwards] bg-white dark:bg-dark-neutral flex flex-col  flex-grow-[0.3] sm:flex-grow-0 h-[38em] w-[20em] justify-between'>
       <div className='col-center items-start'>
         <div className='flex flex-col gap-3'>
-          <h2 className='title text-purple-500'>{title}</h2>
-          <p className='paragraph'>{description}</p>
+          <h2 className='text-3xl text-center  title text-purple-500'>{title}</h2>
+          <p className='paragraph text-lg sm:text-base'>{description}</p>
           <span className='title text-4xl font-bold w-full text-center'>
             ${price}
           </span>
@@ -48,7 +48,7 @@ const PrincigCard = ({
                   <title>check svg icon</title>
                 </svg>
               </span>
-              <span className='font-medium text-sm text-black dark:text-white'>
+              <span className='font-medium text-base sm:text-sm text-black dark:text-white'>
                 {item}
               </span>
             </li>
@@ -59,13 +59,13 @@ const PrincigCard = ({
         <Link
           to={Routes.contact}
           className='w-full'>
-          <Button className='py-5 w-full dark:custom-btn2'>
+          <Button className='py-7 sm:py-6 text-lg sm:text-base w-full dark:custom-btn2'>
             {t('home.description5')}
           </Button>
         </Link>
         <Link
           to={Routes.faq}
-          className='text-sm absolute hover:duration-200 duration-200 hover:text-purple-500 underline hover:no-underline text-purple-600 dark:text-purple-400 font-semibold -bottom-6'>
+          className='text-base sm:text-sm absolute hover:duration-200 duration-200 hover:text-purple-500 underline hover:no-underline text-purple-600 dark:text-purple-400 font-semibold -bottom-6'>
           {t('home.description6')}
         </Link>
       </div>
