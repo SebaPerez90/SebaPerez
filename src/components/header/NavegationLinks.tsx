@@ -6,7 +6,15 @@ import { Routes } from '@/routes/paths'
 import { useTranslation } from 'react-i18next'
 import { LocaleNavLinks } from '@/types'
 
-const NavegationLinks = () => {
+interface NavegationLinksProps {
+  disappear: string
+  flexDirection: string
+}
+
+const NavegationLinks = ({
+  disappear,
+  flexDirection,
+}: NavegationLinksProps) => {
   const { t } = useTranslation()
   const [scope, animate] = useAnimate()
   const isInView = useInView(scope)
@@ -29,10 +37,12 @@ const NavegationLinks = () => {
     3: Routes.faq,
   }
   return (
-    <nav className='hidden sm:block'>
+    // We use this prop when we want to hide the desktop menu
+    <nav className={`${disappear}`}>
       <ul
         ref={scope}
-        className='row-center gap-10'>
+        // we use this prop when we want to hide change the flex direction of the links
+        className={`${flexDirection} gap-10`}>
         {(navLinks as Array<LocaleNavLinks>).map((link) => (
           <motion.li
             initial={{ opacity: 0, x: -100 }}
@@ -41,7 +51,7 @@ const NavegationLinks = () => {
             className='opacity-0 font-medium text-black/80 dark:text-white hover:text-purple-400 hover:duration-200 duration-200 relative before:-bottom-1 before:absolute before:left-0 before:w-0 before:h-1 before:bg-purple-400 hover:before:w-full hover:before:duration-200 before:duration-200 before:rounded-full'>
             <Link
               to={pathsDictionary[link.id]}
-              className='text-sm'>
+              className='text-lg sm:text-sm'>
               {link.label}
             </Link>
           </motion.li>
