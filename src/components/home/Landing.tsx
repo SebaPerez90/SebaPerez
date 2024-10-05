@@ -11,7 +11,7 @@ const Landing = () => {
 
   return (
     <section className='dark:bg-dark-deep py-28 w-full h-dvh relative flex justify-center bg-white'>
-      <div className='z-10 col-center gap-0 w-[50em] text-center'>
+      <div className='z-10 col-center gap-0 w-[50em] text-center px-6'>
         <TextGenerateEffect
           words={t('landing.title')}
           className='font-bold text-5xl min-[500px]:text-6xl min-[500px]:[line-height:1.1em] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-b from-purple-800 via-violet-500 to-pink-600
