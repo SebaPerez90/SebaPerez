@@ -14,7 +14,7 @@ const Landing = () => {
       <div className='z-10 col-center gap-0 w-[50em] text-center px-4'>
         <TextGenerateEffect
           words={t('landing.title')}
-          className='font-bold text-5xl sm:text-6xl [line-height:1.2em] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-b from-purple-800 via-violet-500 to-pink-600
+          className='font-bold text-5xl sm:text-6xl md:[line-height:1.15em] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-b from-purple-800 via-violet-500 to-pink-600
             dark:gradient-title-dark [font-family:"Poppins",sans-serif]
             '
         />

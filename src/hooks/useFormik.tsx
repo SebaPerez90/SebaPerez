@@ -61,7 +61,7 @@ export const useDynamicFormik = (fields: string[], schema: AnySchema) => {
         })
         .catch((error) => {
           console.error(error)
-          setLoading(false) // Asegura que se apague el estado de loading si hay un error
+          setLoading(false)
         })
     },
   })
