@@ -8,7 +8,7 @@ const Benefits = lazy(() => import('@/components/home/Benefits'))
 
 const Landing = () => {
   return (
-    <main className='col-center gap-0 dark:bg-dark-deep overflow-hidden'>
+    <main id='main-section' className='col-center gap-0 dark:bg-dark-deep overflow-hidden'>
       <Suspense fallback={<Loader />}>
         <HeroSection />
         <AboutUs />

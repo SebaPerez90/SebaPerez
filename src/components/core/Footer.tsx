@@ -52,7 +52,9 @@ const Footer = () => {
   const contactData = t('footer.content', { returnObjects: true })
 
   return (
-    <motion.footer className='bg-ligth-soft dark:bg-dark-neutral col-center gap-28 pt-32'>
+    <motion.footer
+      id='footer-section'
+      className='bg-ligth-soft dark:bg-dark-neutral col-center gap-28 pt-32'>
       <div className='flex-col-reverse sm:flex-row flex items-center justify-center h-[50em] sm:h-[20em] gap-0 sm:gap-16'>
         <div className='w-[25em] sm:w-[22em] col-center h-full justify-center sm:justify-between items-starat'>
           <div>
@@ -67,7 +69,9 @@ const Footer = () => {
               {t('footer.description')}
             </p>
           </div>
-          <Link to={Routes.contact} className='w-full'>
+          <Link
+            to={Routes.contact}
+            className='w-full'>
             <Button
               ref={btnRef}
               style={{
