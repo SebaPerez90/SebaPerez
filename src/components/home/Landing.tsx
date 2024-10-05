@@ -11,10 +11,10 @@ const Landing = () => {
 
   return (
     <section className='dark:bg-dark-deep py-28 w-full h-dvh relative flex justify-center bg-white'>
-      <div className='z-10 col-center gap-0 w-[50em] text-center px-6'>
+      <div className='z-10 col-center gap-0 w-[50em] text-center px-4'>
         <TextGenerateEffect
           words={t('landing.title')}
-          className='font-bold text-5xl min-[500px]:text-6xl min-[500px]:[line-height:1.1em] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-b from-purple-800 via-violet-500 to-pink-600
+          className='font-bold text-5xl sm:text-6xl [line-height:1.2em] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-b from-purple-800 via-violet-500 to-pink-600
             dark:gradient-title-dark [font-family:"Poppins",sans-serif]
             '
         />
@@ -26,7 +26,7 @@ const Landing = () => {
           }}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          className='text-lg font-medium dark:text-ligth-soft text-slate-700 w-[70%]'>
+          className='text-xl md:text-lg font-medium mt-3 dark:text-ligth-soft text-slate-700 w-[80%] sm:w-[70%]'>
           {t('landing.description')}
         </motion.p>
         <motion.ul
