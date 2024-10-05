@@ -26,6 +26,7 @@ const Landing = () => {
           }}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
           className='text-xl md:text-lg font-medium mt-3 dark:text-ligth-soft text-slate-700 w-[80%] sm:w-[70%]'>
           {t('landing.description')}
         </motion.p>

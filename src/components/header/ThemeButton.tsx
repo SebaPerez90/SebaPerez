@@ -26,7 +26,7 @@ const ThemeButton = () => {
   }
 
   return (
-    <div className='container'>
+    <div className='container row-center'>
       <label
         className='toggle w-[30px] h-[30px]'
         htmlFor='switch'>

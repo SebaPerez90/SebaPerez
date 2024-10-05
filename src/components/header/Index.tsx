@@ -3,8 +3,7 @@ import { useEffect, useRef } from 'react'
 import ThemeButton from './ThemeButton'
 import { LanguageSelect } from './LanguageSelect'
 import Logo from '../core/Logo'
-
-
+import MobileMenu from './MobileMenu'
 
 const Header = () => {
   const headerRef = useRef<HTMLElement | null>(null)
@@ -27,11 +26,13 @@ const Header = () => {
       ref={headerRef}
       className='flex items-center fixed w-full justify-between px-7 py-4 backdrop-blur-[8px] bg-white/50 z-50 dark:bg-dark-deep'>
       <Logo />
-      <NavegationLinks />
-      <div className='row-center gap-2'>
+      <NavegationLinks disappear={'hidden sm:block'} flexDirection={'row-center'}/>
+      <div className='hidden min-[640px]:row-center  gap-2'>
         <LanguageSelect />
         <ThemeButton />
       </div>
+      {/* mobile menu is available when viewport width is less than 640 px */}
+      <MobileMenu />
     </header>
   )
 }
