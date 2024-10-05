@@ -24,7 +24,9 @@ const QuestionBox = () => {
         <Label
           htmlFor='email'
           className='w-full relative'>
-          <span className='font-semibold text-lg'>{t('faq.form.emailLabel')}</span>
+          <span className='font-semibold text-lg'>
+            {t('faq.form.emailLabel')}
+          </span>
           <Input
             id='email'
             autoComplete='on'
@@ -45,7 +47,9 @@ const QuestionBox = () => {
         <Label
           htmlFor='question'
           className='w-full relative'>
-          <span className='font-semibold text-lg'>{t('faq.form.questionLabel')}</span>
+          <span className='font-semibold text-lg'>
+            {t('faq.form.questionLabel')}
+          </span>
           <Textarea
             id='question'
             name='question'
