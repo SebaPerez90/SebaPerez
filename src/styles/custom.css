@@ -50,15 +50,15 @@
 .loader {
   border: 4px solid rgba(0, 0, 0, .1);
   border-left-color: transparent;
-  width: 20px;
-  height: 20px;
+  width: 19px;
+  height: 19px;
 }
 
 .loader {
-  border: 4px solid rgb(0, 0, 0);
+  border: 4px solid #9e85ff;
   border-left-color: transparent;
-  width: 20px;
-  height: 20px;
+  width: 19px;
+  height: 19px;
   animation: spin89345 1s linear infinite;
 }
 

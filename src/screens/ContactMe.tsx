@@ -32,7 +32,7 @@ const ContactMe = () => {
         <div className='-z-10 w-full text-center sm:text-start sm:w-[40em] col-center gap-8 items-start p-6'>
           <div>
             <TextGenerateEffect
-              duration={1.4}
+              duration={0.5}
               words={t('projectRequestForm.title')}
               className='text-5xl gradient-title pb-2'
             />
