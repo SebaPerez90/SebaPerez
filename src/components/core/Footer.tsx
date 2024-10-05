@@ -12,6 +12,8 @@ import { FaPhoneAlt } from 'react-icons/fa'
 import { LocaleData } from '@/types'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
+import { Routes } from '@/routes/paths'
+import { Link } from 'react-router-dom'
 
 const images = [
   '/footer.webp',
@@ -65,17 +67,18 @@ const Footer = () => {
               {t('footer.description')}
             </p>
           </div>
-          <Button
-            ref={btnRef}
-            size={'lg'}
-            style={{
-              animation: isInView
-                ? 'appear-element 300ms ease-out forwards'
-                : '',
-            }}
-            className='opacity-0 w-full py-6 dark:custom-btn2'>
-            {t('footer.action')}
-          </Button>
+          <Link to={Routes.contact} className='w-full'>
+            <Button
+              ref={btnRef}
+              style={{
+                animation: isInView
+                  ? 'appear-element 300ms ease-out forwards'
+                  : '',
+              }}
+              className='opacity-0 w-full py-6 dark:custom-btn2'>
+              {t('footer.action')}
+            </Button>
+          </Link>
         </div>
         <Swiper
           modules={[Autoplay, EffectFade]}
@@ -102,7 +105,9 @@ const Footer = () => {
       <div className='col-center bg-white dark:bg-dark-deep dark:text-white text-black gap-10 w-full pt-16'>
         <div className='col-center'>
           <Logo />
-          <p className='font-semibold text-lg w-[90%] text-center'>{t('footer.slogan')}</p>
+          <p className='font-semibold text-lg w-[90%] text-center'>
+            {t('footer.slogan')}
+          </p>
           <div className='mt-8 col-center'>
             <ul className='flex flex-col items-start gap-10 pl-16 sm:flex sm:items-center sm:flex-row sm:gap-20 sm:pl-0 my-10'>
               {(contactData as Array<LocaleData>).map((element, index) => (
