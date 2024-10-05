@@ -29,7 +29,7 @@ const NavegationLinks = () => {
     3: Routes.faq,
   }
   return (
-    <nav className='hidden md:block'>
+    <nav className='hidden sm:block'>
       <ul
         ref={scope}
         className='row-center gap-10'>
