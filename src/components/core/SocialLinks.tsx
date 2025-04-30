@@ -1,5 +1,3 @@
-import { stagger, useAnimate, useInView, motion } from 'framer-motion'
-import { useEffect } from 'react'
 import { FaLinkedinIn } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 import { FiGithub } from 'react-icons/fi'
@@ -27,28 +25,11 @@ const socialLinks = [
 ]
 
 const SocialLinks = () => {
-  const [scope, animate] = useAnimate()
-  const isInView = useInView(scope)
-
-  useEffect(() => {
-    if (isInView) {
-      animate(
-        'li',
-        { opacity: 1, y: 0 },
-        { delay: stagger(0.1), duration: 0.4 }
-      )
-    }
-  }, [animate, isInView, scope])
-
   return (
     <nav className='mt-5'>
-      <ul
-        ref={scope}
-        className='row-center gap-1'>
+      <ul className='row-center gap-1'>
         {socialLinks.map((link, index) => (
-          <motion.li
-            transition={{ delay: 2 }}
-            initial={{ opacity: 0, y: 100 }}
+          <li
             key={index}
             className='group'>
             <a
@@ -66,7 +47,7 @@ const SocialLinks = () => {
                 <HiOutlineExternalLink size={10} />
               </span>
             </a>
-          </motion.li>
+          </li>
         ))}
       </ul>
     </nav>

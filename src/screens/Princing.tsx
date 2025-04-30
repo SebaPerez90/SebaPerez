@@ -1,4 +1,4 @@
-import PrincigCard from '@/components/PrincigCard'
+import PrincigCard from '@/components/draft/PrincigCard'
 import { IoIosInformationCircle } from 'react-icons/io'
 import { useTranslation } from 'react-i18next'
 import { LocalePricingData } from '@/types'

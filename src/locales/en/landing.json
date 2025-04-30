@@ -20,72 +20,71 @@
   },
 
   "landing": {
-    "title": "Boost your business with digital solutions.",
+    "title": "Boost your product with digital solutions.",
     "description": "Increase your digital presence and optimize your business with websites and web applications, functional and tailored to your needs.",
     "action": "Book today",
     "benefits": ["Affordable prices", "24/7 Support", "100% Customized"]
   },
 
-  "aboutUs": {
+  "aboutMe": {
     "title": "Who am I?",
     "description1": "Hi! I'm Seba, a software developer, creating digital solutions tailored to the needs of each business. My goal is to help you improve your online presence and attract more clients, ensuring that your business is optimized to grow in the digital world.",
     "description2": "With my experience, you will not only enhance the appearance and functionality of your website or web application, but also better organize your business with tools that allow you to manage all your information efficiently and hassle-free."
   },
-
   "steps": {
-    "title": "How will we work?",
+    "title": "How we work",
     "content": [
       {
         "id": "01",
-        "title": "Understanding your needs",
-        "description": "We listen to your ideas and goals to understand how we can help you."
+        "title": "Getting to know you",
+        "description": "I listen to your needs—whether it’s an online store, a website, or freelance help. Together, we define the main goal of your project."
       },
       {
         "id": "02",
-        "title": "Design creation",
-        "description": "We will create a design focused on usability and aesthetics, tailored to your expectations and goals."
+        "title": "Tailored design",
+        "description": "I create a visual system with the right colors, fonts, and images for your brand. You’ll also get a clickable mockup in Figma to preview the final result."
       },
       {
         "id": "03",
-        "title": "Project development",
-        "description": "We build your product efficiently, paying attention to every detail to ensure quality."
+        "title": "Let’s build it",
+        "description": "Once the design is approved, I start developing your site or app. We agree on realistic deadlines and I keep you updated throughout the process."
       },
       {
         "id": "04",
-        "title": "Launch",
-        "description": "We present your product to the world and ensure everything works perfectly from the start."
+        "title": "Going live",
+        "description": "Your project is launched and everything is set up so you can start using it without any hassle."
       },
       {
         "id": "05",
-        "title": "Continuous support",
-        "description": "We provide ongoing support and make improvements so you’re always one step ahead."
+        "title": "Post-launch support",
+        "description": "After launch, I’m still around to help with any questions, tweaks, or future improvements."
       }
     ]
   },
 
-  "ourServices": {
+  "services": {
     "title": "My Services",
-    "action": "View plans",
     "content": [
       {
         "id": 1,
-        "title": "Custom websites",
-        "description": "Create a professional online presence that will attract more clients and help your business grow."
+        "title": "Online Stores",
+        "description": "I’ll build your online store so you can start selling on the Internet. Simple, functional design tailored to your business. Manage your products, payments, and shipping easily—without relying on anyone.",
+        "CTA": "I want my store!",
+        "img": "/public/service-3.webp"
       },
       {
         "id": 2,
-        "title": "Attractive visual designs",
-        "description": "Modern and eye-catching designs that capture the attention of your visitors and turn them into customers."
+        "title": "Websites",
+        "description": "I’ll design your website so you can showcase what you do or sell in a clear and professional way. Ideal if you offer products, services, or just want a solid online presence—without the hassle.",
+        "CTA": "I want my site!",
+        "img": "/public/service-2.webp"
       },
       {
         "id": 3,
-        "title": "Continuous assistance and support",
-        "description": "We support you every step of the way, resolving issues to ensure your site or application runs smoothly."
-      },
-      {
-        "id": 4,
-        "title": "Responsive websites",
-        "description": "Your website will look perfect on any device: mobile, tablet, or desktop, ensuring it's always accessible."
+        "title": "Freelance Developer",
+        "description": "If you're a company or team that needs an extra hand, I can jump in as a freelance developer. I work per project, independently, with responsibility and clear communication.",
+        "CTA": "Let's work together!",
+        "img": "/public/service-1.webp"
       }
     ]
   },

@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 import { IoMdArrowRoundBack } from 'react-icons/io'
 import { Routes } from '@/routes/paths'
 import Loader from '@/components/core/Loader'
-import FaqAccordion from '@/components/FaqAcordion'
-import QuestionBox from '@/components/QuestionBox'
+import FaqAccordion from '@/components/draft/FaqAcordion'
+import QuestionBox from '@/components/draft/QuestionBox'
 
 const FrecuentlyAskQuestion = () => {
   return (
@@ -16,7 +16,9 @@ const FrecuentlyAskQuestion = () => {
             to={Routes.home}
             className='fixed left-8 top-4 z-50'>
             <Button className='tooltip-container'>
-              <span className='tooltip bg-black dark:bg-[#dddddd] dark:text-black text-white'>Volver</span>
+              <span className='tooltip bg-black dark:bg-[#dddddd] dark:text-black text-white'>
+                Volver
+              </span>
               <IoMdArrowRoundBack />
             </Button>
           </Link>
