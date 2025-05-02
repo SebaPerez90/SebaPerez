@@ -8,6 +8,8 @@ import { LocaleformInputs } from '@/types'
 import { FormikProvider } from 'formik'
 import { useDynamicFormik } from '@/hooks/useFormik'
 import { ContactSchema } from '@/schemas/contact.schema'
+import { useContext } from 'react'
+import { Context } from '@/App'
 
 const ContactMeForm = () => {
   const { t } = useTranslation()
@@ -15,6 +17,8 @@ const ContactMeForm = () => {
     ['topic', 'name', 'message'],
     ContactSchema(t)
   )
+
+  const { setSubject } = useContext(Context)
 
   type FormFieldName = keyof typeof formik.values
 
@@ -41,7 +45,7 @@ const ContactMeForm = () => {
             helpText={item.helpText}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
-            value={formik.values[item.name as FormFieldName]}
+            formikValue={formik.values[item.name as FormFieldName]}
           />
         ))}
 
@@ -59,7 +63,10 @@ const ContactMeForm = () => {
             type='button'
             size={'lg'}
             variant={'outline'}
-            onClick={() => formik.resetForm()}
+            onClick={() => {
+              setSubject('')
+              formik.resetForm()
+            }}
             className=''>
             {t('formInputs.CTA.cancel')}
           </Button>

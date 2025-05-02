@@ -7,6 +7,7 @@ export interface ServiceCardProps {
   title: string
   description: string
   CTA: string
+  setsubject: (subject: string) => void
 }
 
 const ServiceCard = ({
@@ -15,6 +16,7 @@ const ServiceCard = ({
   title,
   description,
   CTA,
+  setsubject,
 }: ServiceCardProps) => {
   return (
     <div className='flex flex-col gap-6 w-[22em] mx-auto'>
@@ -39,7 +41,8 @@ const ServiceCard = ({
       <Button
         size={'custom'}
         variant={'primary'}
-        className='mx-auto'>
+        className='mx-auto'
+        onClick={() => setsubject(CTA)}>
         <a href='#contact-me-form'>{CTA}</a>
       </Button>
     </div>

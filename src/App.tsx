@@ -1,25 +1,37 @@
 import { Toaster } from 'react-hot-toast'
 import { useTranslation } from 'react-i18next'
 
-// import Header from '@/components/core/header/index'
+import Header from '@/components/core/header/index'
 import Hero from '@/components/Hero'
 import AboutMe from '@/components/AboutMe'
 import Services from '@/components/Services'
 import HowWorks from '@/components/HowWorks'
 import ContactMeForm from '@/components/forms/ContactMeForm'
 
+import { useState } from 'react'
+import { createContext, Dispatch, SetStateAction } from 'react'
+
+export const Context = createContext<{
+  subject: string
+  setSubject: Dispatch<SetStateAction<string>>
+}>({
+  subject: '',
+  setSubject: () => '',
+})
+
 const App = () => {
   const { t } = useTranslation()
+  const [subject, setSubject] = useState('')
 
   return (
-    <>
-      {/* <Header /> */}
+    <Context.Provider value={{ subject, setSubject }}>
+      <Header />
       <main
         id='main-section'
         className='col-center gap-24 dark:bg-dark-deep overflow-hidden'>
         <Hero />
         <AboutMe />
-        <Services />
+        <Services setsubject={setSubject} />
         <HowWorks />
         <div className='flex flex-col gap-24 justify-center items-center  mt-32'>
           <h1 className='text-lg font-semibold w-max text-centera'>
@@ -30,7 +42,7 @@ const App = () => {
         </div>
       </main>
       <Toaster />
-    </>
+    </Context.Provider>
   )
 }
 
