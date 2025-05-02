@@ -7,6 +7,7 @@ import AboutMe from '@/components/AboutMe'
 import Services from '@/components/Services'
 import HowWorks from '@/components/HowWorks'
 import ContactMeForm from '@/components/forms/ContactMeForm'
+import Footer from '@/components/core/Footer'
 
 import { useState } from 'react'
 import { createContext, Dispatch, SetStateAction } from 'react'
@@ -33,8 +34,8 @@ const App = () => {
         <AboutMe />
         <Services />
         <HowWorks />
-        <div className='flex flex-col gap-24 justify-center items-center  mt-32'>
-          <h1 className='text-lg font-semibold w-max text-centera'>
+        <div className='flex flex-col gap-24 justify-center items-start sm:items-center mt-32 w-[80%] sm:w-[28em] '>
+          <h1 className='text-lg font-semibold w-[95%] sm:w-max'>
             {t('formInputs.header.text1')}
             <br /> {t('formInputs.header.text2')}
           </h1>
@@ -42,6 +43,7 @@ const App = () => {
         </div>
       </main>
       <Toaster />
+      <Footer />
     </Context.Provider>
   )
 }

@@ -5,7 +5,7 @@ import { RiComputerLine } from 'react-icons/ri'
 
 import ServiceCard, { ServiceCardProps } from './cards/ServiceCard'
 
-import { Autoplay, Pagination } from 'swiper/modules'
+import { Autoplay, EffectFade, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -26,7 +26,9 @@ const Services = () => {
       <h1 className='title text-center mb-28 text-lg'>{t('services.title')}</h1>
       <div className='w-[90%] max-w-[1000px]'>
         <Swiper
-          modules={[Pagination, Autoplay]}
+          modules={[Pagination, Autoplay, EffectFade]}
+          // effect='fade'
+          // fadeEffect={{ crossFade: true }}
           autoplay={{
             delay: 2000,
             pauseOnMouseEnter: true,
