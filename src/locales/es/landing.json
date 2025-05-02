@@ -111,27 +111,9 @@
   },
 
   "footer": {
-    "title": "Únete a la revolución digital para ",
+    "title": "Únete a la revolución digital para",
     "strong": "potenciar tu negocio",
     "description": "No importa tu rubro, mejorar tu presencia digital está a un click de distancia. Te ayudo a cumplir tus objetivos.",
-    "action": "Contáctame!",
-    "slogan": "Convierte tu visión en una experiencia digital excepcional.",
-    "content": [
-      {
-        "id": 1,
-        "title": "Ubicación",
-        "description": "Argentina,Buenos Aires"
-      },
-      {
-        "id": 2,
-        "title": "Correo electrónico",
-        "description": "codevibes.arg@gmail.com"
-      },
-      {
-        "id": 3,
-        "title": "Teléfono",
-        "description": "+54 1132830604"
-      }
-    ]
+    "CTA": "Potenciá tu negocio ahora!"
   }
 }

@@ -19,12 +19,12 @@ const Footer = () => {
   return (
     <footer
       id='footer-section'
-      className='bg-white dark:bg-dark-neutral col-center gap-28 pt-32 my-20'>
+      className='bg-white dark:bg-dark-neutral col-center gap-28 pt-32 my-24'>
       <div className='flex items-center gap-16'>
         <div className='w-[25em] sm:w-[22em] flex flex-col gap-28'>
           <div>
             <h1 className='text-3xl font-light'>
-              {t('footer.title')}
+              {t('footer.title')}{' '}
               <strong className='font-black'>{t('footer.strong')}!</strong>
             </h1>
             <p className='paragraph mt-5'>{t('footer.description')}</p>

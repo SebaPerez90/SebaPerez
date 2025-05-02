@@ -22,7 +22,9 @@ const Services = () => {
   const services = t('services.content', { returnObjects: true })
 
   return (
-    <section className='flex flex-col items-center justify-center '>
+    <section
+      id='services'
+      className='flex flex-col items-center justify-center '>
       <h1 className='title text-center mb-28 text-lg'>{t('services.title')}</h1>
       <div className='w-[90%] max-w-[1000px]'>
         <Swiper

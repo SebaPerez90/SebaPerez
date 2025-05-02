@@ -42,8 +42,8 @@ const App = () => {
           <ContactMeForm />
         </div>
       </main>
-      <Toaster />
       <Footer />
+      <Toaster />
     </Context.Provider>
   )
 }
