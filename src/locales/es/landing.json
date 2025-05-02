@@ -90,22 +90,33 @@
   },
 
   "benefits": {
-    "title": "¿Porqué elegir CodeVibes?",
+    "title": "Descrubrí los beneficios de trabajar juntos!",
+    "paragraph": "Convertí tu idea en realidad con un proceso simple, transparente y profesional. Miles de oportunidades están esperando por vos.",
+    "CTA": "Enviame un mensaje!",
     "content": [
       {
         "id": 1,
-        "title": "Presupuesto Personalizado",
-        "description": "En CodeVibes manejamos una lista de precios super accesibles y personalizados dependiendo de la complejidad de los requisitos."
+        "icon": "⚡",
+        "title": "Rápido y sin vueltas",
+        "description": "Tu idea online en menos tiempo del que imaginás."
       },
       {
         "id": 2,
-        "title": "Plata asegurada",
-        "description": "Con CodeVibes tu satisfacción, también es la nuestra! paga solo si el producto final cumple con tus expectativas."
+        "icon": "🛠️",
+        "title": "Profesional y personalizado",
+        "description": "Desarrollo y diseño personalizado a tu medida para reflejar la escena de tu proyecto."
       },
       {
         "id": 3,
-        "title": "Soporte",
-        "description": "En CodeVibes estamos siempre disponible para optimizar el rendimiento de tu aplicación, garantizando entregas eficientes y soluciones a medida."
+        "icon": "💸",
+        "title": "Sin costos ocultos",
+        "description": "Presupuesto claro y acorde a lo que necesitás."
+      },
+      {
+        "id": 4,
+        "icon": "🤝",
+        "title": "Acompañamiento real",
+        "description": "No te dejo solo: estoy para ayudarte antes, durante y luego del desarrollo."
       }
     ]
   },

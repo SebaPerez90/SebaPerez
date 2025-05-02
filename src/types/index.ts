@@ -29,3 +29,10 @@ export type LocaleformInputs = {
   placeholder: string
   helpText: string
 }
+
+export type BenefitData = {
+  id: number
+  icon: string
+  title: string
+  description: string
+}

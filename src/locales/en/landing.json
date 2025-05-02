@@ -90,22 +90,33 @@
   },
 
   "benefits": {
-    "title": "Why choose CodeVibes?",
+    "title": "Discover the benefits of working together!",
+    "paragraph": "Turn your idea into reality with a simple, transparent, and professional process. Thousands of opportunities are waiting for you.",
+    "CTA": "Send me a message!",
     "content": [
       {
         "id": 1,
-        "title": "Personalized Budget",
-        "description": "At CodeVibes, we offer a highly affordable and customized pricing list depending on the complexity of the requirements."
+        "icon": "⚡",
+        "title": "Fast and hassle-free",
+        "description": "Get your idea online faster than you imagine."
       },
       {
         "id": 2,
-        "title": "Guaranteed Satisfaction",
-        "description": "At CodeVibes, your satisfaction is our priority! Pay only if the final product meets your expectations."
+        "icon": "🛠️",
+        "title": "Professional and personalized",
+        "description": "Custom development and design tailored to reflect your project's essence."
       },
       {
         "id": 3,
-        "title": "Support",
-        "description": "At CodeVibes, we are always available to optimize your application's performance, ensuring efficient deliveries and tailored solutions."
+        "icon": "💸",
+        "title": "No hidden costs",
+        "description": "Clear and fair pricing that fits your needs."
+      },
+      {
+        "id": 4,
+        "icon": "🤝",
+        "title": "Real support",
+        "description": "You're not alone: I'm here to help before, during, and after development."
       }
     ]
   },
