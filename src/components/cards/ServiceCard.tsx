@@ -40,7 +40,7 @@ const ServiceCard = ({
         size={'custom'}
         variant={'primary'}
         className='mx-auto'>
-        {CTA}
+        <a href='#contact-me-form'>{CTA}</a>
       </Button>
     </div>
   )

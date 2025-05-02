@@ -28,7 +28,7 @@ const ContactMeForm = () => {
         id='contact-me-form'
         name='contact-me-form'
         onSubmit={formik.handleSubmit}
-        className='h-dvh w-[28em] flex flex-col gap-14 justify-center items-center'>
+        className='w-[28em] flex flex-col gap-14 justify-center items-center'>
         {(formInputs as Array<LocaleformInputs>).map((item) => (
           <InputLiveFeedback
             id={item.id}
@@ -49,11 +49,15 @@ const ContactMeForm = () => {
           id='message'
           label={t('formInputs.textarea.label')}
           placeholder={t('formInputs.textarea.placeholder')}
+          onChangeFormik={formik.handleChange}
+          onBlur={formik.handleBlur}
+          value={formik.values.message}
         />
 
-        <div className='grid grid-cols-2 gap-2 w-full'>
+        <div className='grid grid-cols-2 gap-3 w-full relative -top-5'>
           <Button
             type='button'
+            size={'lg'}
             variant={'outline'}
             onClick={() => formik.resetForm()}
             className=''>
@@ -61,6 +65,7 @@ const ContactMeForm = () => {
           </Button>
           <Button
             type='submit'
+            size={'lg'}
             loading={loading ? true : false}
             className={`${loading && 'text-transparent'}`}>
             {t('formInputs.CTA.submit')}

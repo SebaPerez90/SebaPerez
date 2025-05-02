@@ -1,8 +1,9 @@
 {
   "formInputs": {
-    "title": "Unete hoy a la expansión digital",
-    "description": "Hábleme sobre la idea de tu proyecto. Estoy listo para ayudarte a hacer realidad tu proyecto digital. ¡Hablemos hoy mismo!",
-    "subtitle": "Ponte en contacto",
+    "header": {
+      "text1": "¿Tenés una idea en mente?",
+      "text2": "Hacela realidad, contame cómo puedo ayudarte."
+    },
 
     "inputs": [
       {

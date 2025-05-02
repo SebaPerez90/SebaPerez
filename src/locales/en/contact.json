@@ -1,8 +1,9 @@
 {
   "formInputs": {
-    "title": "Join the digital expansion today",
-    "description": "Tell me about your project idea. I'm ready to help you bring your digital project to life. Let's talk today!",
-    "subtitle": "Get in touch",
+    "header": {
+      "text1": "Got an idea in mind?",
+      "text2": "Let’s bring it to life, tell me how I can help."
+    },
 
     "inputs": [
       {

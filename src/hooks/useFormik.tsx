@@ -22,6 +22,8 @@ export const useDynamicFormik = (fields: string[], schema: AnySchema) => {
     initialValues,
     validationSchema: schema,
     onSubmit: async (values) => {
+      console.log(values)
+
       const sendForm = async () => {
         setLoading(true)
 

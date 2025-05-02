@@ -7,9 +7,15 @@ import { useState } from 'react'
 interface CustomTextAreaProps extends React.HTMLProps<HTMLTextAreaElement> {
   id: string
   label: string
+  onChangeFormik: (e: React.ChangeEvent<HTMLTextAreaElement>) => void
 }
 
-const CustomTextArea = ({ label, id, ...rest }: CustomTextAreaProps) => {
+const CustomTextArea = ({
+  label,
+  id,
+  onChangeFormik,
+  ...rest
+}: CustomTextAreaProps) => {
   const [textAreaLength, setTextAreaLength] = useState<number>(0)
 
   const lengthControl = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -26,6 +32,7 @@ const CustomTextArea = ({ label, id, ...rest }: CustomTextAreaProps) => {
         rows={10}
         maxLength={300}
         onChange={(e) => {
+          onChangeFormik(e)
           lengthControl(e)
         }}
         className='placeholder:opacity-60 placeholder:font-normal resize-none'
