@@ -1,4 +1,6 @@
+import { Context } from '@/App'
 import { Button } from '@/components/ui/button'
+import { useContext } from 'react'
 
 export interface ServiceCardProps {
   id: number
@@ -7,7 +9,6 @@ export interface ServiceCardProps {
   title: string
   description: string
   CTA: string
-  setsubject: (subject: string) => void
 }
 
 const ServiceCard = ({
@@ -16,8 +17,9 @@ const ServiceCard = ({
   title,
   description,
   CTA,
-  setsubject,
 }: ServiceCardProps) => {
+  const { setSubject } = useContext(Context)
+
   return (
     <div className='flex flex-col gap-6 w-[22em] mx-auto'>
       <div className='flex flex-col items-center w-full relative'>
@@ -42,7 +44,7 @@ const ServiceCard = ({
         size={'custom'}
         variant={'primary'}
         className='mx-auto'
-        onClick={() => setsubject(CTA)}>
+        onClick={() => setSubject(CTA)}>
         <a href='#contact-me-form'>{CTA}</a>
       </Button>
     </div>

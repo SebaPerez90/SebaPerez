@@ -17,11 +17,7 @@ const iconDictionary: { [key: number | string]: JSX.Element } = {
   3: <RiComputerLine size={40} />,
 }
 
-const Services = ({
-  setsubject,
-}: {
-  setsubject: (subject: string) => void
-}) => {
+const Services = () => {
   const { t } = useTranslation()
   const services = t('services.content', { returnObjects: true })
 
@@ -54,7 +50,6 @@ const Services = ({
                 title={service.title}
                 description={service.description}
                 CTA={service.CTA}
-                setsubject={setsubject}
               />
             </SwiperSlide>
           ))}

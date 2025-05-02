@@ -31,7 +31,7 @@ const App = () => {
         className='col-center gap-24 dark:bg-dark-deep overflow-hidden'>
         <Hero />
         <AboutMe />
-        <Services setsubject={setSubject} />
+        <Services />
         <HowWorks />
         <div className='flex flex-col gap-24 justify-center items-center  mt-32'>
           <h1 className='text-lg font-semibold w-max text-centera'>
