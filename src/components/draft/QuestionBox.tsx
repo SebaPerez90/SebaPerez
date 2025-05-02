@@ -4,7 +4,7 @@ import { Label } from '../ui/label'
 import { Input } from '../ui/input'
 import { useDynamicFormik } from '@/hooks/useFormik'
 import { useTranslation } from 'react-i18next'
-import { QuestionBoxSchema } from '../schemas/question.schema'
+import { QuestionBoxSchema } from '../../schemas/question.schema'
 
 const QuestionBox = () => {
   const { t } = useTranslation()
@@ -72,7 +72,7 @@ const QuestionBox = () => {
             variant={'outline'}
             onClick={() => formik.resetForm()}
             className='w-full dark:text-purple-400 border-purple-400 asdasd dark:hover:text-purple-300 hover:duration-200 duration-200 dark:hover:bg-transparent dark:hover:border-purple-300'>
-            {t('projectRequestForm.buttonLabel.cancel')}
+            {t('formInputs.CTA.cancel')}
           </Button>
           <Button
             type='submit'
@@ -80,7 +80,7 @@ const QuestionBox = () => {
             className={`${
               loading && 'text-transparent'
             } w-full custom-btn2 dark:text-white`}>
-            {t('projectRequestForm.buttonLabel.submit')}
+            {t('formInputs.CTA.submit')}
           </Button>
         </div>
       </form>

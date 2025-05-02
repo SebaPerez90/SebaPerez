@@ -88,6 +88,18 @@
     font-weight: 400;
     font-style: normal;
 
+    .valid input[type='email'],
+    .valid input[type='text'],
+    .valid input[type='number'] {
+      border-color: #22c55e;
+    }
+
+    .invalid input[type='email'],
+    .invalid input[type='text'],
+    .invalid input[type='number'] {
+      border-color: #ef4444;
+    }
+
     /* need stylizing the right scroll bar, need modify the width and bg color */
     ::-webkit-scrollbar {
       width: 10px;

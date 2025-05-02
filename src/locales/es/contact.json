@@ -1,5 +1,5 @@
 {
-  "projectRequestForm": {
+  "formInputs": {
     "title": "Unete hoy a la expansión digital",
     "description": "Hábleme sobre la idea de tu proyecto. Estoy listo para ayudarte a hacer realidad tu proyecto digital. ¡Hablemos hoy mismo!",
     "subtitle": "Ponte en contacto",
@@ -10,32 +10,41 @@
         "name": "topic",
         "id": "topic",
         "label": "Asunto",
-        "placeholder": "Presupuesto para mi e-comerce"
+        "placeholder": "Quiero mi tienda!",
+        "helpText": "Debe tener entre 10 y 40 caracteres y no puede contener caracteres especiales."
       },
       {
         "type": "text",
         "name": "name",
         "id": "name",
         "label": "Nombre",
-        "placeholder": "Jhon Doe"
-      },
-      {
-        "type": "text",
-        "name": "email",
-        "id": "email",
-        "label": "Correo electrónico",
-        "placeholder": "example@gmail.com"
+        "placeholder": "Jhon Doe",
+        "helpText": "Debe tener entre 4 y 20 caracteres y no puede contener caracteres especiales."
       }
     ],
 
     "textarea": {
-      "label": "Cuentame un poco sobre tu idea.",
+      "label": "Dime como puedo ayudarte",
       "placeholder": "Tu mensaje..."
     },
 
-    "buttonLabel": {
+    "CTA": {
       "submit": "Enviar",
       "cancel": "Cancelar"
     }
+  },
+
+  "formErrors": {
+    "topic": {
+      "required": "El asunto es obligatorio",
+      "minLength": "El asunto debe tener al menos 10 caracteres",
+      "maxLength": "El asunto no puede tener más de 40 caracteres"
+    },
+    "name": {
+      "required": "El nombre es obligatorio",
+      "minLength": "El nombre debe tener al menos 4 caracteres",
+      "maxLength": "El nombre no puede tener más de 20 caracteres"
+    },
+    "noSpecialChars": "No se permiten caracteres especiales"
   }
 }

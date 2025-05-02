@@ -2,14 +2,11 @@ import { useTranslation } from 'react-i18next'
 import { useFormik } from 'formik'
 import toast from 'react-hot-toast'
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { Routes } from '@/routes/paths'
 import { AnySchema } from 'yup'
 
 const formspreeURL: string = import.meta.env.VITE_FORMSPREE_URL
 
 export const useDynamicFormik = (fields: string[], schema: AnySchema) => {
-  const navigate = useNavigate()
   const [loading, setLoading] = useState(false)
   const { t } = useTranslation()
 
@@ -56,7 +53,7 @@ export const useDynamicFormik = (fields: string[], schema: AnySchema) => {
           formik.resetForm()
           setLoading(false)
           setTimeout(() => {
-            navigate(Routes.home)
+            // navigate(Routes.home)
           }, 3000)
         })
         .catch((error) => {

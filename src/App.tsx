@@ -1,27 +1,25 @@
 import { Toaster } from 'react-hot-toast'
+import ContactMeForm from '@/components/ContactMeForm'
 
-// import Benefits from '@/components/Benefits'
-import Header from '@/components/core/header/index'
-import Hero from '@/components/Hero'
-import AboutMe from '@/components/AboutMe'
-import Services from '@/components/Services'
-import HowWorks from '@/components/HowWorks'
-// import Footer from '@/components/core/Footer'
+// import Header from '@/components/core/header/index'
+// import Hero from '@/components/Hero'
+// import AboutMe from '@/components/AboutMe'
+// import Services from '@/components/Services'
+// import HowWorks from '@/components/HowWorks'
 
 const App = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <main
         id='main-section'
         className='col-center gap-24 dark:bg-dark-deep overflow-hidden'>
-        <Hero />
-        <AboutMe />
-        <Services />
-        <HowWorks />
-        {/* <Benefits /> */}
+        {/* <Hero /> */}
+        {/* <AboutMe /> */}
+        {/* <Services /> */}
+        {/* <HowWorks /> */}
+        <ContactMeForm />
       </main>
-      {/* <Footer /> */}
       <Toaster />
     </>
   )
