@@ -1,5 +1,5 @@
 import { Toaster } from 'react-hot-toast'
-import ContactMeForm from '@/components/ContactMeForm'
+import ContactMeForm from '@/components/forms/ContactMeForm'
 
 // import Header from '@/components/core/header/index'
 // import Hero from '@/components/Hero'

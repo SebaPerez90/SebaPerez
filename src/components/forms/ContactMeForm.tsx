@@ -1,11 +1,13 @@
 import { Button } from '@/components/ui/button'
+import InputLiveFeedback from '@/components/forms/InputLiveFeedback'
+import CustomTextArea from '@/components/forms/CustomTextArea'
+
 import { useTranslation } from 'react-i18next'
 import { LocaleformInputs } from '@/types'
-import { ContactSchema } from '@/schemas/contact.schema'
-import { useDynamicFormik } from '@/hooks/useFormik'
+
 import { FormikProvider } from 'formik'
-import InputLiveFeedback from './forms/InputLiveFeedback'
-import CustomTextArea from './forms/CustomTextArea'
+import { useDynamicFormik } from '@/hooks/useFormik'
+import { ContactSchema } from '@/schemas/contact.schema'
 
 const ContactMeForm = () => {
   const { t } = useTranslation()
@@ -49,7 +51,7 @@ const ContactMeForm = () => {
           placeholder={t('formInputs.textarea.placeholder')}
         />
 
-        <div className='grid grid-cols-2 gap-2'>
+        <div className='grid grid-cols-2 gap-2 w-full'>
           <Button
             type='button'
             variant={'outline'}

@@ -1,7 +1,9 @@
-import { useField } from 'formik'
 import { Label } from '@/components/ui/label'
-import { useState } from 'react'
 import { Input } from '@/components/ui/input'
+
+import { useState } from 'react'
+import { useField } from 'formik'
+
 import { BsCheckAll } from 'react-icons/bs'
 
 interface InputLiveFeedbackProps
