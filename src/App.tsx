@@ -34,13 +34,13 @@ const App = () => {
         <AboutMe />
         <Services />
         <HowWorks />
-        <div className='flex flex-col gap-24 justify-center items-start sm:items-center mt-32 w-[80%] sm:w-[28em] '>
+        <section className='flex flex-col gap-24 justify-center items-start sm:items-center mt-32 w-[80%] sm:w-[28em] '>
           <h1 className='text-lg font-semibold w-[95%] sm:w-max'>
             {t('formInputs.header.text1')}
             <br /> {t('formInputs.header.text2')}
           </h1>
           <ContactMeForm />
-        </div>
+        </section>
       </main>
       <Footer />
       <Toaster />
