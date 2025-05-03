@@ -67,22 +67,19 @@
         "id": 1,
         "title": "Online Stores",
         "description": "I’ll build your online store so you can start selling on the Internet. Simple, functional design tailored to your business. Manage your products, payments, and shipping easily—without relying on anyone.",
-        "CTA": "I want my store!",
-        "img": "/public/service-3.webp"
+        "CTA": "I want my store!"
       },
       {
         "id": 2,
         "title": "Websites",
         "description": "I’ll design your website so you can showcase what you do or sell in a clear and professional way. Ideal if you offer products, services, or just want a solid online presence—without the hassle.",
-        "CTA": "I want my site!",
-        "img": "/public/service-2.webp"
+        "CTA": "I want my site!"
       },
       {
         "id": 3,
         "title": "Freelance Developer",
         "description": "If you're a company or team that needs an extra hand, I can jump in as a freelance developer. I work per project, independently, with responsibility and clear communication.",
-        "CTA": "Let's work together!",
-        "img": "/public/service-1.webp"
+        "CTA": "Let's work together!"
       }
     ]
   },

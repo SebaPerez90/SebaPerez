@@ -2,8 +2,16 @@ import 'swiper/css'
 import 'swiper/css/effect-fade'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, EffectFade } from 'swiper/modules'
+
 import { useTranslation } from 'react-i18next'
 import { Button } from './ui/button'
+
+import footer_1 from '@/assets/footer-1.webp'
+import footer_2 from '@/assets/footer-2.webp'
+import footer_3 from '@/assets/footer-3.webp'
+import footer_4 from '@/assets/footer-4.webp'
+import footer_5 from '@/assets/footer-5.webp'
+import footer_6 from '@/assets/footer-6.webp'
 
 const Slider = () => {
   const { t } = useTranslation()
@@ -36,7 +44,7 @@ const Slider = () => {
             <img
               className='size-full object-cover'
               loading='lazy'
-              src='/footer-1.webp'
+              src={footer_1}
               alt='categories-images'
             />
           </SwiperSlide>
@@ -44,7 +52,7 @@ const Slider = () => {
             <img
               className='size-full object-cover'
               loading='lazy'
-              src='/footer-2.webp'
+              src={footer_2}
               alt='categories-images'
             />
           </SwiperSlide>
@@ -52,7 +60,7 @@ const Slider = () => {
             <img
               className='size-full object-cover'
               loading='lazy'
-              src='/footer-3.webp'
+              src={footer_3}
               alt='categories-images'
             />
           </SwiperSlide>
@@ -60,7 +68,7 @@ const Slider = () => {
             <img
               className='size-full object-cover'
               loading='lazy'
-              src='/footer-4.webp'
+              src={footer_4}
               alt='categories-images'
             />
           </SwiperSlide>
@@ -68,7 +76,7 @@ const Slider = () => {
             <img
               className='size-full object-cover'
               loading='lazy'
-              src='/footer-5.webp'
+              src={footer_5}
               alt='categories-images'
             />
           </SwiperSlide>
@@ -76,7 +84,7 @@ const Slider = () => {
             <img
               className='size-full object-cover'
               loading='lazy'
-              src='/footer-6.webp'
+              src={footer_6}
               alt='categories-images'
             />
           </SwiperSlide>
