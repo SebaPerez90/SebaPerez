@@ -29,8 +29,6 @@ const Services = () => {
       <div className='w-[90%] max-w-[1000px]'>
         <Swiper
           modules={[Pagination, Autoplay, EffectFade]}
-          effect='fade'
-          fadeEffect={{ crossFade: true }}
           autoplay={{
             delay: 2000,
             pauseOnMouseEnter: true,
@@ -49,7 +47,6 @@ const Services = () => {
               className='py-5'>
               <ServiceCard
                 id={service.id}
-                img={service.img}
                 icon={iconDictionary[service.id]}
                 title={service.title}
                 description={service.description}

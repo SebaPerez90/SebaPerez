@@ -2,9 +2,12 @@ import { Context } from '@/App'
 import { Button } from '@/components/ui/button'
 import { useContext } from 'react'
 
+import service_1 from '@/assets/service-1.webp'
+import service_2 from '@/assets/service-2.webp'
+import service_3 from '@/assets/service-3.webp'
+
 export interface ServiceCardProps {
   id: number
-  img: string
   icon: React.ReactNode
   title: string
   description: string
@@ -12,7 +15,7 @@ export interface ServiceCardProps {
 }
 
 const ServiceCard = ({
-  img,
+  id,
   icon,
   title,
   description,
@@ -27,7 +30,7 @@ const ServiceCard = ({
           <img
             loading='lazy'
             className='size-full object-cover'
-            src={img}
+            src={id === 1 ? service_1 : id === 2 ? service_2 : service_3}
             alt='avatar de desarrollador Seba'
           />
         </figure>
