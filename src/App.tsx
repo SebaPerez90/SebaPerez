@@ -42,16 +42,16 @@ const App = () => {
           <FAQContainer />
           <Slider />
           <section className='flex flex-col gap-24 justify-center items-start sm:items-center mt-32 w-[80%] sm:w-[28em] '>
-            <h1 className='text-lg font-semibold w-[95%] sm:w-max'>
+            <h1 className='text-lg font-semibold w-[95%] sm:w-max text-foreground'>
               {t('formInputs.header.text1')}
               <br /> {t('formInputs.header.text2')}
             </h1>
             <ContactMeForm />
           </section>
         </main>
-        <footer className='flex flex-col items-center pt-20'>
+        <footer className='flex flex-col items-center pt-20 dark:bg-dark-deep'>
           <hr className='h-[2px] my-4 bg-gray-300 w-[70%]' />
-          <span className='w-max font-medium text-sm my-2'>
+          <span className='w-max font-medium text-sm my-2 text-foreground'>
             © 2025 Soluciones tecnológicas | Sebastian Perez
           </span>
         </footer>

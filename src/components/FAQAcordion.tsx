@@ -15,7 +15,7 @@ const FAQAcordion = () => {
     <Accordion
       type='single'
       collapsible
-      className='z-10 w-full px-10 flex gap-14 overflow-hidden flex-wrap items-start justify-between max-[560px]:justify-center'>
+      className='z-10 w-full px-10 flex gap-14 overflow-hidden flex-wrap items-start justify-between max-[560px]:justify-center text-foreground'>
       {Object.entries(paymentsContent).map(([section, items]) => (
         <div
           key={section}
@@ -29,7 +29,7 @@ const FAQAcordion = () => {
               <AccordionTrigger className='text-base'>
                 {item.question}
               </AccordionTrigger>
-              <AccordionContent className='paragraaph dark:text-ligth-soft'>
+              <AccordionContent className='paragraaph'>
                 {item.answer}
               </AccordionContent>
             </AccordionItem>

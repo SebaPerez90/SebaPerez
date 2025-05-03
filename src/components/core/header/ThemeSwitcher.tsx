@@ -20,7 +20,7 @@ const ThemeSwitcher = () => {
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'))
     toast.custom(
-      <p className='py-3 px-5 bg-white shadow-lg dark:bg-dark-soft font-medium rounded-md flex items-center mt-4 gap-2'>
+      <p className='py-3 px-5 bg-white text-foreground shadow-lg dark:bg-dark-soft font-medium rounded-md flex items-center mt-4 gap-2 text-xs border dark:border-slate-700'>
         <IoMdInformationCircle
           size={20}
           color='#6897fc'
@@ -35,7 +35,11 @@ const ThemeSwitcher = () => {
       size={'icon'}
       onClick={toggleTheme}
       className='rounded-full'>
-      {theme === 'light' ? <MdNightlightRound /> : <MdOutlineLightMode />}
+      {theme === 'light' ? (
+        <MdNightlightRound size={17} />
+      ) : (
+        <MdOutlineLightMode size={17} />
+      )}
     </Button>
   )
 }

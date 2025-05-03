@@ -29,8 +29,8 @@ const Benefits = () => {
             <motion.div
               key={data.id}
               transition={{
-                duration: 0.7,
-                delay: data.id * 0.5,
+                duration: 0.6,
+                delay: data.id * 0.4,
               }}
               initial={{ y: 50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}

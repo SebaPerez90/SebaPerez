@@ -32,7 +32,7 @@ const ContactMeForm = () => {
         id='contact-me-form'
         name='contact-me-form'
         onSubmit={formik.handleSubmit}
-        className='w-full flex flex-col gap-14 justify-center items-center'>
+        className='w-full flex flex-col gap-14 justify-center items-center text-foreground'>
         {(formInputs as Array<LocaleformInputs>).map((item) => (
           <InputLiveFeedback
             id={item.id}

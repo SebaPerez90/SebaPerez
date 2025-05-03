@@ -7,7 +7,7 @@ export const TextGenerateEffect = ({
   words,
   className,
   filter = true,
-  duration = 0.2,
+  duration = 0.7,
 }: {
   words: string
   className?: string
@@ -15,6 +15,8 @@ export const TextGenerateEffect = ({
   duration?: number
 }) => {
   const [scope, animate] = useAnimate()
+  const currentLanguage = localStorage.getItem('lang')
+
   const wordsArray = words.split(' ')
   useEffect(() => {
     animate(
@@ -29,7 +31,7 @@ export const TextGenerateEffect = ({
       }
     )
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [scope.current])
+  }, [scope.current, currentLanguage])
 
   const renderWords = () => {
     return (
@@ -53,7 +55,7 @@ export const TextGenerateEffect = ({
   return (
     <div className={cn('font-bold', className)}>
       <div className='mt-4'>
-        <div className=' dark:text-white text-black text-2xl leading-snug tracking-wide'>
+        <div className='text-2xl leading-snug tracking-wide'>
           {renderWords()}
         </div>
       </div>

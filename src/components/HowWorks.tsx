@@ -19,14 +19,14 @@ const HowWorks = () => {
           whileInView={{ scale: 1, opacity: 1 }}
           viewport={{ once: true }}
           key={data.id}
-          className='row-center'
+          className='row-center text-foreground'
           style={
             data.id === '02' || data.id === '04'
               ? { alignSelf: 'flex-end', flexDirection: 'row-reverse' }
               : { alignSelf: 'flex-start' }
           }>
           <span
-            className='text-9xl font-bold relative before:absolute before:left-12 before:top-12 before:w-12 before:h-12 before:rounded-full before:border-slate-900 before:border-[10px] before:blur-md before:scale-[5] before:bg-slate-400 before:-z-10 before:opacity-40 tracking-tighter'
+            className='text-9xl font-bold relative before:absolute before:left-12 before:top-12 before:w-12 before:h-12 before:rounded-full before:border-slate-900 dark:before:border-slate-600 before:border-[10px] before:blur-md before:scale-[5] before:bg-slate-400 before:-z-10 before:opacity-40 tracking-tighter'
             style={{ fontFamily: 'Poppins, sans-serif' }}>
             {data.id}
           </span>

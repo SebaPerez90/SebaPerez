@@ -22,7 +22,7 @@ export function QuestionFormModal({
       </DialogTrigger>
       <DialogContent
         aria-describedby={undefined}
-        className='flex flex-col gap-10'>
+        className='flex flex-col gap-10 text-foreground'>
         <DialogHeader>
           <DialogTitle className='text-lg font-semibold'>
             {modalLabel}

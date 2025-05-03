@@ -1,6 +1,5 @@
 import avatar_image from '@/assets/avatar-profile.webp'
 import { useTranslation } from 'react-i18next'
-import { motion } from 'framer-motion'
 
 const AboutMe = () => {
   const { t } = useTranslation()
@@ -10,28 +9,21 @@ const AboutMe = () => {
       <h1 className='title text-lg dark:text-white text-black'>
         {t('aboutMe.title')}
       </h1>
-      <div className='max-[640px]:col-center row-center items-start gap-20'>
+      <div className='flex flex-col md:flex-row items-center md:items-start gap-10 lg:gap-20'>
         <figure className='w-[15em] h-[15em] rounded-full overflow-hidden'>
           <img
             loading='lazy'
             className='h-full w-full object-cover'
             src={avatar_image}
-            alt='avatar de desarrollador Seba'
+            alt='avatar-profile-image'
           />
         </figure>
-        <motion.p
-          transition={{
-            duration: 0.4,
-          }}
-          initial={{ y: 150, scale: 0.2, opacity: 0 }}
-          whileInView={{ y: 0, scale: 1, opacity: 1 }}
-          viewport={{ once: true }}
-          className='w-[25em] paragraaph mt-6 sm:mt-0 text-xl sm:text-base text-black dark:text-ligth-soft'>
+        <p className='w-[80%] md:w-[25em] paragraaph mt-6 sm:mt-0 dark:text-ligth-soft'>
           {t('aboutMe.description1')}
           <br></br>
           <br></br>
           {t('aboutMe.description2')}
-        </motion.p>
+        </p>
       </div>
     </section>
   )

@@ -20,7 +20,7 @@ export function LanguageSwitcher() {
   const toggleLanguage = () => {
     setCurrentLang(currentLang === 'en' ? 'es' : 'en')
     toast.custom(
-      <p className='py-3 px-5 bg-white shadow-lg dark:bg-dark-soft font-medium rounded-md flex items-center mt-4 gap-2'>
+      <p className='py-3 px-5 bg-white text-foreground shadow-lg dark:bg-dark-soft font-medium rounded-md flex items-center mt-4 gap-2 text-xs border dark:border-slate-700'>
         <IoMdInformationCircle
           size={20}
           color='#6897fc'
