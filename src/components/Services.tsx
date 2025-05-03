@@ -29,8 +29,8 @@ const Services = () => {
       <div className='w-[90%] max-w-[1000px]'>
         <Swiper
           modules={[Pagination, Autoplay, EffectFade]}
-          // effect='fade'
-          // fadeEffect={{ crossFade: true }}
+          effect='fade'
+          fadeEffect={{ crossFade: true }}
           autoplay={{
             delay: 2000,
             pauseOnMouseEnter: true,
