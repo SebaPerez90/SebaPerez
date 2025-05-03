@@ -68,21 +68,21 @@
         "title": "Tiendas Online",
         "description": "Creo tu tienda virtual para que empieces a vender por Internet. Diseño simple, funcional y adaptado a tu negocio. Gestioná tus productos, pagos y envíos de forma fácil, sin depender de nadie.",
         "CTA": "Quiero mi tienda!",
-        "img": "../../../public/service-3.webp"
+        "img": "/service-3.webp"
       },
       {
         "id": 2,
         "title": "Sitios Web",
         "description": "Diseño tu página web para que muestres lo que hacés o vendés de forma clara y profesional. Ideal si ofrecés productos, servicios o querés tener presencia online sin complicarte.",
         "CTA": "Quiero mi sitio!",
-        "img": "../../../public/service-2.webp"
+        "img": "/service-2.webp"
       },
       {
         "id": 3,
         "title": "Desarrollador freelance",
         "description": "Si sos una empresa o equipo que necesita una mano extra, puedo sumarme como desarrollador freelance.Trabajo por proyecto, sin relación de dependencia, con responsabilidad y buena comunicación.",
         "CTA": "Colaboremos!",
-        "img": "../../../public/service-1.webp"
+        "img": "/service-1.webp"
       }
     ]
   },

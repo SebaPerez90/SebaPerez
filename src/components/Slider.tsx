@@ -36,7 +36,7 @@ const Slider = () => {
             <img
               className='size-full object-cover'
               loading='lazy'
-              src='/public/footer-1.webp'
+              src='/footer-1.webp'
               alt='categories-images'
             />
           </SwiperSlide>
@@ -44,7 +44,7 @@ const Slider = () => {
             <img
               className='size-full object-cover'
               loading='lazy'
-              src='/public/footer-2.webp'
+              src='/footer-2.webp'
               alt='categories-images'
             />
           </SwiperSlide>
@@ -52,7 +52,7 @@ const Slider = () => {
             <img
               className='size-full object-cover'
               loading='lazy'
-              src='/public/footer-3.webp'
+              src='/footer-3.webp'
               alt='categories-images'
             />
           </SwiperSlide>
@@ -60,7 +60,7 @@ const Slider = () => {
             <img
               className='size-full object-cover'
               loading='lazy'
-              src='/public/footer-4.webp'
+              src='/footer-4.webp'
               alt='categories-images'
             />
           </SwiperSlide>
@@ -68,7 +68,7 @@ const Slider = () => {
             <img
               className='size-full object-cover'
               loading='lazy'
-              src='/public/footer-5.webp'
+              src='/footer-5.webp'
               alt='categories-images'
             />
           </SwiperSlide>
@@ -76,7 +76,7 @@ const Slider = () => {
             <img
               className='size-full object-cover'
               loading='lazy'
-              src='/public/footer-6.webp'
+              src='/footer-6.webp'
               alt='categories-images'
             />
           </SwiperSlide>
