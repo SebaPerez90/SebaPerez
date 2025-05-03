@@ -1,16 +1,17 @@
-import { Button } from '../ui/button'
+import { Button } from '@/components/ui/button'
 import { useDynamicFormik } from '@/hooks/useFormik'
 import { useTranslation } from 'react-i18next'
-import { QuestionBoxSchema } from '../../schemas/question.schema'
+import { QuestionBoxSchema } from '@/schemas/question.schema'
 import { FormikProvider } from 'formik'
-import InputLiveFeedback from './InputLiveFeedback'
-import TextareaLiveFeedback from './TextAreaLiveFeedback'
+
+import InputLiveFeedback from '@/components/forms/InputLiveFeedback'
+import TextareaLiveFeedback from '@/components/forms/TextareaLiveFeedback'
 
 const FAQForm = () => {
   const { t } = useTranslation()
   const { formik, loading } = useDynamicFormik(
     ['email', 'question'],
-    QuestionBoxSchema
+    QuestionBoxSchema(t)
   )
 
   return (

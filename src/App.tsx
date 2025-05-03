@@ -36,10 +36,9 @@ const App = () => {
         <AboutMe />
         <Services />
         <HowWorks />
-        <Slider />
         <Benefits />
         <FAQContainer />
-
+        <Slider />
         <section className='flex flex-col gap-24 justify-center items-start sm:items-center mt-32 w-[80%] sm:w-[28em] '>
           <h1 className='text-lg font-semibold w-[95%] sm:w-max'>
             {t('formInputs.header.text1')}

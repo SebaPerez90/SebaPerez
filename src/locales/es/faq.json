@@ -1,7 +1,8 @@
 {
   "faq": {
     "title": "Preguntas frecuentes.",
-    "subtitle": "¿No encontraste tu pregunta? Preguntame directamente.",
+    "subtitle": "¿No encontraste tu pregunta?",
+    "modalLabel": "Enviame tu pregunta.",
     "form": {
       "email": {
         "label": "Correo electrónico",

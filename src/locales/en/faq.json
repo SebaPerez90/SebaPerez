@@ -1,7 +1,8 @@
 {
   "faq": {
     "title": "Frequently Asked Questions.",
-    "subtitle": "Didn't find your question? Ask me directly.",
+    "subtitle": "Didn't find your question?",
+    "modalLabel": "Send me your question.",
     "form": {
       "email": {
         "label": "Email",

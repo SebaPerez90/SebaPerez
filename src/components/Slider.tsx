@@ -30,7 +30,7 @@ const Slider = () => {
           <Button
             size={'lg'}
             className='py-6'>
-            Potenciá tu negocio ahora!
+            <a href='#contact-me-form'>{t('footer.CTA')}</a>
           </Button>
         </div>
         <Swiper
