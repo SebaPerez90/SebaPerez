@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Button } from '../ui/button'
 import { Card } from '../ui/card'
-import { Routes } from '@/routes/paths'
 import { useTranslation } from 'react-i18next'
 
 interface PrincigCardProps {
@@ -59,14 +58,14 @@ const PrincigCard = ({
       </div>
       <div className='col-center gap-0 relative w-full mb-3'>
         <Link
-          to={Routes.contact}
+          to={'Routes.contact'}
           className='w-full'>
           <Button className='py-7 sm:py-6 text-lg sm:text-base w-full dark:custom-btn2'>
             {t('home.description5')}
           </Button>
         </Link>
         <Link
-          to={Routes.faq}
+          to={'Routes.faq'}
           className='text-base sm:text-sm absolute hover:duration-200 duration-200 hover:text-purple-500 underline hover:no-underline text-purple-600 dark:text-purple-400 font-semibold -bottom-6'>
           {t('home.description6')}
         </Link>

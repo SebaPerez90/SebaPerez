@@ -1,10 +1,75 @@
 {
   "faq": {
-    "title": "¿No encontraste tu pregunta? ¡Pregúntanos directamente!",
+    "title": "Preguntas frecuentes.",
+    "subtitle": "¿No encontraste tu pregunta? Preguntame directamente.",
     "form": {
       "emailLabel": "Correo electrónico",
       "questionLabel": "Tu pregunta",
-      "questionPlaceholder": "Escribe tu mensaje aqui..."
+      "questionPlaceholder": "Escribí tu mensaje acá..."
+    },
+    "Q&A": {
+      "Proceso de Trabajo": [
+        {
+          "question": "No sé nada de tecnología, ¿puedo igual tener mi web?",
+          "answer": "¡Por supuesto! Me encargo de todo el proceso. Solo necesito que me cuentes tu idea y qué querés lograr, y yo te guío paso a paso."
+        },
+        {
+          "question": "¿Qué necesito tener para empezar?",
+          "answer": "Nada técnico. Una breve descripción de tu negocio, tus objetivos, y si tenés fotos o textos que querés usar. El resto lo armo yo."
+        },
+        {
+          "question": "¿Cuánto tarda en estar lista mi web?",
+          "answer": "Depende del tipo de sitio. En promedio, entre 1 y 3 semanas. Lo charlamos juntos y te doy una fecha clara desde el inicio."
+        }
+      ],
+      "Pagos": [
+        {
+          "question": "¿Cómo se paga?",
+          "answer": "Acepto transferencias bancarias, MercadoPago y criptomonedas. Podemos acordar un plan de pagos si lo necesitás."
+        },
+        {
+          "question": "¿Puedo pagar en cuotas?",
+          "answer": "Sí. Evaluamos juntos la mejor forma para que puedas avanzar con tu proyecto sin complicaciones."
+        },
+        {
+          "question": "¿El precio puede cambiar?",
+          "answer": "No. Una vez acordado el presupuesto, no hay sorpresas ni costos ocultos."
+        }
+      ],
+      "Propiedad y Cambios": [
+        {
+          "question": "¿La web es mía una vez que se termina?",
+          "answer": "Sí. El sitio es 100% tuyo y podés usarlo, modificarlo o gestionarlo como prefieras."
+        },
+        {
+          "question": "¿Puedo pedir cambios después de que esté publicada?",
+          "answer": "Sí. Incluyo ajustes menores dentro de un período posterior a la entrega. Si querés hacer cambios grandes, también puedo ayudarte con eso."
+        }
+      ],
+      "Garantías": [
+        {
+          "question": "¿Qué pasa si no me gusta el resultado?",
+          "answer": "Trabajamos juntos para ajustar lo necesario. No finalizo el proyecto hasta que estés conforme."
+        },
+        {
+          "question": "¿Y si tengo un problema después?",
+          "answer": "Podés escribirme sin problema. Estoy para ayudarte incluso después de la entrega."
+        }
+      ],
+      "Servicio continuo": [
+        {
+          "question": "¿Ofrecés mantenimiento mensual del sitio?",
+          "answer": "Sí. Podés contratar un plan mensual que incluye actualizaciones, soporte técnico y monitoreo del sitio para que siempre funcione bien."
+        },
+        {
+          "question": "¿Qué incluye el costo de mantenimiento?",
+          "answer": "Incluye la gestión del hosting, dominios, APIs externas o backend si es necesario, además de asistencia personalizada para resolver cualquier problema que surja."
+        },
+        {
+          "question": "¿Puedo delegarte todo y olvidarme?",
+          "answer": "Sí. Me encargo de todo lo técnico para que vos solo te enfoques en tu negocio. Es un servicio pensado para que no tengas que preocuparte por nada."
+        }
+      ]
     }
   }
 }

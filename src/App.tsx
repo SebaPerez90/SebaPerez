@@ -6,9 +6,10 @@ import Hero from '@/components/Hero'
 import AboutMe from '@/components/AboutMe'
 import Services from '@/components/Services'
 import HowWorks from '@/components/HowWorks'
-import ContactMeForm from '@/components/forms/ContactMeForm'
-import Footer from '@/components/core/Footer'
 import Benefits from '@/components/Benefits'
+import ContactMeForm from '@/components/forms/ContactMeForm'
+import Slider from '@/components/Slider'
+import FAQContainer from '@/components/FAQContainer'
 
 import { useState } from 'react'
 import { createContext, Dispatch, SetStateAction } from 'react'
@@ -35,7 +36,10 @@ const App = () => {
         <AboutMe />
         <Services />
         <HowWorks />
+        <Slider />
         <Benefits />
+        <FAQContainer />
+
         <section className='flex flex-col gap-24 justify-center items-start sm:items-center mt-32 w-[80%] sm:w-[28em] '>
           <h1 className='text-lg font-semibold w-[95%] sm:w-max'>
             {t('formInputs.header.text1')}
@@ -44,7 +48,12 @@ const App = () => {
           <ContactMeForm />
         </section>
       </main>
-      <Footer />
+      <footer className='flex flex-col items-center pt-20'>
+        <hr className='h-[2px] my-4 bg-gray-300 w-[70%]' />
+        <span className='w-max font-medium text-sm my-2'>
+          © 2025 Soluciones tecnológicas | Sebastian Perez
+        </span>
+      </footer>
       <Toaster />
     </Context.Provider>
   )

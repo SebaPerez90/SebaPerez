@@ -5,8 +5,9 @@ import { Input } from '../ui/input'
 import { useDynamicFormik } from '@/hooks/useFormik'
 import { useTranslation } from 'react-i18next'
 import { QuestionBoxSchema } from '../../schemas/question.schema'
+import { FormikProvider } from 'formik'
 
-const QuestionBox = () => {
+const FAQForm = () => {
   const { t } = useTranslation()
   const { formik, loading } = useDynamicFormik(
     ['email', 'question'],
@@ -14,8 +15,7 @@ const QuestionBox = () => {
   )
 
   return (
-    <section className='z-10 [width:clamp(320px,100%,600px)] col-center gap-16 px-12'>
-      <h2 className='title text-center'>{t('faq.title')}</h2>
+    <FormikProvider value={formik}>
       <form
         id='question-form'
         name='question-form'
@@ -84,8 +84,8 @@ const QuestionBox = () => {
           </Button>
         </div>
       </form>
-    </section>
+    </FormikProvider>
   )
 }
 
-export default QuestionBox
+export default FAQForm

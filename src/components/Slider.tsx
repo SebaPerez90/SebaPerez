@@ -3,7 +3,7 @@ import 'swiper/css/effect-fade'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, EffectFade } from 'swiper/modules'
 import { useTranslation } from 'react-i18next'
-import { Button } from '../ui/button'
+import { Button } from './ui/button'
 
 const images = [
   '/footer-1.webp',
@@ -13,13 +13,11 @@ const images = [
   '/footer-5.webp',
   '/footer-6.webp',
 ]
-const Footer = () => {
+const Slider = () => {
   const { t } = useTranslation()
 
   return (
-    <footer
-      id='footer-section'
-      className='bg-white dark:bg-dark-neutral col-center gap-28 pt-32 my-24'>
+    <section className='bg-white dark:bg-dark-neutral col-center gap-28 pt-32 my-24'>
       <div className='flex items-center gap-16'>
         <div className='w-[25em] sm:w-[22em] flex flex-col gap-28'>
           <div>
@@ -56,8 +54,8 @@ const Footer = () => {
           ))}
         </Swiper>
       </div>
-    </footer>
+    </section>
   )
 }
 
-export default Footer
+export default Slider

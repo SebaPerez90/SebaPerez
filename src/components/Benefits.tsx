@@ -21,7 +21,7 @@ const Benefits = () => {
             size={'lg'}
             variant={'secondary'}
             className='mt-4'>
-            {t('benefits.CTA')}
+            <a href='#contact-me-form'>{t('benefits.CTA')}</a>
           </Button>
         </div>
         <motion.div className='flex justify-center flex-row flex-wrap lg:flex-nowrap lg:flex-col gap-6'>
