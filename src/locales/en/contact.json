@@ -46,7 +46,5 @@
       "maxLength": "Name cannot exceed 20 characters"
     },
     "noSpecialChars": "Special characters are not allowed"
-  },
-
-  "helpText": ""
+  }
 }

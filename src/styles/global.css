@@ -90,13 +90,17 @@
 
     .valid input[type='email'],
     .valid input[type='text'],
-    .valid input[type='number'] {
+    .valid input[type='number'],
+    .valid input[type='password'],
+    .valid textarea {
       border-color: #22c55e;
     }
 
     .invalid input[type='email'],
     .invalid input[type='text'],
-    .invalid input[type='number'] {
+    .invalid input[type='number'],
+    .invalid input[type='password'],
+    .invalid textarea {
       border-color: #ef4444;
     }
 

@@ -35,7 +35,7 @@ const CustomTextArea = ({
           onChangeFormik(e)
           lengthControl(e)
         }}
-        className='placeholder:opacity-60 placeholder:font-normal resize-none'
+        className='relative placeholder:opacity-60 placeholder:font-normal resize-none'
       />
       <span
         className={cn(

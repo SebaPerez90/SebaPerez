@@ -12,6 +12,17 @@
         "label": "Hazme tu pregunta",
         "placeholder": "Tu mensaje...",
         "helpText": "Debe tener entre 10 y 200 caracteres."
+      },
+
+      "formErrors": {
+        "email": {
+          "required": "El email es requerido.",
+          "validAdrress": "Ingrese una dirección de email válida."
+        },
+        "textarea": {
+          "required": "La pregunta es requerida.",
+          "minLength": "Ingresa minimo a 20 caracteres."
+        }
       }
     },
 

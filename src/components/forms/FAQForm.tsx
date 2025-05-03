@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { QuestionBoxSchema } from '../../schemas/question.schema'
 import { FormikProvider } from 'formik'
 import InputLiveFeedback from './InputLiveFeedback'
-import CustomTextArea from './CustomTextArea'
+import TextareaLiveFeedback from './TextAreaLiveFeedback'
 
 const FAQForm = () => {
   const { t } = useTranslation()
@@ -34,17 +34,17 @@ const FAQForm = () => {
           helpTextPosition='-bottom-5'
         />
 
-        <CustomTextArea
+        <TextareaLiveFeedback
           id='question'
+          name='question'
           label={t('faq.form.textarea.label')}
           placeholder={t('faq.form.textarea.placeholder')}
+          helpText={t('faq.form.textarea.helpText')}
+          helpTextPosition='-bottom-5'
           onChangeFormik={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.question}
         />
-        {formik.touched.question && (
-          <span className='text-red-600'>{formik.errors.question}</span>
-        )}
 
         <div className='grid grid-cols-2 gap-3 w-full relative -top-5'>
           <Button

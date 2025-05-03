@@ -12,6 +12,16 @@
         "label": "Ask me your question",
         "placeholder": "Your message...",
         "helpText": "Must be between 10 and 200 characters."
+      },
+      "formErrors": {
+        "email": {
+          "required": "Email is required.",
+          "validAdrress": "Enter a valid email address."
+        },
+        "textarea": {
+          "required": "The question is required.",
+          "minLength": "Enter at least 20 characters."
+        }
       }
     },
 
