@@ -20,10 +20,8 @@
   },
 
   "landing": {
-    "title": "Boost your product with digital solutions.",
-    "description": "Increase your digital presence and optimize your business with websites and web applications, functional and tailored to your needs.",
-    "action": "Book today",
-    "benefits": ["Affordable prices", "24/7 Support", "100% Customized"]
+    "title": "Boost your product with digital solutions tailored to your needs.",
+    "CTA": "Check out my services"
   },
 
   "aboutMe": {

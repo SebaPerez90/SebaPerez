@@ -1,11 +1,7 @@
 const Loader = () => {
   return (
     <main className='col-center h-dvh'>
-      <div className='three-body'>
-        <div className='three-body__dot'></div>
-        <div className='three-body__dot'></div>
-        <div className='three-body__dot'></div>
-      </div>
+      <div className='w-10 h-10 border-4 border-t-black border-gray-300 rounded-full animate-spin'></div>
     </main>
   )
 }

@@ -1,12 +1,8 @@
 import { useEffect, useRef } from 'react'
 import Logo from '@/components/core/Logo'
-import { Button } from '@/components/ui/button'
-import HamburguerButton from './HamburguerButton'
-import { IoIosSend } from 'react-icons/io'
 
-// import ThemeButton from './ThemeButton'
-// import { LanguageSelect } from './LanguageSelect'
-// import MobileMenu from './MobileMenu'
+import { LanguageSwitcher } from '@/components/core/header/LanguageSwitcher'
+import ThemeSwitcher from '@/components/core/header/ThemeSwitcher'
 
 const Header = () => {
   const headerRef = useRef<HTMLElement | null>(null)
@@ -27,16 +23,13 @@ const Header = () => {
   return (
     <header
       ref={headerRef}
-      className='flex items-center fixed w-full px-7 py-4 backdrop-blur-[8px] bg-white/50 z-50 dark:bg-dark-deep'>
+      className='flex items-center fixed w-full px-5 py-4 backdrop-blur-[8px] bg-white/50 z-50 dark:bg-dark-deep'>
       <div className='relative flex items-center gap-4 justify-end w-full max-w-[1400px] mx-auto'>
         <Logo />
-        <Button
-          size={'sm'}
-          className='flex gap-2 items-center'>
-          Contáctame
-          <IoIosSend size={15} />
-        </Button>
-        <HamburguerButton />
+        <div className='scale-90 flex items-center gap-2'>
+          <LanguageSwitcher />
+          <ThemeSwitcher />
+        </div>
       </div>
     </header>
   )

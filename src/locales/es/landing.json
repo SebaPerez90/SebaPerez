@@ -19,10 +19,8 @@
     ]
   },
   "landing": {
-    "title": "Impulsá tu producto con soluciones digitales diseñadas   a tu medida.",
-    "description": "Aumenta tu presencia digital y optimiza tu negocio con sitios y aplicaciones web, funcionales y diseñadas a tu medida.",
-    "action": "Reservá hoy",
-    "benefits": ["Precios accesibles", "Soporte 24/7", "100% Personalizadas"]
+    "title": "Impulsá tu producto con soluciones digitales diseñadas  a tu medida.",
+    "CTA": "Conocé mis servicios"
   },
 
   "aboutMe": {

@@ -19,7 +19,7 @@ const Hero = () => {
           size={'custom'}
           variant={'primary'}
           className='animate-[appear-element_200ms_ease-out_forwards] [animation-delay:0.2s]'>
-          <a href='#services'>Conocé mis servicios</a>
+          <a href='#services'>{t('landing.CTA')}</a>
           <IoIosArrowForward size={18} />
         </Button>
       </div>

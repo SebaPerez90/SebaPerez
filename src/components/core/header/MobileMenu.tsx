@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import ThemeButton from './ThemeButton'
-import { LanguageSelect } from './LanguageSelect'
+import ThemeButton from './ThemeSwitcher'
+import { LanguageSelect } from './LanguageSwitcher'
 import HamburguerButton from './HamburguerButton'
 
 const MobileMenu = () => {
