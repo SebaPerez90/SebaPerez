@@ -3,10 +3,18 @@
     "title": "Preguntas frecuentes.",
     "subtitle": "¿No encontraste tu pregunta? Preguntame directamente.",
     "form": {
-      "emailLabel": "Correo electrónico",
-      "questionLabel": "Tu pregunta",
-      "questionPlaceholder": "Escribí tu mensaje acá..."
+      "email": {
+        "label": "Correo electrónico",
+        "placeholder": "example@gmail.com",
+        "helpText": "Debe ser una dirección de correo electrónica válida."
+      },
+      "textarea": {
+        "label": "Hazme tu pregunta",
+        "placeholder": "Tu mensaje...",
+        "helpText": "Debe tener entre 10 y 200 caracteres."
+      }
     },
+
     "Q&A": {
       "Proceso de Trabajo": [
         {

@@ -12,12 +12,14 @@ interface InputLiveFeedbackProps
   label: string
   helpText: string
   formikValue?: string
+  helpTextPosition?: string
 }
 
 const InputLiveFeedback = ({
   label,
   helpText,
   formikValue,
+  helpTextPosition = '-bottom-9',
   ...props
 }: InputLiveFeedbackProps) => {
   const [field, meta] = useField({ ...props, name: props.name as string })
@@ -70,7 +72,7 @@ const InputLiveFeedback = ({
       {showFeedback && meta.error && (
         <div
           tabIndex={-1}
-          className='text-xs absolute -bottom-9 left-0'>
+          className={`${helpTextPosition} text-xs absolute select-none left-0`}>
           {helpText}
         </div>
       )}
