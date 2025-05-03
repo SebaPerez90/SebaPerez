@@ -22,13 +22,9 @@ export const useDynamicFormik = (fields: string[], schema: AnySchema) => {
     initialValues,
     validationSchema: schema,
     onSubmit: async (values) => {
-      console.log(values)
-
       const sendForm = async () => {
         setLoading(true)
-
         await new Promise((resolve) => setTimeout(resolve, 3000))
-
         const response = await fetch(`${formspreeURL}`, {
           method: 'POST',
           headers: {
