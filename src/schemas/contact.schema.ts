@@ -6,8 +6,7 @@ export const ContactSchema = (t: (key: string) => string) =>
       .string()
       .min(10, t('formErrors.topic.minLength'))
       .max(40, t('formErrors.topic.maxLength'))
-      .required(t('formErrors.topic.required'))
-      .matches(/^[a-zA-Z0-9\s]+$/, t('formErrors.noSpecialChars')),
+      .required(t('formErrors.topic.required')),
     name: yup
       .string()
       .min(4, t('formErrors.name.minLength'))
