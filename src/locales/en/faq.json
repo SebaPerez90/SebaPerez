@@ -1,10 +1,94 @@
 {
   "faq": {
-    "title": "Didn't find your question? Ask us directly!",
+    "title": "Frequently Asked Questions.",
+    "subtitle": "Didn't find your question?",
+    "modalLabel": "Send me your question.",
     "form": {
-      "emailLabel": "Email",
-      "questionLabel": "Your question",
-      "questionPlaceholder": "Write your message here..."
+      "email": {
+        "label": "Email",
+        "placeholder": "example@gmail.com",
+        "helpText": "Must be a valid email address."
+      },
+      "textarea": {
+        "label": "Ask me your question",
+        "placeholder": "Your message...",
+        "helpText": "Must be between 10 and 200 characters."
+      },
+      "formErrors": {
+        "email": {
+          "required": "Email is required.",
+          "validAdrress": "Enter a valid email address."
+        },
+        "textarea": {
+          "required": "The question is required.",
+          "minLength": "Enter at least 20 characters."
+        }
+      }
+    },
+
+    "Q&A": {
+      "Proceso de Trabajo": [
+        {
+          "question": "I don't know anything about technology, can I still have my own website?",
+          "answer": "Absolutely! I handle the entire process. Just tell me your idea and what you want to achieve, and I’ll guide you step by step."
+        },
+        {
+          "question": "What do I need to get started?",
+          "answer": "Nothing technical. Just a short description of your business, your goals, and any photos or text you’d like to use. I’ll take care of the rest."
+        },
+        {
+          "question": "How long will it take to have my website ready?",
+          "answer": "It depends on the type of site. On average, between 1 and 3 weeks. We’ll talk about it and I’ll give you a clear deadline from the start."
+        }
+      ],
+      "Pagos": [
+        {
+          "question": "How do I pay?",
+          "answer": "I accept bank transfers, MercadoPago, and cryptocurrencies. We can also set up a payment plan if needed."
+        },
+        {
+          "question": "Can I pay in installments?",
+          "answer": "Yes. We’ll find the best way for you to move forward with your project without hassle."
+        },
+        {
+          "question": "Can the price change?",
+          "answer": "No. Once we agree on a budget, there are no surprises or hidden fees."
+        }
+      ],
+      "Propiedad y Cambios": [
+        {
+          "question": "Do I own the website once it's finished?",
+          "answer": "Yes. The site is 100% yours and you can use it, modify it, or manage it however you prefer."
+        },
+        {
+          "question": "Can I request changes after it's published?",
+          "answer": "Yes. I include minor adjustments within a post-delivery period. If you want to make major changes, I can help with that too."
+        }
+      ],
+      "Garantías": [
+        {
+          "question": "What if I don't like the result?",
+          "answer": "We’ll work together to make the necessary adjustments. I don’t consider the project finished until you're satisfied."
+        },
+        {
+          "question": "And what if I have a problem afterward?",
+          "answer": "Feel free to reach out. I'm here to help even after delivery."
+        }
+      ],
+      "Servicio continuo": [
+        {
+          "question": "Do you offer monthly website maintenance?",
+          "answer": "Yes. You can sign up for a monthly plan that includes updates, tech support, and site monitoring to ensure it runs smoothly."
+        },
+        {
+          "question": "What does the maintenance cost include?",
+          "answer": "It includes managing hosting, domains, external APIs or backend if needed, plus personalized support to solve any issue that may come up."
+        },
+        {
+          "question": "Can I just leave everything to you and forget about it?",
+          "answer": "Yes. I take care of all the technical stuff so you can focus solely on your business. This service is designed so you don’t have to worry about a thing."
+        }
+      ]
     }
   }
 }

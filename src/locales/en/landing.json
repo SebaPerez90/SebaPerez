@@ -20,119 +20,110 @@
   },
 
   "landing": {
-    "title": "Boost your business with digital solutions.",
-    "description": "Increase your digital presence and optimize your business with websites and web applications, functional and tailored to your needs.",
-    "action": "Book today",
-    "benefits": ["Affordable prices", "24/7 Support", "100% Customized"]
+    "title": "Boost your product with digital solutions tailored to your needs.",
+    "CTA": "Check out my services"
   },
 
-  "aboutUs": {
+  "aboutMe": {
     "title": "Who am I?",
     "description1": "Hi! I'm Seba, a software developer, creating digital solutions tailored to the needs of each business. My goal is to help you improve your online presence and attract more clients, ensuring that your business is optimized to grow in the digital world.",
     "description2": "With my experience, you will not only enhance the appearance and functionality of your website or web application, but also better organize your business with tools that allow you to manage all your information efficiently and hassle-free."
   },
-
   "steps": {
-    "title": "How will we work?",
+    "title": "How we work",
     "content": [
       {
         "id": "01",
-        "title": "Understanding your needs",
-        "description": "We listen to your ideas and goals to understand how we can help you."
+        "title": "Getting to know you",
+        "description": "I listen to your needs—whether it’s an online store, a website, or freelance help. Together, we define the main goal of your project."
       },
       {
         "id": "02",
-        "title": "Design creation",
-        "description": "We will create a design focused on usability and aesthetics, tailored to your expectations and goals."
+        "title": "Tailored design",
+        "description": "I create a visual system with the right colors, fonts, and images for your brand. You’ll also get a clickable mockup in Figma to preview the final result."
       },
       {
         "id": "03",
-        "title": "Project development",
-        "description": "We build your product efficiently, paying attention to every detail to ensure quality."
+        "title": "Let’s build it",
+        "description": "Once the design is approved, I start developing your site or app. We agree on realistic deadlines and I keep you updated throughout the process."
       },
       {
         "id": "04",
-        "title": "Launch",
-        "description": "We present your product to the world and ensure everything works perfectly from the start."
+        "title": "Going live",
+        "description": "Your project is launched and everything is set up so you can start using it without any hassle."
       },
       {
         "id": "05",
-        "title": "Continuous support",
-        "description": "We provide ongoing support and make improvements so you’re always one step ahead."
+        "title": "Post-launch",
+        "description": "After launch, I’m still around to help with any questions, tweaks, or future improvements."
       }
     ]
   },
 
-  "ourServices": {
+  "services": {
     "title": "My Services",
-    "action": "View plans",
     "content": [
       {
         "id": 1,
-        "title": "Custom websites",
-        "description": "Create a professional online presence that will attract more clients and help your business grow."
+        "title": "Online Stores",
+        "description": "I’ll build your online store so you can start selling on the Internet. Simple, functional design tailored to your business. Manage your products, payments, and shipping easily—without relying on anyone.",
+        "CTA": "I want my store!",
+        "img": "/public/service-3.webp"
       },
       {
         "id": 2,
-        "title": "Attractive visual designs",
-        "description": "Modern and eye-catching designs that capture the attention of your visitors and turn them into customers."
+        "title": "Websites",
+        "description": "I’ll design your website so you can showcase what you do or sell in a clear and professional way. Ideal if you offer products, services, or just want a solid online presence—without the hassle.",
+        "CTA": "I want my site!",
+        "img": "/public/service-2.webp"
       },
       {
         "id": 3,
-        "title": "Continuous assistance and support",
-        "description": "We support you every step of the way, resolving issues to ensure your site or application runs smoothly."
-      },
-      {
-        "id": 4,
-        "title": "Responsive websites",
-        "description": "Your website will look perfect on any device: mobile, tablet, or desktop, ensuring it's always accessible."
+        "title": "Freelance Developer",
+        "description": "If you're a company or team that needs an extra hand, I can jump in as a freelance developer. I work per project, independently, with responsibility and clear communication.",
+        "CTA": "Let's work together!",
+        "img": "/public/service-1.webp"
       }
     ]
   },
 
   "benefits": {
-    "title": "Why choose CodeVibes?",
+    "title": "Discover the benefits of working together!",
+    "paragraph": "Turn your idea into reality with a simple, transparent, and professional process. Thousands of opportunities are waiting for you.",
+    "CTA": "Send me a message!",
     "content": [
       {
         "id": 1,
-        "title": "Personalized Budget",
-        "description": "At CodeVibes, we offer a highly affordable and customized pricing list depending on the complexity of the requirements."
+        "icon": "⚡",
+        "title": "Fast and hassle-free",
+        "description": "Get your idea online faster than you imagine."
       },
       {
         "id": 2,
-        "title": "Guaranteed Satisfaction",
-        "description": "At CodeVibes, your satisfaction is our priority! Pay only if the final product meets your expectations."
+        "icon": "🛠️",
+        "title": "Professional and personalized",
+        "description": "Custom development and design tailored to reflect your project's essence."
       },
       {
         "id": 3,
-        "title": "Support",
-        "description": "At CodeVibes, we are always available to optimize your application's performance, ensuring efficient deliveries and tailored solutions."
+        "icon": "💸",
+        "title": "No hidden costs",
+        "description": "Clear and fair pricing that fits your needs."
+      },
+      {
+        "id": 4,
+        "icon": "🤝",
+        "title": "Real support",
+        "description": "You're not alone: I'm here to help before, during, and after development."
       }
     ]
   },
 
   "footer": {
-    "title": "Join the digital revolution to ",
+    "title": "Join the digital revolution to",
     "strong": "empower your business",
     "description": "No matter your industry, improving your digital presence is just a click away. I can help you achieve your goals.",
     "action": "Contact me!",
-    "slogan": "Turn your vision into an exceptional digital experience. Let's connect!",
-    "content": [
-      {
-        "id": 1,
-        "title": "Location",
-        "description": "Argentina, Buenos Aires"
-      },
-      {
-        "id": 2,
-        "title": "Email",
-        "description": "codevibes.arg@gmail.com"
-      },
-      {
-        "id": 3,
-        "title": "Phone",
-        "description": "+54 1132830604"
-      }
-    ]
+    "CTA": "Boost your business now!"
   }
 }

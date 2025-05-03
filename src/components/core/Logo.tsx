@@ -1,23 +1,19 @@
-import icon from '@/assets/icon.png'
-import { Routes } from '@/routes/paths'
-import { Link } from 'react-router-dom'
+import avatar_profile from '@/assets/avatar-profile.webp'
 
-const Logo = () => {
+const Logo = ({ position = 'absolute' }) => {
   return (
-    <div className='row-center gap-1 items-center'>
-      <figure>
+    <div className={`flex items-center gap-2 select-none ${position} left-0`}>
+      <figure className='rounded-full overflow-hidden size-[3em]'>
         <img
-          src={icon}
-          alt='CodeVibes Logo'
-          className='h-[1.5em] w-[1.5em]'
+          src={avatar_profile}
+          loading='lazy'
+          alt='avatar-profile-image'
+          className='size-full object-cover animate-[image-filter_600ms_ease-out_forwards]'
         />
       </figure>
-      <Link
-        to={Routes.home}
-        aria-label='Ir al inicio'
-        className='gradient-title dark:gradient-title-dark translate-y-[3px] text-2xl'>
-        CodeVibes
-      </Link>
+      <span className='text-dark dark:text-white text-lg architects-daughter-regular'>
+        Seba Perez
+      </span>
     </div>
   )
 }

@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Beiruti:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zen+Maru+Gothic&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -73,30 +74,76 @@
 
 @layer base {
   * {
-    @apply border-border;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font: inherit;
+    transition: background ease-out 400ms;
   }
 
+  html,
   body {
-    @apply bg-background text-foreground;
-    font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    .valid input[type='email'],
+    .valid input[type='text'],
+    .valid input[type='number'],
+    .valid input[type='password'],
+    .valid textarea {
+      border-color: #22c55e;
+    }
+
+    .invalid input[type='email'],
+    .invalid input[type='text'],
+    .invalid input[type='number'],
+    .invalid input[type='password'],
+    .invalid textarea {
+      border-color: #ef4444;
+    }
+
+    /* need stylizing the right scroll bar, need modify the width and bg color */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #000;
+      border-radius: 10px;
+    }
+  }
+
+  .hero-title {
+    font-family: 'Zen Maru Gothic', serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .architects-daughter-regular {
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  /* swipper bullets */
+  .custom-swiper .swiper-pagination-bullet {
+    background-color: #cbd5e1;
+    opacity: 1;
+  }
+  .custom-swiper .swiper-pagination-bullet-active {
+    background-color: #2a2a2a;
+    scale: 1.4;
   }
 }
 
 @layer components {
   .row-center {
-    @apply flex items-center justify-center gap-5
+    @apply flex items-center justify-center gap-5;
   }
 
   .col-center {
-    @apply flex flex-col items-center justify-center gap-5
-  }
-
-  .gradient-title {
-    @apply font-bold [font-family:'Poppins',sans-serif] text-transparent bg-clip-text bg-gradient-to-l from-purple-500 to-blue-400;
-  }
-
-  .gradient-title-dark {
-    @apply font-bold [font-family:'Poppins',sans-serif] text-transparent bg-clip-text bg-gradient-to-b from-pink-300 to-indigo-300 dark:from-pink-500 dark:to-indigo-400;
+    @apply flex flex-col items-center justify-center gap-5;
   }
 
   .title {
@@ -104,7 +151,7 @@
   }
 
   .paragraph {
-    @apply  font-medium text-gray-600 dark:text-slate-300;
+    @apply font-medium text-gray-800 dark:text-slate-300;
   }
 
   .test {
@@ -113,48 +160,5 @@
 
   .test2 {
     @apply border border-blue-600;
-  }
-
-  .custom-btn {
-    @apply py-2 px-4 text-xs border-2 rounded-md text-purple-500 border-purple-500 hover:bg-purple-500 hover:duration-200 duration-200 hover:text-white font-semibold active:scale-95 active:border-purple-800;
-  }
-  .custom-btn2 {
-    @apply bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold hover:from-blue-400 hover:to-purple-400;
-  }
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  scroll-behavior: smooth;
-  box-sizing: border-box;
-  font: inherit;
-  font-size: calc(8px + 0.6vw);
-  transition: background ease-out 400ms;
-}
-
-html,
-body {
-
-  /* hide default increment and decrement indicator */
-  input[type="number"]::-webkit-outer-spin-button,
-  input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-
-  input[type="number"] {
-    -moz-appearance: textfield;
-    appearance: auto;
-  }
-
-  /* need stylizing the right scroll bar, need modify the width and bg color */
-  ::-webkit-scrollbar {
-    width: 7px;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background-color: #b247ff;
-    border-radius: 10px;
   }
 }

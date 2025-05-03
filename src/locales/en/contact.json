@@ -1,8 +1,9 @@
 {
-  "projectRequestForm": {
-    "title": "Join the digital expansion today",
-    "description": "Tell me about your project idea. I'm ready to help you bring your digital project to life. Let's talk today!",
-    "subtitle": "Get in touch",
+  "formInputs": {
+    "header": {
+      "text1": "Got an idea in mind?",
+      "text2": "Let’s bring it to life, tell me how I can help."
+    },
 
     "inputs": [
       {
@@ -10,32 +11,40 @@
         "name": "topic",
         "id": "topic",
         "label": "Subject",
-        "placeholder": "Budget for my e-commerce"
+        "placeholder": "I want my store!",
+        "helpText": "Must be between 10 and 40 characters and cannot contain special characters."
       },
       {
         "type": "text",
         "name": "name",
         "id": "name",
         "label": "Name",
-        "placeholder": "Jhon Doe"
-      },
-      {
-        "type": "text",
-        "name": "email",
-        "id": "email",
-        "label": "Email",
-        "placeholder": "example@gmail.com"
+        "placeholder": "Jhon Doe",
+        "helpText": "Must be between 4 and 20 characters and cannot contain special characters."
       }
     ],
-
     "textarea": {
-      "label": "Tell me a little about your idea.",
+      "label": "Tell me how I can help you",
       "placeholder": "Your message..."
     },
 
-    "buttonLabel": {
+    "CTA": {
       "submit": "Send",
       "cancel": "Cancel"
     }
+  },
+
+  "formErrors": {
+    "topic": {
+      "required": "Subject is required",
+      "minLength": "Subject must be at least 10 characters long",
+      "maxLength": "Subject cannot exceed 40 characters"
+    },
+    "name": {
+      "required": "Name is required",
+      "minLength": "Name must be at least 4 characters long",
+      "maxLength": "Name cannot exceed 20 characters"
+    },
+    "noSpecialChars": "Special characters are not allowed"
   }
 }

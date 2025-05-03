@@ -19,119 +19,110 @@
     ]
   },
   "landing": {
-    "title": "Impulsa tu negocio con soluciones digitales.",
-    "description": "Aumenta tu presencia digital y optimiza tu negocio con sitios y aplicaciones web, funcionales y diseñadas a tu medida.",
-    "action": "Reservá hoy",
-    "benefits": ["Precios accesibles", "Soporte 24/7", "100% Personalizadas"]
+    "title": "Impulsá tu producto con soluciones digitales diseñadas  a tu medida.",
+    "CTA": "Conocé mis servicios"
   },
 
-  "aboutUs": {
+  "aboutMe": {
     "title": "¿Quién soy?",
     "description1": "¡Hola! Soy Seba, desarrollador de software, creo soluciones digitales adaptadas las necesidades de cada negocio. Mi objetivo es ayudarte a mejorar tu presencia online y atraer más clientes, asegurando que tu negocio esté optimizado para crecer en el mundo digital.",
     "description2": "Con mi experiencia, no solo podrás mejorar la apariencia y funcionalidad de tu sitio o aplicación web, sino también organizar mejor tu negocio con herramientas que te permitirán gestionar toda la información de manera eficiente y sin complicaciones."
   },
 
   "steps": {
-    "title": "¿Cómo vamos a trabajar?",
+    "title": "¿Cómo trabajamos?",
     "content": [
       {
         "id": "01",
-        "title": "Conociendo tus necesidades",
-        "description": "Escuchamos tus ideas y objetivos para entender cómo podemos ayudarte."
+        "title": "Nos conocemos",
+        "description": "Te escucho para entender qué necesitás, ya sea una tienda online, un sitio web o ayuda como desarrollador. Definimos juntos el objetivo del proyecto."
       },
       {
         "id": "02",
-        "title": "Creación del diseño",
-        "description": "Crearemos un diseño centrado en usabilidad y estética, ajustado a tus expectativas y objetivos."
+        "title": "Diseño a medida",
+        "description": "Creo un sistema visual con los colores, tipografías e imágenes que mejor representen tu marca. También te muestro un boceto navegable en Figma para que veas cómo va a quedar."
       },
       {
         "id": "03",
-        "title": "Desarrollo de tu proyecto",
-        "description": "Creamos tu producto de manera eficiente y cuidamos cada detalle para garantizar calidad."
+        "title": "Manos a la obra",
+        "description": "Una vez aprobado el diseño, empiezo a desarrollar tu sitio o app. Coordinamos plazos de entrega y te mantengo al tanto del progreso."
       },
       {
         "id": "04",
-        "title": "Lanzamiento",
-        "description": "Presentamos tu producto al mundo y nos aseguramos de que todo funcione perfectamente desde el inicio."
+        "title": "Tu proyecto online",
+        "description": "Publicamos tu sitio o aplicación y lo dejamos todo listo para que empieces a usarlo sin complicaciones."
       },
       {
         "id": "05",
-        "title": "Soporte continuo",
-        "description": "Te brindamos soporte continuo y hacemos mejoras para que siempre estés un paso adelante."
+        "title": "Post-lanzamiento",
+        "description": "Después del lanzamiento, sigo disponible para ayudarte con dudas, ajustes o mejoras futuras."
       }
     ]
   },
 
-  "ourServices": {
+  "services": {
     "title": "Mis servicios",
-    "action": "Ver planes",
     "content": [
       {
         "id": 1,
-        "title": "Sitios web a medida",
-        "description": "Creá una presencia online profesional que atraerá más clientes y hará crecer tu negocio."
+        "title": "Tiendas Online",
+        "description": "Creo tu tienda virtual para que empieces a vender por Internet. Diseño simple, funcional y adaptado a tu negocio. Gestioná tus productos, pagos y envíos de forma fácil, sin depender de nadie.",
+        "CTA": "Quiero mi tienda!",
+        "img": "/public/service-3.webp"
       },
       {
         "id": 2,
-        "title": "Diseños visuales atractivos",
-        "description": "Diseños modernos y llamativos que capturan la atención de tus visitantes y los convierten en clientes."
+        "title": "Sitios Web",
+        "description": "Diseño tu página web para que muestres lo que hacés o vendés de forma clara y profesional. Ideal si ofrecés productos, servicios o querés tener presencia online sin complicarte.",
+        "CTA": "Quiero mi sitio!",
+        "img": "/public/service-2.webp"
       },
       {
         "id": 3,
-        "title": "Asistencia y soporte continuo",
-        "description": "Te acompañamos en cada paso, resolviendo problemas para que tu sitio o aplicación siempre esté funcionando sin problemas."
-      },
-      {
-        "id": 4,
-        "title": "Webs adaptables",
-        "description": "Tu sitio web lucirá perfecto en cualquier dispositivo: móvil, tablet o computadora, para que siempre esté accesible."
+        "title": "Desarrollador freelance",
+        "description": "Si sos una empresa o equipo que necesita una mano extra, puedo sumarme como desarrollador freelance.Trabajo por proyecto, sin relación de dependencia, con responsabilidad y buena comunicación.",
+        "CTA": "Colaboremos!",
+        "img": "/public/service-1.webp"
       }
     ]
   },
 
   "benefits": {
-    "title": "¿Porqué elegir CodeVibes?",
+    "title": "Descrubrí los beneficios de trabajar juntos!",
+    "paragraph": "Convertí tu idea en realidad con un proceso simple, transparente y profesional. Miles de oportunidades están esperando por vos.",
+    "CTA": "Enviame un mensaje!",
     "content": [
       {
         "id": 1,
-        "title": "Presupuesto Personalizado",
-        "description": "En CodeVibes manejamos una lista de precios super accesibles y personalizados dependiendo de la complejidad de los requisitos."
+        "icon": "⚡",
+        "title": "Rápido y sin vueltas",
+        "description": "Tu idea online en menos tiempo del que imaginás."
       },
       {
         "id": 2,
-        "title": "Plata asegurada",
-        "description": "Con CodeVibes tu satisfacción, también es la nuestra! paga solo si el producto final cumple con tus expectativas."
+        "icon": "🛠️",
+        "title": "Profesional y personalizado",
+        "description": "Desarrollo y diseño personalizado a tu medida para reflejar la escena de tu proyecto."
       },
       {
         "id": 3,
-        "title": "Soporte",
-        "description": "En CodeVibes estamos siempre disponible para optimizar el rendimiento de tu aplicación, garantizando entregas eficientes y soluciones a medida."
+        "icon": "💸",
+        "title": "Sin costos ocultos",
+        "description": "Presupuesto claro y acorde a lo que necesitás."
+      },
+      {
+        "id": 4,
+        "icon": "🤝",
+        "title": "Acompañamiento real",
+        "description": "No te dejo solo: estoy para ayudarte antes, durante y luego del desarrollo."
       }
     ]
   },
 
   "footer": {
-    "title": "Únete a la revolución digital para ",
+    "title": "Únete a la revolución digital para",
     "strong": "potenciar tu negocio",
     "description": "No importa tu rubro, mejorar tu presencia digital está a un click de distancia. Te ayudo a cumplir tus objetivos.",
-    "action": "Contáctame!",
-    "slogan": "Convierte tu visión en una experiencia digital excepcional. Conectemos!",
-    "content": [
-      {
-        "id": 1,
-        "title": "Ubicación",
-        "description": "Argentina,Buenos Aires"
-      },
-      {
-        "id": 2,
-        "title": "Correo electrónico",
-        "description": "codevibes.arg@gmail.com"
-      },
-      {
-        "id": 3,
-        "title": "Teléfono",
-        "description": "+54 1132830604"
-      }
-    ]
+    "CTA": "Potenciá tu negocio ahora!"
   }
 }

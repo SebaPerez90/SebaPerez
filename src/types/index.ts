@@ -21,10 +21,18 @@ export type LocalePricingData = LocaleData & {
   services: string[]
 }
 
-export type LocaleProjectRequestForm = {
+export type LocaleformInputs = {
   type: string
   name: string
   id: string
   label: string
   placeholder: string
+  helpText: string
+}
+
+export type BenefitData = {
+  id: number
+  icon: string
+  title: string
+  description: string
 }

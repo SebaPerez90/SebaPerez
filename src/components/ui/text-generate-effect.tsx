@@ -7,7 +7,7 @@ export const TextGenerateEffect = ({
   words,
   className,
   filter = true,
-  duration = 0.4,
+  duration = 0.7,
 }: {
   words: string
   className?: string
@@ -15,6 +15,8 @@ export const TextGenerateEffect = ({
   duration?: number
 }) => {
   const [scope, animate] = useAnimate()
+  const currentLanguage = localStorage.getItem('lang')
+
   const wordsArray = words.split(' ')
   useEffect(() => {
     animate(
@@ -24,12 +26,12 @@ export const TextGenerateEffect = ({
         filter: filter ? 'blur(0px)' : 'none',
       },
       {
-        duration: duration ? duration : 1,
-        delay: stagger(0.2),
+        duration: duration ? duration : 0.03,
+        delay: stagger(0.03),
       }
     )
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [scope.current])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [scope.current, currentLanguage])
 
   const renderWords = () => {
     return (
@@ -38,9 +40,9 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              className={`${className} opacity-0` }
+              className={`${className} opacity-0`}
               style={{
-                filter: filter ? 'blur(10px)' : 'none',
+                filter: filter ? 'blur(40px)' : 'none',
               }}>
               {word}{' '}
             </motion.span>
@@ -53,7 +55,7 @@ export const TextGenerateEffect = ({
   return (
     <div className={cn('font-bold', className)}>
       <div className='mt-4'>
-        <div className=' dark:text-white text-black text-2xl leading-snug tracking-wide'>
+        <div className='text-2xl leading-snug tracking-wide'>
           {renderWords()}
         </div>
       </div>
