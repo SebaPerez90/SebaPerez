@@ -21,7 +21,7 @@ const ServiceCard = ({
   const { setSubject } = useContext(Context)
 
   return (
-    <div className='flex flex-col gap-6 w-[22em] mx-auto'>
+    <div className='flex flex-col gap-6 w-[17em] sm:w-[22em] mx-auto'>
       <div className='flex flex-col items-center w-full relative'>
         <figure className='w-full h-[15em] rounded-lg overflow-hidden'>
           <img

@@ -10,8 +10,8 @@ const Slider = () => {
 
   return (
     <section className='bg-white dark:bg-dark-deep col-center gap-28 pt-32'>
-      <div className='flex flex-col-reverse lg:flex-row items-center gap-8 lg:gap-16'>
-        <div className='w-[25em] sm:w-[22em] flex flex-col gap-10 lg:gap-28'>
+      <div className='flex flex-col-reverse lg:flex-row items-center gap-8 lg:gap-16 px-10 sm:px-0'>
+        <div className='w-full sm:w-[22em] flex flex-col gap-10 lg:gap-28'>
           <div>
             <h1 className='text-3xl font-light text-foreground'>
               {t('footer.title')}{' '}
@@ -31,7 +31,7 @@ const Slider = () => {
           fadeEffect={{ crossFade: true }}
           slidesPerView={1}
           autoplay={{ delay: 700 }}
-          className='w-[25em] h-[30em] rounded-2xl overflow-hidden'>
+          className='w-[20em] sm:w-[25em] h-[30em] rounded-2xl overflow-hidden'>
           <SwiperSlide className='size-full overflow-hidden'>
             <img
               className='size-full object-cover'

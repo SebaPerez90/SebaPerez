@@ -42,7 +42,7 @@ const Services = () => {
           }}
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
-          className='h-[38em] custom-swiper'>
+          className='sm:h-[38em] h-[40em] custom-swiper'>
           {(services as ServiceCardProps[]).map((service) => (
             <SwiperSlide
               key={service.id}

@@ -15,17 +15,16 @@ const FAQAcordion = () => {
     <Accordion
       type='single'
       collapsible
-      className='z-10 w-full px-10 flex gap-14 overflow-hidden flex-wrap items-start justify-between max-[560px]:justify-center text-foreground'>
+      className='w-full px-10 flex gap-14 overflow-hidden flex-wrap justify-between text-foreground'>
       {Object.entries(paymentsContent).map(([section, items]) => (
         <div
           key={section}
-          className='w-[24em] flex-grow'>
+          className='w-full sm:w-[24em] flex-grow'>
           <h2 className='text-2xl font-semibold'>{section}</h2>
           {(items as Array<LocaleFaqData>).map((item, index) => (
             <AccordionItem
               key={index}
-              value={item.question}
-              className=''>
+              value={item.question}>
               <AccordionTrigger className='text-base'>
                 {item.question}
               </AccordionTrigger>
