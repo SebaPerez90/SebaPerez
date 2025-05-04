@@ -5,7 +5,7 @@ const AboutMe = () => {
   const { t } = useTranslation()
 
   return (
-    <section className='w-full h-[70em] sm:h-[50em] relative col-center gap-32'>
+    <section className='w-full h-[70em] sm:h-[40em] relative col-center gap-32'>
       <h1 className='title text-lg dark:text-white text-black'>
         {t('aboutMe.title')}
       </h1>

@@ -27,7 +27,7 @@
     },
 
     "Q&A": {
-      "Proceso de Trabajo": [
+      "Workflow": [
         {
           "question": "I don't know anything about technology, can I still have my own website?",
           "answer": "Absolutely! I handle the entire process. Just tell me your idea and what you want to achieve, and I’ll guide you step by step."
@@ -41,7 +41,7 @@
           "answer": "It depends on the type of site. On average, between 1 and 3 weeks. We’ll talk about it and I’ll give you a clear deadline from the start."
         }
       ],
-      "Pagos": [
+      "Payments": [
         {
           "question": "How do I pay?",
           "answer": "I accept bank transfers, MercadoPago, and cryptocurrencies. We can also set up a payment plan if needed."
@@ -55,7 +55,7 @@
           "answer": "No. Once we agree on a budget, there are no surprises or hidden fees."
         }
       ],
-      "Propiedad y Cambios": [
+      "Ownership & Revisions": [
         {
           "question": "Do I own the website once it's finished?",
           "answer": "Yes. The site is 100% yours and you can use it, modify it, or manage it however you prefer."
@@ -65,7 +65,7 @@
           "answer": "Yes. I include minor adjustments within a post-delivery period. If you want to make major changes, I can help with that too."
         }
       ],
-      "Garantías": [
+      "Guarantees": [
         {
           "question": "What if I don't like the result?",
           "answer": "We’ll work together to make the necessary adjustments. I don’t consider the project finished until you're satisfied."
@@ -75,7 +75,7 @@
           "answer": "Feel free to reach out. I'm here to help even after delivery."
         }
       ],
-      "Servicio continuo": [
+      "Ongoing Support": [
         {
           "question": "Do you offer monthly website maintenance?",
           "answer": "Yes. You can sign up for a monthly plan that includes updates, tech support, and site monitoring to ensure it runs smoothly."

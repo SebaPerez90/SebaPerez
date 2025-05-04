@@ -29,7 +29,7 @@ const Benefits = () => {
             <motion.div
               key={data.id}
               transition={{
-                duration: 0.6,
+                duration: 0.4,
                 delay: data.id * 0.4,
               }}
               initial={{ y: 50, opacity: 0 }}
