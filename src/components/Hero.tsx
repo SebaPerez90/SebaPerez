@@ -7,17 +7,23 @@ const Hero = () => {
   const { t } = useTranslation()
 
   return (
-    <section className='py-28 w-full h-dvh relative bg-gradient-to-b from-white via-white to-slate-300 dark:from-black dark:via-black dark:to-slate-black'>
-      <div className='flex flex-col items-center justify-center h-full gap-20 text-center w-[80%] md:w-[40em] lg:w-[65em] mx-auto'>
-        <TextGenerateEffect
-          words={t('landing.title')}
-          className='text-4xl sm:text-5xl lg:text-7xl text-pretty tracking-tight text-[#1f1f1f] hero-title dark:text-white'
-        />
+    <section
+      id='hero-section'
+      className='py-28 w-full h-dvh relative bg-white dark:bg-dark-deep'>
+      <div className='flex flex-col gap-12 items-center justify-center h-full'>
+        <header className='flex flex-col items-center justify-center gap-10 text-center w-[80%] md:w-[40em] lg:w-[75em] mx-auto'>
+          <TextGenerateEffect
+            words={t('landing.title')}
+            className='text-4xl sm:text-5xl lg:text-7xl font-semibold text-pretty text-[#1f1f1f] hero-title dark:text-white'
+          />
+          <p className='w-3/4 paragraph opacity-0 animate-[appear-element_150ms_ease-out_forwards] [animation-delay:0.8s]'>
+            {t('landing.subtitle')}
+          </p>
+        </header>
         <Button
           type='button'
           size={'custom'}
-          variant={'primary'}
-          className='opacity-0 animate-[appear-element_200ms_ease-out_forwards] [animation-delay:0.8s]'>
+          className='opacity-0 w-max animate-[appear-element_150ms_ease-out_forwards] [animation-delay:1s]'>
           <a href='#services'>{t('landing.CTA')}</a>
           <IoIosArrowForward size={18} />
         </Button>

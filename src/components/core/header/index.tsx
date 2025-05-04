@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <header
       ref={headerRef}
-      className='flex items-center fixed w-full px-5 py-4 backdrop-blur-[8px] bg-white/50 z-50 dark:bg-dark-deep/30'>
+      className='flex items-center fixed w-full px-5 py-4 backdrop-blur-[8px] bg-white/50 z-50 dark:bg-dark-deep/50'>
       <div className='relative flex items-center gap-4 justify-end w-full max-w-[1400px] mx-auto'>
         <Logo />
         <div className='scale-90 flex items-center gap-2'>

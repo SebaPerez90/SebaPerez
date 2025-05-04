@@ -14,6 +14,7 @@ const Benefits = lazy(() => import('@/components/Benefits'))
 const ContactMeForm = lazy(() => import('@/components/forms/ContactMeForm'))
 const FAQContainer = lazy(() => import('@/components/FAQContainer'))
 const Slider = lazy(() => import('@/components/Slider'))
+const Footer = lazy(() => import('@/components/core/Footer'))
 
 export const Context = createContext<{
   subject: string
@@ -49,12 +50,7 @@ const App = () => {
             <ContactMeForm />
           </section>
         </main>
-        <footer className='flex flex-col items-center pt-20 dark:bg-dark-deep'>
-          <hr className='h-[2px] my-4 bg-gray-300 w-[70%]' />
-          <span className='w-max font-medium text-sm my-2 text-foreground'>
-            © 2025 Soluciones tecnológicas | Sebastian Perez
-          </span>
-        </footer>
+        <Footer />
         <Toaster />
       </Suspense>
     </Context.Provider>

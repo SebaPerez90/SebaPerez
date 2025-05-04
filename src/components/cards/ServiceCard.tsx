@@ -45,7 +45,6 @@ const ServiceCard = ({
       </div>
       <Button
         size={'custom'}
-        variant={'primary'}
         className='mx-auto'
         onClick={() => setSubject(CTA)}>
         <a href='#contact-me-form'>{CTA}</a>
