@@ -9,11 +9,11 @@ const HowWorks = () => {
   return (
     <section className='z-10 col-center gap-52 lg:gap-40 w-full px-6 sm:px-10 max-w-[1000px] pt-20 pb-32'>
       <h1 className='title text-lg my-16'>{t('steps.title')}</h1>
-      {(stepByStepContent as Array<LocaleData>).map((data) => (
+      {(stepByStepContent as Array<LocaleData>).map((data, index) => (
         <motion.div
           transition={{
-            duration: 0.3,
-            delay: 0.6,
+            duration: 0.2,
+            delay: index * 0.2,
           }}
           initial={{ scale: 0.5, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
