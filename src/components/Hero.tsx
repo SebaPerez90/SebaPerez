@@ -14,9 +14,9 @@ const Hero = () => {
         <header className='flex flex-col items-center justify-center gap-10 text-center w-[90%] lg:w-[60em] xl:w-[75em] mx-auto'>
           <TextGenerateEffect
             words={t('landing.title')}
-            className='text-3xl sm:text-5xl lg:text-7xl font-semibold text-pretty text-[#1f1f1f] hero-title dark:text-white'
+            className='text-3xl sm:text-5xl lg:text-7xl font-semibold text-pretty text-black hero-title dark:text-white'
           />
-          <p className='w-full lg:w-3/4 paragraph text-balance opacity-0 animate-[appear-element_150ms_ease-out_forwards] [animation-delay:0.8s]'>
+          <p className='w-full lg:w-3/4 text-[14px] sm:text-base paragraph  dark:text-slate-300 text-balance opacity-0 animate-[appear-element_150ms_ease-out_forwards] [animation-delay:0.8s]'>
             {t('landing.subtitle')}
           </p>
         </header>
